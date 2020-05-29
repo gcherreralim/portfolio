@@ -6,10 +6,15 @@
     <link rel="stylesheet" type = "text/css" href="main.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/logo-white-fill.png">
     <script type="text/javascript" src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700, 900|Playfair+Display:400,900" rel="stylesheet">
 </head>
 <body>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="waypoint.js"></script>
 <!-- START Loading Page -->
 <!--<div id="load-wrapper">-->
 <!--    <div class="loading-spinner"></div>-->
@@ -20,7 +25,6 @@
     <p id="loading-sub"> Portfolio </p>
     <p id="loading-foot"> Copyright 2020 &copy; Gabriel Herrera-Lim </p>
 </div>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script type="text/javascript">
     function counter(){
         var count = setInterval(function(){
@@ -228,11 +232,13 @@
         <div id="project-side-container">
             <h3 id="project-head">Projects</h3>
         </div>
+<!--        PROJECT 1 -->
         <div class="project-container project-1">
             <div class="project-name-desc">
                 <p class="project-name nba-cluster">Using Clustering Methods to Redefine Positions and Analyze Effective Lineups in the NBA</p>
                 <div class="desc-container">
-                    <p class="project-description nba-cluster-description">Using LDA and Means-Based Clustering, as well as creating a Comparison Index, to reclassify NBA players into modern-day "positions" and analyze effective lineups for front-office team- and lineup-building decisions.</p>
+                    <p class="project-description nba-cluster-description">Using LDA and Means-Based Clustering, as well as creating a Comparison Index,
+                        to reclassify NBA players into modern-day "positions" and analyze effective lineups for front-office team- and lineup-building decisions.</p>
                 </div>
                 <div class="project-link-container">
                     <div class="project-link-wrapper link-git">
@@ -249,7 +255,107 @@
             </div>
         </div>
         <div class="project-date-container project-date-1">
-            <h4 class="project-date nba-cluster-date">April 2020</h4>
+            <h4 class="project-date nba-cluster-date">APR 2020</h4>
+        </div>
+<!--        PROJECT 2 -->
+        <div class="project-container project-2">
+            <div class="project-name-desc">
+                <p class="project-name nba-postgame">Text/Sentiment Analysis and Topic Modeling on NBA Finals Post-Game Interviews</p>
+                <div class="desc-container">
+                    <p class="project-description nba-postgame-description">Performing text/sentiment analysis and topic modeling on NBA Finals post-game interviews to understand the<br>effect of
+                        experience and results on certain players and coaches.</p>
+                </div>
+                <div class="project-link-container">
+                    <div class="project-link-wrapper link-git">
+                        <div class="project-text-wrapper">
+                            <a class="project-link project-git" href="#"> <span class="project-link-text project-git-text">GitHub</span> </a>
+                        </div>
+                    </div>
+                    <div class="project-link-wrapper link-writeup">
+                        <div class="project-text-wrapper">
+                            <a class="project-link project-writeup" href="#"> <span class="project-link-text project-writeup-text">Documentation</span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-date-container project-date-2">
+            <h4 class="project-date nba-postgame-date">FEB 2020</h4>
+        </div>
+<!--        PROJECT 3-->
+        <div class="project-container project-3">
+            <div class="project-name-desc">
+                <p class="project-name glassdoor">Glassdoor Reviews Analysis</p>
+                <div class="desc-container">
+                    <p class="project-description glassdoor-description">Performing text/sentiment analysis and topic modeling on scraped Glassdoor<br>reviews (pros, cons, and advice) for 4
+                        distinct companies.</p>
+                </div>
+                <div class="project-link-container">
+                    <div class="project-link-wrapper link-git">
+                        <div class="project-text-wrapper">
+                            <a class="project-link project-git" href="#"> <span class="project-link-text project-git-text">GitHub</span> </a>
+                        </div>
+                    </div>
+                    <div class="project-link-wrapper link-writeup">
+                        <div class="project-text-wrapper">
+                            <a class="project-link project-writeup" href="#"> <span class="project-link-text project-writeup-text">Documentation</span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-date-container project-date-3">
+            <h4 class="project-date glassdoor-date">FEB 2020</h4>
+        </div>
+<!--        PROJECT 4 -->
+        <div class="project-container project-4">
+            <div class="project-name-desc">
+                <p class="project-name wwe">WWE Earnings Calls Analysis</p>
+                <div class="desc-container">
+                    <p class="project-description wwe-description">Performing text/sentiment analysis and unstructured data parsing/cleaning on WWE earnings calls transcripts and<br>compared
+                        results with corresponding 10-day trade/market prices.</p>
+                </div>
+                <div class="project-link-container">
+                    <div class="project-link-wrapper link-git">
+                        <div class="project-text-wrapper">
+                            <a class="project-link project-git" href="#"> <span class="project-link-text project-git-text">GitHub</span> </a>
+                        </div>
+                    </div>
+                    <div class="project-link-wrapper link-writeup">
+                        <div class="project-text-wrapper">
+                            <a class="project-link project-writeup" href="#"> <span class="project-link-text project-writeup-text">Documentation</span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-date-container project-date-4">
+            <h4 class="project-date glassdoor-date">FEB 2020</h4>
+        </div>
+<!--        PROJECT 5 -->
+        <div class="project-container project-5">
+            <div class="project-name-desc">
+                <p class="project-name nba-goat">Greatest of All Time [GOAT]</p>
+                <div class="desc-container">
+                    <p class="project-description nba-goat-description">Running and documenting a statistical analysis of basketball’s “Greatest of All Time”
+                        argument, using<br>categorical data analyses, linear and logistic regression, and mixed models.</p>
+                </div>
+                <div class="project-link-container">
+                    <div class="project-link-wrapper link-git">
+                        <div class="project-text-wrapper">
+                            <a class="project-link project-git" href="#"> <span class="project-link-text project-git-text">GitHub</span> </a>
+                        </div>
+                    </div>
+                    <div class="project-link-wrapper link-writeup">
+                        <div class="project-text-wrapper">
+                            <a class="project-link project-writeup" href="#"> <span class="project-link-text project-writeup-text">Documentation</span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-date-container project-date-5">
+            <h4 class="project-date nba-goat-date">DEC 2019</h4>
         </div>
     </div>
 </section>
@@ -276,14 +382,6 @@
 <!-- END Contact Section -->
 
 <!-- SCRIPTS -->
-
-    <script>
-        let spinwrap = document.querySelector('.spin-wrap')
-
-        window.addEventListener('load', function () {
-            spinwrap.parentElement.removeChild(spinwrap)
-        });
-    </script>
 
     <script src="js/typed.js"></script>
     <script>

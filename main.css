@@ -19,12 +19,7 @@ body{
     background: #FFFFFF;
     min-height:1500px;
 }
-.section-selector{
-    transition: all 350ms;
-}
-.section-selector:target{
-    width: 27px;
-}
+
 /* scrollbar */
 ::-webkit-scrollbar{
    width:10px;
@@ -279,49 +274,63 @@ body{
 
 /* section buttons */
 #section1{
-    width: 20px;
-    height: 2px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
     background: #FFF;
     position: fixed;
     top: 45%;
     left: 2vw;
     z-index: 99999999;
+    transition: all 350ms ease-in-out;
 }
 #section2{
-    width: 20px;
-    height: 2px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
     background: #FFF;
     position: fixed;
     top: 47.5%;
     left: 2vw;
     z-index: 99999999;
+    transition: all 350ms ease-in-out;
 }
 #section3{
-    width: 20px;
-    height: 2px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
     background: #FFF;
     position: fixed;
     top: 50%;
     left: 2vw;
     z-index: 99999999;
+    transition: all 350ms ease-in-out;
 }
 #section4{
-    width: 20px;
-    height: 2px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
     background: #FFF;
     position: fixed;
     top: 52.5%;
     left: 2vw;
     z-index: 99999999;
+    transition: all 350ms ease-in-out;
 }
 #section5{
-    width: 20px;
-    height: 2px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
     background: #FFF;
     position: fixed;
     top: 55%;
     left: 2vw;
     z-index: 99999999;
+    transition: all 350ms ease-in-out;
+}
+.enlarge{
+    width: 10px;
+    height: 10px;
 }
 /* section buttons end*/
 
@@ -888,10 +897,6 @@ body{
     justify-content: center;
     transition: all 350ms ease-in-out;
 }
-
-.project-container:hover{
-    background: url(images/project-1-nba-cluster.jpg) no-repeat;
-}
 .project-date-container{
     width: 2%;
     position: absolute;
@@ -911,7 +916,6 @@ body{
     font-weight: 400;
     position: absolute;
     top: 50%;
-    left: 1px;
     white-space: nowrap;
     transform: rotate(-90deg);
 }
@@ -947,7 +951,7 @@ body{
     opacity: 0;
     transition: all 400ms ease-in 50ms;
 }
-.nba-cluster-description{
+.project-description{
     left: 50%;
     padding: 20px;
     text-align: justify;
@@ -1028,4 +1032,51 @@ body{
 .project-1{
     position: absolute;
     left: 20%;
+}
+.project-1:hover{
+    background: url(images/project-1-nba-cluster.jpg) no-repeat;
+}
+.project-2{
+    position: absolute;
+    left: 20%;
+    top: calc(100vh / 3);
+}
+.project-date-2{
+    top: calc(100vh/3);
+}
+.project-2:hover{
+    background: url(images/project-2-nba-postgame.jpg) no-repeat;
+}
+.project-3{
+    position: absolute;
+    left:20%;
+    top: calc(100vh * 2 / 3);
+}
+.project-date-3{
+    top: calc(100vh * 2 / 3);
+}
+.project-3:hover{
+    background: url(images/project-3-glassdoor.jpg) no-repeat;
+}
+.project-4{
+    position: absolute;
+    left:20%;
+    top: calc(100vh * 3 / 3);
+}
+.project-date-4{
+    top: calc(100vh * 3 / 3);
+}
+.project-4:hover{
+    background: url(images/project-4-wwe.jpg) no-repeat;
+}
+.project-5{
+    position: absolute;
+    left:20%;
+    top: calc(100vh * 4 / 3);
+}
+.project-date-5{
+    top: calc(100vh * 4 / 3);
+}
+.project-5:hover{
+    background: url(images/project-5-goat.jpg) no-repeat;
 }
