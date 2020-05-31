@@ -1232,3 +1232,140 @@ body{
     visibility: visible;
     transform: scaleX(1);
 }
+#contactme-text{
+    display: block;
+    background: #A50000;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    margin:0;
+    position: absolute;
+    text-align: left;
+    bottom: 3%;
+    left: 3%;
+    color: #FFF;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.175s ease-in-out 0s;
+    transition-delay: 450ms;
+}
+.contact-me-container:hover #contactme-text{
+    visibility: visible;
+    opacity: 1;
+}
+
+.contact-input-container{
+    box-sizing: border-box;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 60%;
+}
+.contact-input-container .row100{
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.contact-input-container .row100 .col{
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+}
+
+.contact-input-container .row100 .inputBox{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #A50000;
+}
+
+.contact-input-container .row100 .inputBox input,
+.contact-input-container .row100 .inputBox.textarea textarea{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 0 10px;
+    color: #FFF;
+    z-index: 1;
+}
+
+.contact-input-container .row100 .inputBox .contact-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.contact-input-container .row100 .inputBox input:focus + .contact-text,
+.contact-input-container .row100 .inputBox input:valid + .contact-text{
+    top: -35px;
+    left: -10px;
+}
+
+.contact-input-container .row100 .inputBox .contact-line{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #A50000;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.contact-input-container .row100 .inputBox input:focus ~ .contact-line,
+.contact-input-container .row100 .inputBox input:valid ~ .contact-line{
+    height: 100%;
+}
+.contact-input-container .row100 .inputBox.textarea{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding:10px 0;
+}
+.contact-input-container .row100 .inputBox.textarea textarea{
+    height: 100%;
+    resize: none;
+}
+.contact-input-container .row100 .inputBox.textarea .contact-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.contact-input-container .row100 .inputBox.textarea textarea:focus + .contact-text,
+.contact-input-container .row100 .inputBox.textarea textarea:valid + .contact-text{
+    top: -35px;
+    left: -10px;
+}
+.contact-input-container .row100 .inputBox.textarea textarea:focus ~ .contact-line,
+.contact-input-container .row100 .inputBox.textarea textarea:valid ~ .contact-line{
+    height: 100%;
+}
+input[type="submit"]{
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: #A50000;
+    color: #FFF;
+    font-size: 15px;
+}
