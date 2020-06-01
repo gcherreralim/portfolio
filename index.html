@@ -20,7 +20,7 @@
 <!--    <div class="loading-spinner"></div>-->
 <!--</div>-->
 <div class="preloader">
-    <div class="counter">0</div>
+    <div class="counter">1997</div>
     <p id="loading-head"> Gabriel Herrera-Lim </p>
     <p id="loading-sub"> Portfolio </p>
     <p id="loading-foot"> Copyright 2020 &copy; Gabriel Herrera-Lim </p>
@@ -30,7 +30,7 @@
         var count = setInterval(function(){
             var c = parseInt($('.counter').text());
             $('.counter').text((++c).toString());
-            if (c == 100){
+            if (c == 2020){
                 clearInterval(count);
                 $('.counter').addClass('hide')
                 $('#loading-head').addClass('hide')
@@ -38,7 +38,7 @@
                 $('#loading-foot').addClass('hide')
                 $('.preloader').addClass('active')
             }
-        },5)
+        },100)
     }
     counter()
 </script>
@@ -522,7 +522,12 @@
 <!--    </form>-->
 </section>
 <!-- END Contact Section -->
-<!--    EXIT SLIDE -->
+<section id="#footer">
+    <div class="footer-container">
+
+    </div>
+</section>
+    <!--    EXIT SLIDE -->
     <div class="exit-slide"></div>
 <!-- SCRIPTS -->
     <script src="js/typed.js"></script>

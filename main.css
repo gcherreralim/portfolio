@@ -42,7 +42,7 @@ body{
 .preloader:before{
     content:'Loading';
     position: absolute;
-    font-size: 2em;
+    font-size: 5em;
     font-weight: 900;
     text-transform: lowercase;
     color: rgba(255,255,255,0.1);
@@ -72,14 +72,15 @@ body{
 .counter{
     position:relative;
     color: #FFF;
+    font-family: "Circular Std", serif;
     font-size: 3.5em;
-    font-weight: 200;
+    font-weight: 800;
     z-index: 1;
 }
-.counter:after{
-    content:'%';
-    font-size: 0.5em;
+.counter:before{
+    content:"'";
 }
+
 .hide{
     opacity: 0;
     transition: 1s;
@@ -1386,7 +1387,7 @@ input[type="submit"]{
     background: #A50000;
     z-index: 10000000000;
     transform: translateY(100%);
-    transition: all .08s ease-in;
+    transition: all 200ms ease-in;
     /*-webkit-animation-name: slideIn;*/
     /*-webkit-animation-iteration-count: 1;*/
     /*-webkit-animation-timing-function: ease-in;*/
