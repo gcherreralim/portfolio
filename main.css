@@ -2,14 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:300,400,500,600,700,800,900&display=swap');
 
 ::selection {
-    background: #A50000; /* WebKit/Blink Browsers */
+    background: #A50000;
 }
-html{
-    /*scroll-snap-type: y mandatory;*/
-}
-/*section {*/
-/*    scroll-snap-align: start;*/
-/*}*/
 *{
     margin:0;
     padding:0;
@@ -1379,3 +1373,31 @@ input[type="submit"]{
     color: #FFF;
     font-size: 15px;
 }
+
+/*EXIT SLIDE*/
+.exit-slide{
+    position: fixed;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100vh;
+    background: #A50000;
+    z-index: 10000000000;
+    transform: translateY(100%);
+    transition: all .08s ease-in;
+    /*-webkit-animation-name: slideIn;*/
+    /*-webkit-animation-iteration-count: 1;*/
+    /*-webkit-animation-timing-function: ease-in;*/
+    /*-webkit-animation-duration: 1.5s;*/
+    /*animation-name: slideIn;*/
+    /*animation-iteration-count: 1;*/
+    /*animation-timing-function: ease-in;*/
+    /*animation-duration: 1.5s;*/
+    /*-webkit-animation-delay: 2s;*/
+    /*animation-delay: 2s;*/
+    /*-webkit-animation-fill-mode: forwards;*/
+    /*animation-fill-mode: forwards;*/
+}
+

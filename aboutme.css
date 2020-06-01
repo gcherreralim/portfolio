@@ -1,0 +1,257 @@
+::selection {
+    background: #A50000;
+}
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Circular Std', sans-serif;
+}
+body{
+    background: #030303;
+    min-height:1500px;
+}
+
+/* scrollbar */
+::-webkit-scrollbar{
+    width:10px;
+}
+::-webkit-scrollbar-track{
+    border:7px solid #030303;
+    box-shadow: inset 0 0 3px 2px rgba(0,0,0,1)
+}
+::-webkit-scrollbar-thumb{
+    background: #A50000;
+    border-radius: 3px;
+}
+
+/* hamburger menu */
+/* MENU STYLES */
+.menu-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999999;
+}
+
+.menu-wrap .toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999999999;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+.menu-wrap .hamburger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999999999;
+    width: 30px;
+    height: 30px;
+    padding: 1rem;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Hamburger Line */
+.menu-wrap .hamburger > div {
+    position: relative;
+    flex: none;
+    width: 100%;
+    height: 2px;
+    background: #030303;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+/* Hamburger Lines - Top & Bottom */
+.menu-wrap .hamburger > div::before,
+.menu-wrap .hamburger > div::after {
+    content: '';
+    position: absolute;
+    z-index: 999999999;
+    top: -10px;
+    width: 70%;
+    height: 2px;
+    background: inherit;
+}
+
+/* Moves Line Down */
+.menu-wrap .hamburger > div::after {
+    top: 10px;
+}
+
+/* Toggler Animation */
+.menu-wrap .toggler:checked + .hamburger {
+    background: #A50000;
+}
+.menu-wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+    background: #FFF;
+}
+
+/* Turns Lines Into X */
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+/* Rotate On Hover When Checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+}
+
+/* Show Menu */
+.menu-wrap .toggler:checked ~ .menu {
+    visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+    transform: scale(1);
+    transition-duration: 0.8s;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+    opacity: 1;
+    transition:  opacity 0.4s ease 0.4s;
+}
+
+.menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-wrap .menu > div {
+    background: #030303;
+    border-radius: 50%;
+    width: 200vw;
+    height: 200vw;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+}
+
+.menu-wrap .menu > div > div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu > div > div > ul > li {
+    list-style: none;
+    color: #fff;
+    font-size: 90px;
+    padding: 1rem;
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+    position: relative;
+    color: #151515;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+.menu-wrap .menu > div > div > ul > li > a:hover{
+    background: #A50000;
+    color: #FFF;
+}
+
+.menu-wrap .menu > div > div > ul > li > a::before{
+    content: "";
+    position: absolute;
+    width:100%;
+    height: 5px;
+    bottom: 0;
+    left:0;
+    background-color:#FFF;
+    visibility:hidden;
+    transform: scaleX(0);
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-wrap .menu > div > div > ul > li > a:hover::before{
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+#menu-logo {
+    height: 10%;
+    width: 10%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* end hamburger menu */
+
+/* screen transition */
+.screen-transition{
+    position: fixed;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100vh;
+    background: #A50000;
+    z-index: 10000000000;
+    -webkit-animation-name: slideOut;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 1s;
+    animation-name: slideOut;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.screen-transition:before{
+    content:'about me';
+    position: absolute;
+    font-size: 3em;
+    font-weight: 900;
+    text-transform: lowercase;
+    color: #FFF;
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@-webkit-keyframes slideOut {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}

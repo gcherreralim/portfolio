@@ -53,8 +53,8 @@
                 <div>
                     <ul>
                         <li><a href="index.html" id="menu-home">home</a></li>
-                        <li><a href="aboutme.html" id="menu-about">about me</a></li>
-                        <li><a href="portfolio.html" id="menu-portfolio">portfolio</a></li>
+                        <li><a href="aboutme.html" id="menu-about" class="about-click">about me</a></li>
+                        <li><a href="portfolio.html" id="menu-portfolio" class="portfolio-click">portfolio</a></li>
                         <li><a href="index.html#contact-me-section" id="menu-contact">contact me</a></li>
                         <img src="./images/logo-white-stroke.png" id="menu-logo" alt="./images/logo-white-fill">
                     </ul>
@@ -143,7 +143,7 @@
                 <br>
                 <div class="more-about-wrapper">
                     <div class="about-link-wrapper">
-                        <a id="about-more" href="aboutme.html"> <span id="more-about-text"> More About Me </span> </a>
+                        <a id="about-more" href="aboutme.html" class="about-click"> <span id="more-about-text"> More About Me </span> </a>
                     </div>
                 </div>
             </div>
@@ -230,7 +230,7 @@
 <section id="portfolio-section">
     <div class="proj-head-container">
         <div id="project-side-container">
-            <a href="portfolio.html"><h3 id="project-head">Projects</h3></a>
+            <a href="portfolio.html" class="portfolio-click"><h3 id="project-head">Projects</h3></a>
         </div>
 <!--        PROJECT 1 -->
         <div class="project-container project-1">
@@ -522,6 +522,8 @@
 <!--    </form>-->
 </section>
 <!-- END Contact Section -->
+<!--    EXIT SLIDE -->
+    <div class="exit-slide"></div>
 <!-- SCRIPTS -->
     <script src="js/typed.js"></script>
     <script>
@@ -535,5 +537,19 @@
             showCursor: true
         });
     </script>
+<script>
+    function myFunction() {
+        // Code for Chrome, Safari, Opera
+        document.getElementsByClassName("exit-slide")[0].style.WebkitTransform = "translateY(0)";
+        document.getElementsByClassName("exit-slide")[0].innerHtml =" asd";
+        // Code for IE9
+        document.getElementsByClassName("exit-slide")[0].style.msTransform = "translateY(0)";
+        // Standard syntax
+        document.getElementsByClassName("exit-slide")[0].style.transform = "translateY(0)";
+    }
+
+    document.getElementById("about-more").addEventListener("click", function(){
+        myFunction();});
+</script>
 </body>
 </html>
