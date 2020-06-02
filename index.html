@@ -121,12 +121,12 @@
             var value = window.scrollY;
 
             landbg.style.top = value * 0.5 + 'px';
-            landstripe.style.top = -value * 0.7 + 'px';
-            landdots.style.top = -value * 0.9 + 'px';
+            landstripe.style.top = -value * 0.5 + 'px';
+            landdots.style.top = -value * 0.6 + 'px';
             landedge.style.left = value * 0.3 + 'px';
             landghl.style.left = -value * 0.5 + 'px';
-            landtext.style.top = value * 1.25 + 'px';
-            landsub.style.left = value * 0.6 + 'px';
+            landtext.style.top = value * 0.75 + 'px';
+            landsub.style.left = value * 0.5 + 'px';
         })
     </script>
 <!-- END Landing Section -->
@@ -542,19 +542,19 @@
             showCursor: true
         });
     </script>
-<script>
-    function myFunction() {
-        // Code for Chrome, Safari, Opera
-        document.getElementsByClassName("exit-slide")[0].style.WebkitTransform = "translateY(0)";
-        document.getElementsByClassName("exit-slide")[0].innerHtml =" asd";
-        // Code for IE9
-        document.getElementsByClassName("exit-slide")[0].style.msTransform = "translateY(0)";
-        // Standard syntax
-        document.getElementsByClassName("exit-slide")[0].style.transform = "translateY(0)";
-    }
+    <script>
+        function myFunction() {
+            // Code for Chrome, Safari, Opera
+            document.getElementsByClassName("exit-slide")[0].style.WebkitTransform = "translateY(0)";
+            document.getElementsByClassName("exit-slide")[0].innerHtml =" asd";
+            // Code for IE9
+            document.getElementsByClassName("exit-slide")[0].style.msTransform = "translateY(0)";
+            // Standard syntax
+            document.getElementsByClassName("exit-slide")[0].style.transform = "translateY(0)";
+        }
 
-    document.getElementById("about-more").addEventListener("click", function(){
-        myFunction();});
-</script>
+        document.getElementById("about-more").addEventListener("click", function(){
+            myFunction();});
+    </script>
 </body>
 </html>
