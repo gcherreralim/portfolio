@@ -624,6 +624,115 @@ body{
     visibility: visible;
 }
 
+/*ORGS*/
+.org-sub{
+    width: 70%;
+}
+.org-msbaa:hover{
+    background: url(images/org-msbaa.jpg) no-repeat;
+    color: #FFF;
+}
+.org-jma:hover{
+    background: url(images/org-jma.jpg) no-repeat;
+    color: #FFF;
+}
+
+/*.cards-container .school-nd:before{*/
+/*    content:'notre dame';*/
+/*    position: absolute;*/
+/*    top:45%;*/
+/*    left:0%;*/
+/*    font-size: 130px;*/
+/*    font-weight: 800;*/
+/*    color: rgba(0,0,0,0.1);*/
+/*    transition: all 350ms ease-in-out;*/
+/*}*/
+/*.school-nd:hover:before{*/
+/*    color: rgba(255,255,255,0.2);*/
+/*}*/
+/*.cards-container .school-up:before{*/
+/*    content:'up diliman';*/
+/*    position: absolute;*/
+/*    top:45%;*/
+/*    left:0%;*/
+/*    font-size: 130px;*/
+/*    font-weight: 800;*/
+/*    color: rgba(0,0,0,0.1);*/
+/*    transition: all 350ms ease-in-out;*/
+/*}*/
+/*.school-up:hover:before{*/
+/*    color: rgba(255,255,255,0.2);*/
+/*}*/
+/*.cards-container .school-ubc:before{*/
+/*    content:'ubc sauder';*/
+/*    position: absolute;*/
+/*    top:45%;*/
+/*    left:0%;*/
+/*    font-size: 130px;*/
+/*    font-weight: 800;*/
+/*    color: rgba(0,0,0,0.1);*/
+/*    transition: all 350ms ease-in-out;*/
+/*}*/
+/*.school-ubc:hover:before{*/
+/*    color: rgba(255,255,255,0.2);*/
+/*}*/
+
+/*.school-nd:hover .organization{*/
+/*    top: 60px;*/
+/*}*/
+/*.school-nd:hover .position{*/
+/*    top: 85px;*/
+/*}*/
+/*.school-sub-nd{*/
+/*    position: absolute;*/
+/*    top: 110px;*/
+/*    left: 293.3125px;*/
+/*    opacity: 0;*/
+/*    visibility: hidden;*/
+/*    transition-delay: 350ms;*/
+/*}*/
+/*.school-nd:hover .school-sub-nd{*/
+/*    opacity: 1;*/
+/*    visibility: visible;*/
+/*}*/
+/*.school-up:hover .organization{*/
+/*    top: 60px;*/
+/*}*/
+/*.school-up:hover .position{*/
+/*    top: 85px;*/
+/*}*/
+/*.school-sub-up{*/
+/*    position: absolute;*/
+/*    top: 110px;*/
+/*    left: 293.3125px;*/
+/*    opacity: 0;*/
+/*    visibility: hidden;*/
+/*    transition-delay: 350ms;*/
+/*}*/
+/*.school-up:hover .school-sub-up{*/
+/*    opacity: 1;*/
+/*    visibility: visible;*/
+/*}*/
+
+/*.school-ubc:hover .organization{*/
+/*    top: 60px;*/
+/*}*/
+/*.school-ubc:hover .position{*/
+/*    top: 85px;*/
+/*}*/
+/*.school-sub-ubc{*/
+/*    position: absolute;*/
+/*    top: 110px;*/
+/*    left: 293.3125px;*/
+/*    opacity: 0;*/
+/*    visibility: hidden;*/
+/*    transition-delay: 350ms;*/
+/*}*/
+/*.school-ubc:hover .school-sub-ubc{*/
+/*    opacity: 1;*/
+/*    visibility: visible;*/
+/*}*/
+
 /*.skills-container .card:hover:before{*/
 /*    clip-path: circle(300px at 80% -20%);*/
 /*}*/
