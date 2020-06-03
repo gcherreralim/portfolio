@@ -277,8 +277,27 @@ body{
     width: 60%;
     position: absolute;
     right: 10px;
+    top: 300px;
 }
-
+.work-title{
+    color: #FFF;
+    text-align: left;
+    position: absolute;
+    left: 185px;
+    top: -65px;
+    font-size: 100px;
+}
+.education-container{
+    position: relative;
+}
+.school-title{
+    color: #FFF;
+    text-align: left;
+    position: absolute;
+    left: 0px;
+    top: -65px;
+    font-size: 100px;
+}
 /*cards*/
 .cards-container{
     display: block;
@@ -287,7 +306,7 @@ body{
 }
 .cards-container .card{
     position:relative;
-    width: 80%;
+    width: 950px;
     height: 200px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -295,51 +314,316 @@ body{
     border-radius: 20px;
     overflow:hidden;
     box-shadow: 4px 6px 31px -10px rgba(165,0,0,0.3);
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    transition: all 350ms ease-in-out;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    /*text-align: center;*/
 }
-/*.data{*/
-/*    position: absolute;*/
-/*    animation: 5s floating5 infinite ease-in-out;*/
-/*}*/
-/*.design{*/
-/*    position: absolute;*/
-/*    animation: 4s floating6 infinite ease-in-out;*/
-/*}*/
-/*.viz{*/
-/*    position: absolute;*/
-/*    animation: 6s floating7 infinite ease-in-out;*/
-/*}*/
-/*@keyframes floating5 {*/
-/*    from {transform: translate(0,0px);}*/
-/*    33% {transform: translate(-8px,10px);}*/
-/*    65% {transform: translate(3px,12px);}*/
-/*    to {transform: translate(0,0px);}*/
-/*}*/
-/*@keyframes floating6 {*/
-/*    from {transform: translate(0,0px);}*/
-/*    33% {transform: translate(8px,-5px);}*/
-/*    65% {transform: translate(13px,12px);}*/
-/*    to {transform: translate(0,0px);}*/
-/*}*/
-/*@keyframes floating7 {*/
-/*    from {transform: translate(0,0px);}*/
-/*    33% {transform: translate(-4px,4px);}*/
-/*    65% {transform: translate(2px,15px);}*/
-/*    to {transform: translate(0,0px);}*/
-/*}*/
-.work-cards .card:before{
-    content:'';
+.card-content{
+    width: 95%;
     position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:#A50000;
-    clip-path: circle(60px at 98% 5%);
-    transition: 0.5s ease-in-out;
+    left: 0;
 }
+.date-container{
+    width: 5%;
+    height: 200px;
+    border-left: #030303 solid;
+    position: absolute;
+    right: 0;
+}
+.date{
+    transform: translate(0, 125px) rotate(-90deg);
+    font-size: 12px;
+    color: #030303;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    transition: all 350ms ease-in-out;
+}
+.subdetails{
+    margin: 0 auto;
+    width: 70%;
+    font-size: 13px;
+    text-align: justify;
+    text-align-last: center;
+    color: #FFF;
+}
+.organization,
+.position{
+    position: absolute;
+    vertical-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms ease-in-out;
+}
+.organization{
+    top: 85px;
+}
+.position{
+    top: 110px;
+}
+.work-nd:hover{
+    background: url(images/work-nd-bg-red.jpg) no-repeat;
+    color: #FFF;
+}
+.work-capstone:hover{
+    background: url(images/work-tr-bg.jpg) no-repeat;
+    color: #FFF;
+}
+.work-cobena:hover{
+    background: url(images/work-cob-bg.jpg) no-repeat;
+    color: #FFF;
+}
+.work-loreal:hover{
+    background: url(images/work-lor-bg.jpg) no-repeat;
+    color: #FFF;
+}
+.card:hover .date{
+    color: #FFF;
+}
+.card:hover .date-container{
+    border-left: #FFF solid;
+}
+.cards-container .work-nd:before{
+    content:'notre dame';
+    position: absolute;
+    top:45%;
+    left:0%;
+    font-size: 130px;
+    font-weight: 800;
+    color: rgba(0,0,0,0.1);
+    transition: all 350ms ease-in-out;
+}
+.work-nd:hover:before{
+    color: rgba(255,255,255,0.2);
+}
+.cards-container .work-capstone:before{
+    content:'capstone';
+    position: absolute;
+    top:45%;
+    left:0%;
+    font-size: 130px;
+    font-weight: 800;
+    color: rgba(0,0,0,0.1);
+    transition: all 350ms ease-in-out;
+}
+.work-capstone:hover:before{
+    color: rgba(255,255,255,0.2);
+}
+.cards-container .work-cobena:before{
+    content:'cobena';
+    position: absolute;
+    top:45%;
+    left:0%;
+    font-size: 130px;
+    font-weight: 800;
+    color: rgba(0,0,0,0.1);
+    transition: all 350ms ease-in-out;
+}
+.work-cobena:hover:before{
+    color: rgba(255,255,255,0.2);
+}
+.cards-container .work-loreal:before{
+    content:"l'oréal";
+    position: absolute;
+    top:45%;
+    left:0%;
+    font-size: 130px;
+    font-weight: 800;
+    color: rgba(0,0,0,0.1);
+    transition: all 350ms ease-in-out;
+}
+.work-loreal:hover:before{
+    color: rgba(255,255,255,0.2);
+}
+.work-nd:hover .organization{
+    top: 50px;
+}
+.work-nd:hover .position{
+    top: 75px;
+}
+.work-sub-nd{
+    position: absolute;
+    top: 100px;
+    left: 135.375px;
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: 350ms;
+}
+.work-nd:hover .work-sub-nd{
+    opacity: 1;
+    visibility: visible;
+}
+.work-capstone:hover .organization{
+    top: 40px;
+}
+.work-capstone:hover .position{
+    top: 65px;
+}
+.work-sub-capstone{
+    position: absolute;
+    top: 90px;
+    left: 135.375px;
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: 350ms;
+}
+.work-capstone:hover .work-sub-capstone{
+    opacity: 1;
+    visibility: visible;
+}
+
+.work-cobena:hover .organization{
+    top: 50px;
+}
+.work-cobena:hover .position{
+    top: 75px;
+}
+.work-sub-cobena{
+    position: absolute;
+    top: 100px;
+    left: 135.375px;
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: 350ms;
+}
+.work-cobena:hover .work-sub-cobena{
+    opacity: 1;
+    visibility: visible;
+}
+
+.work-loreal:hover .organization{
+    top: 55px;
+}
+.work-loreal:hover .position{
+    top: 80px;
+}
+.work-sub-loreal{
+    position: absolute;
+    top: 105px;
+    left: 135.375px;
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: 350ms;
+}
+.work-loreal:hover .work-sub-loreal{
+    opacity: 1;
+    visibility: visible;
+}
+
+/*SCHOOLS*/
+.school-sub{
+    width: 35%;
+}
+.school-nd:hover{
+    background: url(images/school-nd.jpg) no-repeat;
+    color: #FFF;
+}
+.school-up:hover{
+    background: url(images/school-up.jpg) no-repeat;
+    color: #FFF;
+}
+.school-ubc:hover{
+    background: url(images/school-ubc.jpg) no-repeat;
+    color: #FFF;
+}
+
+.cards-container .school-nd:before{
+    content:'notre dame';
+    position: absolute;
+    top:45%;
+    left:0%;
+    font-size: 130px;
+    font-weight: 800;
+    color: rgba(0,0,0,0.1);
+    transition: all 350ms ease-in-out;
+}
+.school-nd:hover:before{
+    color: rgba(255,255,255,0.2);
+}
+.cards-container .school-up:before{
+    content:'up diliman';
+    position: absolute;
+    top:45%;
+    left:0%;
+    font-size: 130px;
+    font-weight: 800;
+    color: rgba(0,0,0,0.1);
+    transition: all 350ms ease-in-out;
+}
+.school-up:hover:before{
+    color: rgba(255,255,255,0.2);
+}
+.cards-container .school-ubc:before{
+    content:'ubc sauder';
+    position: absolute;
+    top:45%;
+    left:0%;
+    font-size: 130px;
+    font-weight: 800;
+    color: rgba(0,0,0,0.1);
+    transition: all 350ms ease-in-out;
+}
+.school-ubc:hover:before{
+    color: rgba(255,255,255,0.2);
+}
+
+.school-nd:hover .organization{
+    top: 60px;
+}
+.school-nd:hover .position{
+    top: 85px;
+}
+.school-sub-nd{
+    position: absolute;
+    top: 110px;
+    left: 293.3125px;
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: 350ms;
+}
+.school-nd:hover .school-sub-nd{
+    opacity: 1;
+    visibility: visible;
+}
+.school-up:hover .organization{
+    top: 60px;
+}
+.school-up:hover .position{
+    top: 85px;
+}
+.school-sub-up{
+    position: absolute;
+    top: 110px;
+    left: 293.3125px;
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: 350ms;
+}
+.school-up:hover .school-sub-up{
+    opacity: 1;
+    visibility: visible;
+}
+
+.school-ubc:hover .organization{
+    top: 60px;
+}
+.school-ubc:hover .position{
+    top: 85px;
+}
+.school-sub-ubc{
+    position: absolute;
+    top: 110px;
+    left: 293.3125px;
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: 350ms;
+}
+.school-ubc:hover .school-sub-ubc{
+    opacity: 1;
+    visibility: visible;
+}
+
 /*.skills-container .card:hover:before{*/
 /*    clip-path: circle(300px at 80% -20%);*/
 /*}*/

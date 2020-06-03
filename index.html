@@ -556,5 +556,10 @@
         document.getElementById("about-more").addEventListener("click", function(){
             myFunction();});
     </script>
+    <script>
+        $(window).on('beforeunload', function() {
+            $(window).scrollTop(0);
+        });
+    </script>
 </body>
 </html>

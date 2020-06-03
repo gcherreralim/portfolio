@@ -36,19 +36,19 @@
 
 <!-- Body -->
 <div id="body-container">
-    <div id="sidetext-container" data-scroll-speed="9">
+    <div id="sidetext-container" data-scroll-speed="100000000000000000000000000000">
         <div id="side-text"><span class="sidespan">where i'm from<br>what i do</span></div>
         <div id="side-dots"></div>
     </div>
     <div class="main-container">
 <!--        WORK CONTAINER-->
         <div class="main-sub work-container" data-scroll-speed="1">
-            <h1 class="segment-title work-title">Work Experience</h1>
+            <h1 class="segment-title work-title">work experience</h1>
             <div class="cards-container work-cards">
                 <div class="card work-nd">
                     <div class="card-content">
-                        <h2>University of Notre Dame</h2>
-                        <h4>Graduate Research Assistant</h4>
+                        <h2 class="organization">University of Notre Dame</h2>
+                        <h4 class="position">Graduate Research Assistant</h4>
                         <div class="subdetails work-sub-nd">
                             <h4>Developed an automated and interactive dashboard using R, Shiny, and CSS for an NCAA Division I athletics team to extract, manipulate, and display Division I box score/advanced statistics from NatStat to aid in team/player
                                 evaluation, development, and scouting for the 2020-2021 season</h4>
@@ -60,15 +60,15 @@
                 </div>
                 <div class="card work-capstone">
                     <div class="card-content">
-                        <h2>Analytics Capstone Project</h2>
-                        <h4>Analytics Consultant</h4>
+                        <h2 class="organization">Analytics Capstone Project</h2>
+                        <h4 class="position">Analytics Consultant</h4>
                         <div class="subdetails work-sub-capstone">
                             <h4>Analyzed sales data for a US-based B2C automotive vehicle parts distributor and
                                 provided recommendations on consumer behavior, projected to achieve 50%+
-                                conversion and growth on nation-, state-, county-, and city-wide scales</h4>
+                                conversion and growth nationwide</h4>
                             <h4>Identified 20 target regions across the US based on a determined consumer behavior index</h4>
                             <h4>Used regression analysis models, visualization outputs, and other quantitative
-                                methods on R and Tableau to identify trends in customer decision-making</h4>
+                                methods on R and Tableau to identify key trends in customer decision-making</h4>
                         </div>
                     </div>
                     <div class="date-container work-date-2">
@@ -77,8 +77,8 @@
                 </div>
                 <div class="card work-cobena">
                     <div class="card-content">
-                        <h2>Cobena Business Analytics & Strategy</h2>
-                        <h4>Business & Data Analytics Intern</h4>
+                        <h2 class="organization">Cobena Business Analytics & Strategy</h2>
+                        <h4 class="position">Business & Data Analytics Intern</h4>
                         <div class="subdetails work-sub-cobena">
                             <h4>Consulted and used analytical tools on 3 major projects for various industries,
                                 including: full dashboard development and implementation,
@@ -93,8 +93,8 @@
                 </div>
                 <div class="card work-loreal">
                     <div class="card-content">
-                        <h2>L'Oréal Philippines, Inc.</h2>
-                        <h4>Kiehl's Marketing Intern</h4>
+                        <h2 class="organization">L'Oréal Philippines, Inc.</h2>
+                        <h4 class="position">Kiehl's Marketing Intern</h4>
                         <div class="subdetails work-sub-loreal">
                             <h4>Conducted retail analysis, developed campaigns, and assisted on brand-related events
                                 for a multinational leading skincare brand.</h4>
@@ -107,14 +107,14 @@
             </div>
         </div>
 <!--        EDUCATION CONTAINER-->
-        <div class="main-sub education-container">
-            <h1 class="segment-title school-title">Education</h1>
+        <div class="main-sub education-container" data-scroll-speed="2">
+            <h1 class="segment-title school-title">education</h1>
             <div class="cards-container school-cards">
                 <div class="card school-nd">
                     <div class="card-content">
-                        <h2>University of Notre Dame</h2>
-                        <h4>MS in Business Analytics '20</h4>
-                        <div class="subdetails school-sub-nd">
+                        <h2 class="organization">University of Notre Dame</h2>
+                        <h4 class="position">MS in Business Analytics '20</h4>
+                        <div class="subdetails school-sub school-sub-nd">
                             <h4>GPA: 3.93/4.00, magna cum laude</h4>
                             <h4>Fellowship Recipient</h4>
                         </div>
@@ -125,9 +125,9 @@
                 </div>
                 <div class="card school-up">
                     <div class="card-content">
-                        <h2>University of the Philippines, Diliman</h2>
-                        <h4>BS in Business Administration '18</h4>
-                        <div class="subdetails school-sub-up">
+                        <h2 class="organization">University of the Philippines, Diliman</h2>
+                        <h4 class="position">BS in Business Administration '18</h4>
+                        <div class="subdetails school-sub school-sub-up">
                             <h4>GPA: 1.417/1.000, magna cum laude</h4>
                             <h4>WES-Converted GPA: 3.72/4.00</h4>
                         </div>
@@ -138,9 +138,9 @@
                 </div>
                 <div class="card school-ubc">
                     <div class="card-content">
-                        <h2>University of British Columbia</h2>
-                        <h4>Vancouver Summer Program Delegate (Business) '16</h4>
-                        <div class="subdetails school-sub-ubc">
+                        <h2 class="organization">University of British Columbia</h2>
+                        <h4 class="position">Vancouver Summer Program Delegate (Business) '16</h4>
+                        <div class="subdetails school-sub school-sub-ubc">
                             <h4>Courses Taken: Marketing, Organizational Behavior</h4>
                         </div>
                     </div>
@@ -152,5 +152,10 @@
         </div>
     </div>
 </div>
+<script>
+    $(window).on('beforeunload', function() {
+        $(window).scrollTop(0);
+    });
+</script>
 </body>
 </html>
