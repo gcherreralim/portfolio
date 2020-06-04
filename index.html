@@ -527,6 +527,21 @@
 
     </div>
 </section>
+
+    <div class="cursor"></div>
+    <script>
+        (function() {
+            const cursor = document.querySelector('.cursor');
+
+            const editCursor = e => {
+                const { clientX: x, clientY: y} = e;
+                cursor.style.left = x - 30 + 'px';
+                cursor.style.top = y - 30 + 'px';
+            };
+
+            window.addEventListener('mousemove', editCursor);
+        })();
+    </script>
     <!--    EXIT SLIDE -->
     <div class="exit-slide"></div>
 <!-- SCRIPTS -->

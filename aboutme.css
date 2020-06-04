@@ -14,6 +14,25 @@ a{
     text-decoration: underline;
     color: #FFF;
 }
+html, body {
+    cursor: none
+}
+.cursor{
+    border: #FFF solid 2px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    pointer-events: none;
+    position: fixed;
+    padding: 0.3rem;
+    background: transparent;
+    mix-blend-mode: difference;
+    transition: transform 0.3s ease;
+    z-index: 100000000000000000000000000000000000000000000000;
+}
+a, input{
+    cursor: none;
+}
 /* scrollbar */
 ::-webkit-scrollbar{
     width:12px;

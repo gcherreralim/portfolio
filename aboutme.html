@@ -198,6 +198,20 @@
         </div>
     </div>
 </div>
+<div class="cursor"></div>
+<script>
+    (function() {
+        const cursor = document.querySelector('.cursor');
+
+        const editCursor = e => {
+            const { clientX: x, clientY: y} = e;
+            cursor.style.left = x - 30 + 'px';
+            cursor.style.top = y - 30 + 'px';
+        };
+
+        window.addEventListener('mousemove', editCursor);
+    })();
+</script>
 <script>
     $(window).on('beforeunload', function() {
         $(window).scrollTop(0);
