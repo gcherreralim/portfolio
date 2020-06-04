@@ -535,12 +535,40 @@
 
             const editCursor = e => {
                 const { clientX: x, clientY: y} = e;
-                cursor.style.left = x - 30 + 'px';
-                cursor.style.top = y - 30 + 'px';
+                cursor.style.left = x - 5 + 'px';
+                cursor.style.top = y - 5 + 'px';
             };
 
             window.addEventListener('mousemove', editCursor);
         })();
+    </script>
+    <script>
+        $(function() {
+            $('a').hover(function() {
+                $('.cursor').css('background-color', '#A50000');
+                $('.cursor').css('height', '30px');
+                $('.cursor').css('width', '30px');
+            }, function() {
+                // on mouseout, reset the background colour
+                $('.cursor').css('background-color', '');
+                $('.cursor').css('height', '');
+                $('.cursor').css('width', '');
+            });
+        });
+    </script>
+    <script>
+        $(function() {
+            $('input').hover(function() {
+                $('.cursor').css('background-color', '#A50000');
+                $('.cursor').css('height', '30px');
+                $('.cursor').css('width', '30px');
+            }, function() {
+                // on mouseout, reset the background colour
+                $('.cursor').css('background-color', '');
+                $('.cursor').css('height', '');
+                $('.cursor').css('width', '');
+            });
+        });
     </script>
     <!--    EXIT SLIDE -->
     <div class="exit-slide"></div>
@@ -576,5 +604,17 @@
             $(window).scrollTop(0);
         });
     </script>
+<script>
+    $('a').click(function (e) {
+        e.preventDefault();                   // prevent default anchor behavior
+        var goTo = this.getAttribute("href"); // store anchor href
+
+        // do something while timeOut ticks ...
+
+        setTimeout(function(){
+            window.location = goTo;
+        }, 500);                             // time in ms
+    });
+</script>
 </body>
 </html>

@@ -19,8 +19,8 @@ html, body {
 }
 .cursor{
     border: #FFF solid 2px;
-    height: 60px;
-    width: 60px;
+    height: 10px;
+    width: 10px;
     border-radius: 50%;
     pointer-events: none;
     position: fixed;
@@ -33,6 +33,7 @@ html, body {
 a, input{
     cursor: none;
 }
+
 /* scrollbar */
 ::-webkit-scrollbar{
     width:12px;
@@ -60,7 +61,6 @@ a, input{
     top: 0;
     left: 0;
     z-index: 9999999999;
-    cursor: pointer;
     width: 50px;
     height: 50px;
     opacity: 0;
@@ -245,8 +245,8 @@ a, input{
     animation-iteration-count: 1;
     animation-timing-function: ease-out;
     animation-duration: 1s;
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
@@ -354,6 +354,12 @@ a, input{
     font-size: 100px;
 }
 .education-container{
+    position: relative;
+}
+.org-container{
+    position: relative;
+}
+.skills-container{
     position: relative;
 }
 .school-title{
@@ -775,238 +781,79 @@ a, input{
     visibility: visible;
 }
 
-/*.cards-container .school-nd:before{*/
-/*    content:'notre dame';*/
-/*    position: absolute;*/
-/*    top:45%;*/
-/*    left:0%;*/
-/*    font-size: 130px;*/
-/*    font-weight: 800;*/
-/*    color: rgba(0,0,0,0.1);*/
-/*    transition: all 350ms ease-in-out;*/
-/*}*/
-/*.school-nd:hover:before{*/
-/*    color: rgba(255,255,255,0.2);*/
-/*}*/
-/*.cards-container .school-up:before{*/
-/*    content:'up diliman';*/
-/*    position: absolute;*/
-/*    top:45%;*/
-/*    left:0%;*/
-/*    font-size: 130px;*/
-/*    font-weight: 800;*/
-/*    color: rgba(0,0,0,0.1);*/
-/*    transition: all 350ms ease-in-out;*/
-/*}*/
-/*.school-up:hover:before{*/
-/*    color: rgba(255,255,255,0.2);*/
-/*}*/
-/*.cards-container .school-ubc:before{*/
-/*    content:'ubc sauder';*/
-/*    position: absolute;*/
-/*    top:45%;*/
-/*    left:0%;*/
-/*    font-size: 130px;*/
-/*    font-weight: 800;*/
-/*    color: rgba(0,0,0,0.1);*/
-/*    transition: all 350ms ease-in-out;*/
-/*}*/
-/*.school-ubc:hover:before{*/
-/*    color: rgba(255,255,255,0.2);*/
-/*}*/
+/* SKILLS */
+.skill-sub{
+    width: 70%;
+}
+.org-msbaa:hover{
+    background: url(images/org-msbaa.jpg) no-repeat;
+    color: #FFF;
+}
+.org-jma:hover{
+    background: url(images/org-jma.jpg) no-repeat;
+    color: #FFF;
+}
 
-/*.school-nd:hover .organization{*/
-/*    top: 60px;*/
-/*}*/
-/*.school-nd:hover .position{*/
-/*    top: 85px;*/
-/*}*/
-/*.school-sub-nd{*/
-/*    position: absolute;*/
-/*    top: 110px;*/
-/*    left: 293.3125px;*/
-/*    opacity: 0;*/
-/*    visibility: hidden;*/
-/*    transition-delay: 350ms;*/
-/*}*/
-/*.school-nd:hover .school-sub-nd{*/
-/*    opacity: 1;*/
-/*    visibility: visible;*/
-/*}*/
-/*.school-up:hover .organization{*/
-/*    top: 60px;*/
-/*}*/
-/*.school-up:hover .position{*/
-/*    top: 85px;*/
-/*}*/
-/*.school-sub-up{*/
-/*    position: absolute;*/
-/*    top: 110px;*/
-/*    left: 293.3125px;*/
-/*    opacity: 0;*/
-/*    visibility: hidden;*/
-/*    transition-delay: 350ms;*/
-/*}*/
-/*.school-up:hover .school-sub-up{*/
-/*    opacity: 1;*/
-/*    visibility: visible;*/
-/*}*/
+.cards-container .org-msbaa:before{
+    content:'msbaa';
+    position: absolute;
+    top:45%;
+    left:0%;
+    font-size: 130px;
+    font-weight: 800;
+    color: rgba(0,0,0,0.1);
+    transition: all 350ms ease-in-out;
+}
+.org-msbaa:hover:before{
+    color: rgba(255,255,255,0.2);
+}
+.cards-container .org-jma:before{
+    content:'upjma';
+    position: absolute;
+    top:45%;
+    left:0%;
+    font-size: 130px;
+    font-weight: 800;
+    color: rgba(0,0,0,0.1);
+    transition: all 350ms ease-in-out;
+}
+.org-jma:hover:before{
+    color: rgba(255,255,255,0.2);
+}
 
-/*.school-ubc:hover .organization{*/
-/*    top: 60px;*/
-/*}*/
-/*.school-ubc:hover .position{*/
-/*    top: 85px;*/
-/*}*/
-/*.school-sub-ubc{*/
-/*    position: absolute;*/
-/*    top: 110px;*/
-/*    left: 293.3125px;*/
-/*    opacity: 0;*/
-/*    visibility: hidden;*/
-/*    transition-delay: 350ms;*/
-/*}*/
-/*.school-ubc:hover .school-sub-ubc{*/
-/*    opacity: 1;*/
-/*    visibility: visible;*/
-/*}*/
-
-/*.skills-container .card:hover:before{*/
-/*    clip-path: circle(300px at 80% -20%);*/
-/*}*/
-/*.skills-container .data:after{*/
-/*    content:'data';*/
-/*    position: absolute;*/
-/*    top:30%;*/
-/*    left:0%;*/
-/*    font-size: 10em;*/
-/*    font-weight: 800;*/
-/*    color: rgba(255,255,255,0.1);*/
-/*}*/
-/*.skills-container .design:after{*/
-/*    content:'design';*/
-/*    position: absolute;*/
-/*    top:30%;*/
-/*    left:0%;*/
-/*    font-size: 10em;*/
-/*    font-weight: 800;*/
-/*    color: rgba(255,255,255,0.1);*/
-/*}*/
-/*.skills-container .viz:after{*/
-/*    content:'viz';*/
-/*    position: absolute;*/
-/*    top:30%;*/
-/*    left:0%;*/
-/*    font-size: 10em;*/
-/*    font-weight: 800;*/
-/*    color: rgba(255,255,255,0.1);*/
-/*}*/
-/*#skills-data-img{*/
-/*    position: absolute;*/
-/*    top:40%;*/
-/*    transform: translate(22%,-40%) rotate(-15deg);*/
-/*    z-index: 200002;*/
-/*    width: 220px;*/
-/*    height: 220px;*/
-/*    transition: 0.5s;*/
-/*}*/
-/*.skills-container .card:hover #skills-data-img{*/
-/*    top:0%;*/
-/*    transform: translate(22%,0%);*/
-/*}*/
-/*#skills-design-img{*/
-/*    position: absolute;*/
-/*    top:40%;*/
-/*    transform: translate(22%,-40%) rotate(-15deg);*/
-/*    z-index: 200002;*/
-/*    width: 220px;*/
-/*    height: 220px;*/
-/*    transition: 0.5s;*/
-/*}*/
-/*.skills-container .card:hover #skills-design-img{*/
-/*    top:0%;*/
-/*    transform: translate(22%,0%);*/
-/*}*/
-/*#skills-viz-img{*/
-/*    position: absolute;*/
-/*    top:40%;*/
-/*    transform: translate(22%,-40%) rotate(-15deg);*/
-/*    z-index: 200002;*/
-/*    width: 220px;*/
-/*    height: 220px;*/
-/*    transition: 0.5s;*/
-/*}*/
-/*.skills-container .card:hover #skills-viz-img{*/
-/*    top:0%;*/
-/*    transform: translate(22%,0%);*/
-/*}*/
-/*.skills-container .card .contentBx{*/
-/*    position: absolute;*/
-/*    bottom: 10%;*/
-/*    width: 100%;*/
-/*    height: 100px;*/
-/*    text-align: left;*/
-/*    transition: 0.75s;*/
-/*    z-index: 200003;*/
-/*}*/
-/*.skills-container .card:hover .contentBx{*/
-/*    height: 210px;*/
-/*}*/
-/*.skills-container .card .contentBx h2{*/
-/*    position: relative;*/
-/*    font-weight: 600;*/
-/*    letter-spacing: 1px;*/
-/*    color: #FFF;*/
-/*    text-align: center;*/
-/*}*/
-/*.skills-container .card .contentBx .skill-list{*/
-/*    !*display: flex;*!*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    padding: 8px 20px;*/
-/*    transition: 0.5s;*/
-/*}*/
-/*.skills-container .card .contentBx .skill-list h3{*/
-/*    color: #fff;*/
-/*    font-weight: 300;*/
-/*    font-size: 14px;*/
-/*    text-transform: uppercase;*/
-/*    letter-spacing: 2px;*/
-/*    margin-right: 10px;*/
-/*    opacity: 0;*/
-/*    visibility: hidden;*/
-/*    transition: 0.5s ease-in-out;*/
-/*}*/
-/*.skills-container .card:hover .contentBx .skill-list h3{*/
-/*    opacity: 1;*/
-/*    text-align: left;*/
-/*    visibility: visible;*/
-/*    transition-delay: 0.5s;*/
-/*}*/
-/*.skills-container .card .progress-container{*/
-/*    box-sizing:border-box;*/
-/*    width: 100%;*/
-/*    background-color:#FFF;*/
-/*    margin-top: 5px;*/
-/*    margin-bottom: 10px;*/
-/*    border-radius: 100px;*/
-/*    opacity: 0;*/
-/*    visibility: hidden;*/
-/*    transition: 0.5s ease-in-out;*/
-/*}*/
-/*.skills-container .card:hover .progress-container{*/
-/*    opacity: 1;*/
-/*    visibility: visible;*/
-/*    transition-delay: 0.5s;*/
-/*}*/
-/*.skills{*/
-/*    text-align: right;*/
-/*    font-size: 9px;*/
-/*    font-weight: 400;*/
-/*    padding-top:2px;*/
-/*    padding-bottom: 2px;*/
-/*    border-radius: 100px;*/
-/*    color: #FFF;*/
-/*    width:0;*/
-/*    transition: 1.25s ease-in-out;*/
-/*}*/
+.org-msbaa:hover .organization{
+    top: 60px;
+}
+.org-msbaa:hover .position{
+    top: 85px;
+}
+.org-sub-msbaa{
+    position: absolute;
+    top: 110px;
+    left: 135.375px;
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: 350ms;
+}
+.org-msbaa:hover .org-sub-msbaa{
+    opacity: 1;
+    visibility: visible;
+}
+.org-jma:hover .organization{
+    top: 40px;
+}
+.org-jma:hover .position{
+    top: 65px;
+}
+.org-sub-jma{
+    position: absolute;
+    top: 90px;
+    left: 135.375px;
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: 350ms;
+}
+.org-jma:hover .org-sub-jma{
+    opacity: 1;
+    visibility: visible;
+}

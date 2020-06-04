@@ -164,38 +164,84 @@
             </div>
         </section>
 <!--        ORGANIZATION & LEADERSHIP -->
-        <div class="main-sub org-container" data-scroll-speed="3">
-            <h1 class="segment-title org-title">org + leadership</h1>
-            <div class="cards-container org-cards">
-                <div class="card org-msbaa">
-                    <div class="card-content">
-                        <h2 class="organization">Notre Dame MSBA Student Association</h2>
-                        <h4 class="position">Director of Academic Affairs / Secretary</h4>
-                        <div class="subdetails org-sub org-sub-msbaa">
-                            <h4>Primary academic liaison of the inaugural Notre Dame residential MSBA program, in a council of 6</h4>
-                            <h4>Conceptualized and organized the Hot Deck analytics lecture series, a series of workshops on various analytics tools and techniques for Mendoza students</h4>
+        <section id="org-section">
+            <div class="main-sub org-container" data-scroll-speed="3">
+                <h1 class="segment-title org-title">org + leadership</h1>
+                <div class="cards-container org-cards">
+                    <div class="card org-msbaa">
+                        <div class="card-content">
+                            <h2 class="organization">Notre Dame MSBA Student Association</h2>
+                            <h4 class="position">Director of Academic Affairs / Secretary</h4>
+                            <div class="subdetails org-sub org-sub-msbaa">
+                                <h4>Primary academic liaison of the inaugural Notre Dame residential MSBA program, in a council of 6</h4>
+                                <h4>Conceptualized and organized the Hot Deck analytics lecture series, a series of workshops on various analytics tools and techniques for Mendoza students</h4>
+                            </div>
+                        </div>
+                        <div class="date-container org-date-1">
+                            <h4 class="date org-msbaa-date">NOV 2019 - MAY 2020</h4>
                         </div>
                     </div>
-                    <div class="date-container org-date-1">
-                        <h4 class="date org-msbaa-date">NOV 2019 - MAY 2020</h4>
-                    </div>
-                </div>
-                <div class="card org-jma">
-                    <div class="card-content">
-                        <h2 class="organization">UP Junior Marketing Association</h2>
-                        <h4 class="position">President</h4>
-                        <div class="subdetails org-sub org-sub-jma">
-                            <h4>Officially represented and led a membership base of approximately 370 members</h4>
-                            <h4>Streamlined several internal systems, supervised 13 committees and an executive committee of 6, and consequently increased member involvement by 30%</h4>
-                            <h4>Awarded the Villar Sipag Organizational Leadership Award for Academic Year 2017-2018</h4>
+                    <div class="card org-jma">
+                        <div class="card-content">
+                            <h2 class="organization">UP Junior Marketing Association</h2>
+                            <h4 class="position">President</h4>
+                            <div class="subdetails org-sub org-sub-jma">
+                                <h4>Officially represented and led a membership base of approximately 370 members</h4>
+                                <h4>Streamlined several internal systems, supervised 13 committees and an executive committee of 6, and consequently increased member involvement by 30%</h4>
+                                <h4>Awarded the Villar Sipag Organizational Leadership Award for Academic Year 2017-2018</h4>
+                            </div>
                         </div>
-                    </div>
-                    <div class="date-container org-date-2">
-                        <h4 class="date school-up-date">MAY 2017 - JUN 2018</h4>
+                        <div class="date-container org-date-2">
+                            <h4 class="date school-up-date">MAY 2017 - JUN 2018</h4>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+<!--        SKILLS -->
+        <section id="skills-section">
+            <div class="main-sub skills-container" data-scroll-speed="4">
+                <h1 class="segment-title skill-title">skills + competencies</h1>
+                <div class="cards-container skill-cards">
+                    <div class="card skill-data">
+                        <div class="card-content">
+                            <h2 class="organization">Data & Analytics</h2>
+                            <h4 class="position">Tools: R, Python, SQL, Excel VBA</h4>
+                            <div class="subdetails skill-sub skill-sub-data">
+                                <h4>Machine Learning, Statistical Analysis</h4>
+                            </div>
+                        </div>
+                        <div class="date-container skills-date-1">
+                            <h4 class="date skills-data-date">2018 - 2020</h4>
+                        </div>
+                    </div>
+                    <div class="card skill-design">
+                        <div class="card-content">
+                            <h2 class="organization">Design & Creatives</h2>
+                            <h4 class="position">Tools: Adobe Creative Cloud (Photoshop, Illustrator, XD, Lightroom), Final Cut Pro</h4>
+                            <div class="subdetails skill-sub skill-sub-design">
+                                <h4>Multimedia Design, Web Design, Photo Editing, Video Editing</h4>
+                            </div>
+                        </div>
+                        <div class="date-container skills-date-2">
+                            <h4 class="date skills-design-date">2013 - 2020</h4>
+                        </div>
+                    </div>
+                    <div class="card skill-viz">
+                        <div class="card-content">
+                            <h2 class="organization">Visualization & Presentation</h2>
+                            <h4 class="position">Tools: Tableau, Power BI, R Shiny, HTML/CSS, MS Powerpoint/VBA, Keynote</h4>
+                            <div class="subdetails skill-sub skill-sub-viz">
+                                <h4>Data Visualization, Dashboard Development, Basic Web Development, Dynamic Presentation Development and Design</h4>
+                            </div>
+                        </div>
+                        <div class="date-container skills-date-3">
+                            <h4 class="date skills-viz-date">2014 - 2020</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </div>
 <div class="cursor"></div>
@@ -205,12 +251,40 @@
 
         const editCursor = e => {
             const { clientX: x, clientY: y} = e;
-            cursor.style.left = x - 30 + 'px';
-            cursor.style.top = y - 30 + 'px';
+            cursor.style.left = x - 5 + 'px';
+            cursor.style.top = y - 5 + 'px';
         };
 
         window.addEventListener('mousemove', editCursor);
     })();
+</script>
+<script>
+    $(function() {
+        $('a').hover(function() {
+            $('.cursor').css('background-color', '#A50000');
+            $('.cursor').css('height', '30px');
+            $('.cursor').css('width', '30px');
+        }, function() {
+            // on mouseout, reset the background colour
+            $('.cursor').css('background-color', '');
+            $('.cursor').css('height', '');
+            $('.cursor').css('width', '');
+        });
+    });
+</script>
+<script>
+    $(function() {
+        $('input').hover(function() {
+            $('.cursor').css('background-color', '#A50000');
+            $('.cursor').css('height', '30px');
+            $('.cursor').css('width', '30px');
+        }, function() {
+            // on mouseout, reset the background colour
+            $('.cursor').css('background-color', '');
+            $('.cursor').css('height', '');
+            $('.cursor').css('width', '');
+        });
+    });
 </script>
 <script>
     $(window).on('beforeunload', function() {
