@@ -10,18 +10,21 @@ body{
     background: #030303;
     min-height:1500px;
 }
-
+a{
+    text-decoration: underline;
+    color: #FFF;
+}
 /* scrollbar */
 ::-webkit-scrollbar{
-    width:10px;
+    width:12px;
 }
 ::-webkit-scrollbar-track{
-    border:7px solid #030303;
+    border:9px solid #030303;
     box-shadow: inset 0 0 3px 2px rgba(0,0,0,1)
 }
 ::-webkit-scrollbar-thumb{
     background: #A50000;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 
 /* hamburger menu */
@@ -271,13 +274,57 @@ body{
     line-height: 225px;
     font-weight: 900;
 }
-
+/*INTRO TEXT*/
+.intro-text-container{
+    width: 100%;
+    height: 100vh;
+}
+.circle{
+    width: 60em;
+    height: 60em;
+    background: #A50000;
+    opacity: 0.5;
+    border-radius: 50%;
+    z-index: -10;
+}
+.circ-1{
+    position: absolute;
+    top: -50%;
+    right: 0;
+}
+.circ-2{
+    position: absolute;
+    bottom:-50%;
+    left: -20%;
+}
+.dots-vert{
+    width: 10em;
+    z-index: -1;
+    position: absolute;
+    top: -10%;
+    right: 30%;
+}
+#intro-text{
+    width: 57%;
+    position: absolute;
+    right: 18%;
+    top: 33vh;
+    color: #FFF;
+}
+#big-intro{
+    font-size: 6em;
+    font-weight: 800;
+}
+#small-intro{
+    font-size: 1em;
+    font-weight: 100;
+}
 /*main container*/
 .main-container{
     width: 60%;
     position: absolute;
     right: 10px;
-    top: 300px;
+    top: calc(100vh + 300px);
 }
 .work-title{
     color: #FFF;
@@ -295,6 +342,14 @@ body{
     text-align: left;
     position: absolute;
     left: 0px;
+    top: -65px;
+    font-size: 100px;
+}
+.org-title{
+    color: #FFF;
+    text-align: right;
+    position: absolute;
+    left: 160px;
     top: -65px;
     font-size: 100px;
 }
@@ -635,6 +690,70 @@ body{
 .org-jma:hover{
     background: url(images/org-jma.jpg) no-repeat;
     color: #FFF;
+}
+
+.cards-container .org-msbaa:before{
+    content:'msbaa';
+    position: absolute;
+    top:45%;
+    left:0%;
+    font-size: 130px;
+    font-weight: 800;
+    color: rgba(0,0,0,0.1);
+    transition: all 350ms ease-in-out;
+}
+.org-msbaa:hover:before{
+    color: rgba(255,255,255,0.2);
+}
+.cards-container .org-jma:before{
+    content:'upjma';
+    position: absolute;
+    top:45%;
+    left:0%;
+    font-size: 130px;
+    font-weight: 800;
+    color: rgba(0,0,0,0.1);
+    transition: all 350ms ease-in-out;
+}
+.org-jma:hover:before{
+    color: rgba(255,255,255,0.2);
+}
+
+.org-msbaa:hover .organization{
+    top: 60px;
+}
+.org-msbaa:hover .position{
+    top: 85px;
+}
+.org-sub-msbaa{
+    position: absolute;
+    top: 110px;
+    left: 135.375px;
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: 350ms;
+}
+.org-msbaa:hover .org-sub-msbaa{
+    opacity: 1;
+    visibility: visible;
+}
+.org-jma:hover .organization{
+    top: 40px;
+}
+.org-jma:hover .position{
+    top: 65px;
+}
+.org-sub-jma{
+    position: absolute;
+    top: 90px;
+    left: 135.375px;
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: 350ms;
+}
+.org-jma:hover .org-sub-jma{
+    opacity: 1;
+    visibility: visible;
 }
 
 /*.cards-container .school-nd:before{*/
