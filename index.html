@@ -546,13 +546,11 @@
         $(function() {
             $('a').hover(function() {
                 $('.cursor').css('background-color', '#A50000');
-                $('.cursor').css('height', '30px');
-                $('.cursor').css('width', '30px');
+                $('.cursor').css('transform','scale(2)');
             }, function() {
                 // on mouseout, reset the background colour
                 $('.cursor').css('background-color', '');
-                $('.cursor').css('height', '');
-                $('.cursor').css('width', '');
+                $('.cursor').css('transform','');
             });
         });
     </script>
@@ -560,13 +558,11 @@
         $(function() {
             $('input').hover(function() {
                 $('.cursor').css('background-color', '#A50000');
-                $('.cursor').css('height', '30px');
-                $('.cursor').css('width', '30px');
+                $('.cursor').css('transform','scale(2)');
             }, function() {
                 // on mouseout, reset the background colour
                 $('.cursor').css('background-color', '');
-                $('.cursor').css('height', '');
-                $('.cursor').css('width', '');
+                $('.cursor').css('transform','');
             });
         });
     </script>

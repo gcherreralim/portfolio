@@ -41,7 +41,7 @@
         <div class="circle circ-2" data-scroll-speed="8"></div>
         <img src="images/dots-vert.png" alt="" class="dots-vert">
         <div id="intro-text" data-scroll-speed="1">
-            <span id="big-intro">I'm Gabby Herrera-Lim, a data analyst (<a href="#skill-section">++</a>) from the Philippines.<br></span>
+            <span id="big-intro">I'm Gabby Herrera-Lim, a data analyst (<a href="#skills-section">++</a>) from the Philippines.<br></span>
             <span id="small-intro"><br>I have experience in statistical analysis, data management, machine learning, and dashboard development, and I love working on sports, media, and entertainment projects! Scroll down to see where I've been, who I've worked with, and what I can do!</span>
         </div>
     </div>
@@ -52,7 +52,7 @@
     <div class="main-container">
 <!--        WORK CONTAINER-->
         <section id="work-section">
-            <div class="main-sub work-container" data-scroll-speed="1">
+            <div class="main-sub work-container" data-scroll-speed="4">
                 <h1 class="segment-title work-title">work experience</h1>
                 <div class="cards-container work-cards">
                     <div class="card work-nd">
@@ -119,7 +119,7 @@
         </section>
 <!--        EDUCATION CONTAINER-->
         <section id="school-section">
-            <div class="main-sub education-container" data-scroll-speed="2">
+            <div class="main-sub education-container" data-scroll-speed="5">
                 <h1 class="segment-title school-title">education</h1>
                 <div class="cards-container school-cards">
                     <div class="card school-nd">
@@ -165,7 +165,7 @@
         </section>
 <!--        ORGANIZATION & LEADERSHIP -->
         <section id="org-section">
-            <div class="main-sub org-container" data-scroll-speed="3">
+            <div class="main-sub org-container" data-scroll-speed="6">
                 <h1 class="segment-title org-title">org + leadership</h1>
                 <div class="cards-container org-cards">
                     <div class="card org-msbaa">
@@ -200,7 +200,7 @@
         </section>
 <!--        SKILLS -->
         <section id="skills-section">
-            <div class="main-sub skills-container" data-scroll-speed="4">
+            <div class="main-sub skills-container" data-scroll-speed="7">
                 <h1 class="segment-title skill-title">skills + competencies</h1>
                 <div class="cards-container skill-cards">
                     <div class="card skill-data">
@@ -208,7 +208,7 @@
                             <h2 class="organization">Data & Analytics</h2>
                             <h4 class="position">Tools: R, Python, SQL, Excel VBA</h4>
                             <div class="subdetails skill-sub skill-sub-data">
-                                <h4>Machine Learning, Statistical Analysis</h4>
+                                <h4>Machine Learning, Statistical Analysis, Data Management/Web Scraping, Text/Image Analysis</h4>
                             </div>
                         </div>
                         <div class="date-container skills-date-1">
@@ -232,7 +232,7 @@
                             <h2 class="organization">Visualization & Presentation</h2>
                             <h4 class="position">Tools: Tableau, Power BI, R Shiny, HTML/CSS, MS Powerpoint/VBA, Keynote</h4>
                             <div class="subdetails skill-sub skill-sub-viz">
-                                <h4>Data Visualization, Dashboard Development, Basic Web Development, Dynamic Presentation Development and Design</h4>
+                                <h4>Report and Dashboard Development, Basic Web Development, Dynamic Presentation Development and Design</h4>
                             </div>
                         </div>
                         <div class="date-container skills-date-3">
@@ -244,6 +244,11 @@
         </section>
     </div>
 </div>
+<div class="footer-container">
+    <div class="footer-text">
+        <h5>Designed and developed by Gabriel Herrera-Lim. &copy; 2020</h5>
+    </div>
+</div>
 <div class="cursor"></div>
 <script>
     (function() {
@@ -251,8 +256,8 @@
 
         const editCursor = e => {
             const { clientX: x, clientY: y} = e;
-            cursor.style.left = x - 5 + 'px';
-            cursor.style.top = y - 5 + 'px';
+            cursor.style.left = x + 'px';
+            cursor.style.top = y + 'px';
         };
 
         window.addEventListener('mousemove', editCursor);
@@ -262,13 +267,11 @@
     $(function() {
         $('a').hover(function() {
             $('.cursor').css('background-color', '#A50000');
-            $('.cursor').css('height', '30px');
-            $('.cursor').css('width', '30px');
+            $('.cursor').css('transform','scale(2)');
         }, function() {
             // on mouseout, reset the background colour
             $('.cursor').css('background-color', '');
-            $('.cursor').css('height', '');
-            $('.cursor').css('width', '');
+            $('.cursor').css('transform','');
         });
     });
 </script>
@@ -276,13 +279,11 @@
     $(function() {
         $('input').hover(function() {
             $('.cursor').css('background-color', '#A50000');
-            $('.cursor').css('height', '30px');
-            $('.cursor').css('width', '30px');
+            $('.cursor').css('transform','scale(2)');
         }, function() {
             // on mouseout, reset the background colour
             $('.cursor').css('background-color', '');
-            $('.cursor').css('height', '');
-            $('.cursor').css('width', '');
+            $('.cursor').css('transform','');
         });
     });
 </script>

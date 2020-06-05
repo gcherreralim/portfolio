@@ -27,7 +27,9 @@ html, body {
     padding: 0.3rem;
     background: transparent;
     mix-blend-mode: difference;
-    transition: transform 0.3s ease;
+    transform: translate(-50%, -50%);
+    transition: transform 0.35s ease;
+    transition-property: background, transform;
     z-index: 100000000000000000000000000000000000000000000000;
 }
 a, input{
@@ -280,7 +282,7 @@ a, input{
 
 /*sidebar*/
 #sidetext-container{
-    height: 4vh;
+    height: 100vh;
     width: 20%;
     position: absolute;
     left: 10%;
@@ -375,6 +377,14 @@ a, input{
     text-align: right;
     position: absolute;
     left: 160px;
+    top: -65px;
+    font-size: 100px;
+}
+.skill-title{
+    color: #FFF;
+    text-align: right;
+    position: absolute;
+    left: 10px;
     top: -65px;
     font-size: 100px;
 }
@@ -785,17 +795,20 @@ a, input{
 .skill-sub{
     width: 70%;
 }
-.org-msbaa:hover{
-    background: url(images/org-msbaa.jpg) no-repeat;
+.skill-data:hover{
+    background: url(images/skill-data.jpg) no-repeat;
     color: #FFF;
 }
-.org-jma:hover{
-    background: url(images/org-jma.jpg) no-repeat;
+.skill-design:hover{
+    background: url(images/skill-design.jpg) no-repeat;
     color: #FFF;
 }
-
-.cards-container .org-msbaa:before{
-    content:'msbaa';
+.skill-viz:hover{
+    background: url(images/skill-viz.jpg) no-repeat;
+    color: #FFF;
+}
+.cards-container .skill-data:before{
+    content:'data';
     position: absolute;
     top:45%;
     left:0%;
@@ -804,11 +817,11 @@ a, input{
     color: rgba(0,0,0,0.1);
     transition: all 350ms ease-in-out;
 }
-.org-msbaa:hover:before{
+.skill-data:hover:before{
     color: rgba(255,255,255,0.2);
 }
-.cards-container .org-jma:before{
-    content:'upjma';
+.cards-container .skill-design:before{
+    content:'design';
     position: absolute;
     top:45%;
     left:0%;
@@ -817,17 +830,30 @@ a, input{
     color: rgba(0,0,0,0.1);
     transition: all 350ms ease-in-out;
 }
-.org-jma:hover:before{
+.skill-design:hover:before{
+    color: rgba(255,255,255,0.2);
+}
+.cards-container .skill-viz:before{
+    content:'visualization';
+    position: absolute;
+    top:45%;
+    left:0%;
+    font-size: 130px;
+    font-weight: 800;
+    color: rgba(0,0,0,0.1);
+    transition: all 350ms ease-in-out;
+}
+.skill-viz:hover:before{
     color: rgba(255,255,255,0.2);
 }
 
-.org-msbaa:hover .organization{
+.skill-data:hover .organization{
     top: 60px;
 }
-.org-msbaa:hover .position{
+.skill-data:hover .position{
     top: 85px;
 }
-.org-sub-msbaa{
+.skill-sub-data{
     position: absolute;
     top: 110px;
     left: 135.375px;
@@ -835,25 +861,62 @@ a, input{
     visibility: hidden;
     transition-delay: 350ms;
 }
-.org-msbaa:hover .org-sub-msbaa{
+.skill-data:hover .skill-sub-data{
     opacity: 1;
     visibility: visible;
 }
-.org-jma:hover .organization{
-    top: 40px;
+.skill-design:hover .organization{
+    top: 60px;
 }
-.org-jma:hover .position{
-    top: 65px;
+.skill-design:hover .position{
+    top: 85px;
 }
-.org-sub-jma{
+.skill-sub-design{
     position: absolute;
-    top: 90px;
+    top: 110px;
     left: 135.375px;
     opacity: 0;
     visibility: hidden;
     transition-delay: 350ms;
 }
-.org-jma:hover .org-sub-jma{
+.skill-design:hover .skill-sub-design{
     opacity: 1;
     visibility: visible;
+}
+.skill-viz:hover .organization{
+    top: 60px;
+}
+.skill-viz:hover .position{
+    top: 85px;
+}
+.skill-sub-viz{
+    position: absolute;
+    top: 110px;
+    left: 135.375px;
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: 350ms;
+}
+.skill-viz:hover .skill-sub-viz{
+    opacity: 1;
+    visibility: visible;
+}
+.skill-cards .position{
+    width: 600px;
+    text-align: center;
+}
+.skill-cards .date{
+    transform: translate(0, 100px) rotate(-90deg)
+}
+
+/*footer*/
+.footer-container{
+    position: fixed;
+    width: 80%;
+    bottom: 50px;
+    align-items: center;
+    border-top: #FFF 2px solid;
+}
+.footer-text{
+    color: #FFF;
 }
