@@ -7,6 +7,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/logo-white-fill.png">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="aboutme.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -41,212 +42,209 @@
         <div class="circle circ-2" data-scroll-speed="8"></div>
         <img src="images/dots-vert.png" alt="" class="dots-vert">
         <div id="intro-text" data-scroll-speed="1">
-            <span id="big-intro">I'm Gabby Herrera-Lim, a data analyst (<a href="#skills-section">++</a>) from the Philippines.<br></span>
+            <span id="big-intro">I'm <span class="full">Gabby Herrera-Lim</span>,<br>a data analyst (<a href="#skill-land" class="link">++</a>)<br>from the Philippines.<br></span>
             <span id="small-intro"><br>I have experience in statistical analysis, data management, machine learning, and dashboard development, and I love working on sports, media, and entertainment projects! Scroll down to see where I've been, who I've worked with, and what I can do!</span>
         </div>
     </div>
-    <div id="sidetext-container" data-scroll-speed="100000000000000000000000000000">
-        <div id="side-text"><span class="sidespan">where i'm from<br>what i do</span></div>
-        <div id="side-dots"></div>
-    </div>
-    <div class="main-container">
-<!--        WORK CONTAINER-->
-        <section id="work-section">
-            <div class="main-sub work-container" data-scroll-speed="4">
-                <h1 class="segment-title work-title">work experience</h1>
-                <div class="cards-container work-cards">
-                    <div class="card work-nd">
-                        <div class="card-content">
-                            <h2 class="organization">University of Notre Dame</h2>
-                            <h4 class="position">Graduate Research Assistant</h4>
-                            <div class="subdetails work-sub-nd">
-                                <h4>Developed an automated and interactive dashboard using R, Shiny, and CSS for an NCAA Division I athletics team to extract, manipulate, and display Division I box score/advanced statistics from NatStat to aid in team/player
-                                    evaluation, development, and scouting for the 2020-2021 season</h4>
+    <div class="content">
+        <div id="sidetext-container" data-scroll-speed="100000000000000000000000000000">
+            <div id="side-text"><span class="sidespan"><span class="full">where</span> i'm from<br><span class="full">what</span> i do</span></div>
+            <div id="side-dots"></div>
+        </div>
+        <div class="main-container">
+    <!--        WORK CONTAINER-->
+            <section id="work-section">
+                <div class="main-sub work-container" data-scroll-speed="2">
+                    <h1 class="segment-title work-title">work experience</h1>
+                    <div class="cards-container work-cards">
+                        <div class="card work-nd">
+                            <div class="card-content">
+                                <h2 class="organization">University of Notre Dame</h2>
+                                <h4 class="position">Graduate Research Assistant</h4>
+                                <div class="subdetails work-sub-nd">
+                                    <h4>Developed an automated and interactive dashboard using R, Shiny, and CSS for an NCAA Division I athletics team to extract, manipulate, and display Division I box score/advanced statistics from NatStat to aid in team/player
+                                        evaluation, development, and scouting for the 2020-2021 season</h4>
+                                </div>
+                            </div>
+                            <div class="date-container work-date-1">
+                                <h4 class="date work-nd-date">FEB 2020 - MAY 2020</h4>
                             </div>
                         </div>
-                        <div class="date-container work-date-1">
-                            <h4 class="date work-nd-date">FEB 2020 - MAY 2020</h4>
-                        </div>
-                    </div>
-                    <div class="card work-capstone">
-                        <div class="card-content">
-                            <h2 class="organization">Analytics Capstone Project</h2>
-                            <h4 class="position">Analytics Consultant</h4>
-                            <div class="subdetails work-sub-capstone">
-                                <h4>Analyzed sales data for a US-based B2C automotive vehicle parts distributor and
-                                    provided recommendations on consumer behavior, projected to achieve 50%+
-                                    conversion and growth nationwide</h4>
-                                <h4>Identified 20 target regions across the US based on a determined consumer behavior index</h4>
-                                <h4>Used regression analysis models, visualization outputs, and other quantitative
-                                    methods on R and Tableau to identify key trends in customer decision-making</h4>
+                        <div class="card work-capstone">
+                            <div class="card-content">
+                                <h2 class="organization">Analytics Capstone Project</h2>
+                                <h4 class="position">Analytics Consultant</h4>
+                                <div class="subdetails work-sub-capstone">
+                                    <h4>Analyzed sales data for a US-based B2C automotive vehicle parts distributor and
+                                        provided recommendations on consumer behavior, projected to achieve 50%+
+                                        conversion and growth nationwide</h4>
+                                    <h4>Identified 20 target regions across the US based on a determined consumer behavior index</h4>
+                                    <h4>Used regression analysis models, visualization outputs, and other quantitative
+                                        methods on R and Tableau to identify key trends in customer decision-making</h4>
+                                </div>
+                            </div>
+                            <div class="date-container work-date-2">
+                                <h4 class="date work-capstone-date">JAN 2020 - MAY 2020</h4>
                             </div>
                         </div>
-                        <div class="date-container work-date-2">
-                            <h4 class="date work-capstone-date">JAN 2020 - MAY 2020</h4>
-                        </div>
-                    </div>
-                    <div class="card work-cobena">
-                        <div class="card-content">
-                            <h2 class="organization">Cobena Business Analytics & Strategy</h2>
-                            <h4 class="position">Business & Data Analytics Intern</h4>
-                            <div class="subdetails work-sub-cobena">
-                                <h4>Consulted and used analytical tools on 3 major projects for various industries,
-                                    including: full dashboard development and implementation,
-                                    digital transformation strategies, and
-                                    sales data analyses.</h4>
-                                <h4>Led, with a team of 3, an internal Lean Six Sigma certification program.</h4>
+                        <div class="card work-cobena">
+                            <div class="card-content">
+                                <h2 class="organization">Cobena Business Analytics & Strategy</h2>
+                                <h4 class="position">Business & Data Analytics Intern</h4>
+                                <div class="subdetails work-sub-cobena">
+                                    <h4>Consulted and used analytical tools on 3 major projects for various industries,
+                                        including: full dashboard development and implementation,
+                                        digital transformation strategies, and
+                                        sales data analyses.</h4>
+                                    <h4>Led, with a team of 3, an internal Lean Six Sigma certification program.</h4>
+                                </div>
+                            </div>
+                            <div class="date-container work-date-3">
+                                <h4 class="date work-cobena-date">APR 2019 - JUL 2019</h4>
                             </div>
                         </div>
-                        <div class="date-container work-date-3">
-                            <h4 class="date work-cobena-date">APR 2019 - JUL 2019</h4>
-                        </div>
-                    </div>
-                    <div class="card work-loreal">
-                        <div class="card-content">
-                            <h2 class="organization">L'Oréal Philippines, Inc.</h2>
-                            <h4 class="position">Kiehl's Marketing Intern</h4>
-                            <div class="subdetails work-sub-loreal">
-                                <h4>Conducted retail analysis, developed campaigns, and assisted on brand-related events
-                                    for a multinational leading skincare brand.</h4>
+                        <div class="card work-loreal">
+                            <div class="card-content">
+                                <h2 class="organization">L'Oréal Philippines, Inc.</h2>
+                                <h4 class="position">Kiehl's Marketing Intern</h4>
+                                <div class="subdetails work-sub-loreal">
+                                    <h4>Conducted retail analysis, developed campaigns, and assisted on brand-related events
+                                        for a multinational leading skincare brand.</h4>
+                                </div>
                             </div>
-                        </div>
-                        <div class="date-container work-date-4">
-                            <h4 class="date work-loreal-date">MAY 2017 - AUG 2017</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-<!--        EDUCATION CONTAINER-->
-        <section id="school-section">
-            <div class="main-sub education-container" data-scroll-speed="5">
-                <h1 class="segment-title school-title">education</h1>
-                <div class="cards-container school-cards">
-                    <div class="card school-nd">
-                        <div class="card-content">
-                            <h2 class="organization">University of Notre Dame</h2>
-                            <h4 class="position">MS in Business Analytics '20</h4>
-                            <div class="subdetails school-sub school-sub-nd">
-                                <h4>GPA: 3.93/4.00, magna cum laude</h4>
-                                <h4>Fellowship Recipient</h4>
+                            <div class="date-container work-date-4">
+                                <h4 class="date work-loreal-date">MAY 2017 - AUG 2017</h4>
                             </div>
-                        </div>
-                        <div class="date-container school-date-1">
-                            <h4 class="date school-nd-date">AUG 2019 - MAY 2020</h4>
-                        </div>
-                    </div>
-                    <div class="card school-up">
-                        <div class="card-content">
-                            <h2 class="organization">University of the Philippines, Diliman</h2>
-                            <h4 class="position">BS in Business Administration '18</h4>
-                            <div class="subdetails school-sub school-sub-up">
-                                <h4>GPA: 1.417/1.000, magna cum laude</h4>
-                                <h4>WES-Converted GPA: 3.72/4.00</h4>
-                            </div>
-                        </div>
-                        <div class="date-container school-date-2">
-                            <h4 class="date school-up-date">AUG 2014 - JUN 2018</h4>
-                        </div>
-                    </div>
-                    <div class="card school-ubc">
-                        <div class="card-content">
-                            <h2 class="organization">University of British Columbia</h2>
-                            <h4 class="position">Vancouver Summer Program Delegate (Business) '16</h4>
-                            <div class="subdetails school-sub school-sub-ubc">
-                                <h4>Courses Taken: Marketing, Organizational Behavior</h4>
-                            </div>
-                        </div>
-                        <div class="date-container school-date-3">
-                            <h4 class="date school-ubc-date">JUL 2016 - AUG 2016</h4>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-<!--        ORGANIZATION & LEADERSHIP -->
-        <section id="org-section">
-            <div class="main-sub org-container" data-scroll-speed="6">
-                <h1 class="segment-title org-title">org + leadership</h1>
-                <div class="cards-container org-cards">
-                    <div class="card org-msbaa">
-                        <div class="card-content">
-                            <h2 class="organization">Notre Dame MSBA Student Association</h2>
-                            <h4 class="position">Director of Academic Affairs / Secretary</h4>
-                            <div class="subdetails org-sub org-sub-msbaa">
-                                <h4>Primary academic liaison of the inaugural Notre Dame residential MSBA program, in a council of 6</h4>
-                                <h4>Conceptualized and organized the Hot Deck analytics lecture series, a series of workshops on various analytics tools and techniques for Mendoza students</h4>
+            </section>
+    <!--        EDUCATION CONTAINER-->
+            <section id="school-section">
+                <div class="main-sub education-container" data-scroll-speed="3">
+                    <h1 class="segment-title school-title">education</h1>
+                    <div class="cards-container school-cards">
+                        <div class="card school-nd">
+                            <div class="card-content">
+                                <h2 class="organization">University of Notre Dame</h2>
+                                <h4 class="position">MS in Business Analytics '20</h4>
+                                <div class="subdetails school-sub school-sub-nd">
+                                    <h4>GPA: 3.93/4.00, magna cum laude</h4>
+                                    <h4>Fellowship Recipient</h4>
+                                </div>
+                            </div>
+                            <div class="date-container school-date-1">
+                                <h4 class="date school-nd-date">AUG 2019 - MAY 2020</h4>
                             </div>
                         </div>
-                        <div class="date-container org-date-1">
-                            <h4 class="date org-msbaa-date">NOV 2019 - MAY 2020</h4>
-                        </div>
-                    </div>
-                    <div class="card org-jma">
-                        <div class="card-content">
-                            <h2 class="organization">UP Junior Marketing Association</h2>
-                            <h4 class="position">President</h4>
-                            <div class="subdetails org-sub org-sub-jma">
-                                <h4>Officially represented and led a membership base of approximately 370 members</h4>
-                                <h4>Streamlined several internal systems, supervised 13 committees and an executive committee of 6, and consequently increased member involvement by 30%</h4>
-                                <h4>Awarded the Villar Sipag Organizational Leadership Award for Academic Year 2017-2018</h4>
+                        <div class="card school-up">
+                            <div class="card-content">
+                                <h2 class="organization">University of the Philippines, Diliman</h2>
+                                <h4 class="position">BS in Business Administration '18</h4>
+                                <div class="subdetails school-sub school-sub-up">
+                                    <h4>GPA: 1.417/1.000, magna cum laude</h4>
+                                    <h4>WES-Converted GPA: 3.72/4.00</h4>
+                                </div>
+                            </div>
+                            <div class="date-container school-date-2">
+                                <h4 class="date school-up-date">AUG 2014 - JUN 2018</h4>
                             </div>
                         </div>
-                        <div class="date-container org-date-2">
-                            <h4 class="date school-up-date">MAY 2017 - JUN 2018</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-<!--        SKILLS -->
-        <section id="skills-section">
-            <div class="main-sub skills-container" data-scroll-speed="7">
-                <h1 class="segment-title skill-title">skills + competencies</h1>
-                <div class="cards-container skill-cards">
-                    <div class="card skill-data">
-                        <div class="card-content">
-                            <h2 class="organization">Data & Analytics</h2>
-                            <h4 class="position">Tools: R, Python, SQL, Excel VBA</h4>
-                            <div class="subdetails skill-sub skill-sub-data">
-                                <h4>Machine Learning, Statistical Analysis, Data Management/Web Scraping, Text/Image Analysis</h4>
+                        <div class="card school-ubc">
+                            <div class="card-content">
+                                <h2 class="organization">University of British Columbia</h2>
+                                <h4 class="position">Vancouver Summer Program Delegate (Business) '16</h4>
+                                <div class="subdetails school-sub school-sub-ubc">
+                                    <h4>Courses Taken: Marketing, Organizational Behavior</h4>
+                                </div>
                             </div>
-                        </div>
-                        <div class="date-container skills-date-1">
-                            <h4 class="date skills-data-date">2018 - 2020</h4>
-                        </div>
-                    </div>
-                    <div class="card skill-design">
-                        <div class="card-content">
-                            <h2 class="organization">Design & Creatives</h2>
-                            <h4 class="position">Tools: Adobe Creative Cloud (Photoshop, Illustrator, XD, Lightroom), Final Cut Pro</h4>
-                            <div class="subdetails skill-sub skill-sub-design">
-                                <h4>Multimedia Design, Web Design, Photo Editing, Video Editing</h4>
+                            <div class="date-container school-date-3">
+                                <h4 class="date school-ubc-date">JUL 2016 - AUG 2016</h4>
                             </div>
-                        </div>
-                        <div class="date-container skills-date-2">
-                            <h4 class="date skills-design-date">2013 - 2020</h4>
-                        </div>
-                    </div>
-                    <div class="card skill-viz">
-                        <div class="card-content">
-                            <h2 class="organization">Visualization & Presentation</h2>
-                            <h4 class="position">Tools: Tableau, Power BI, R Shiny, HTML/CSS, MS Powerpoint/VBA, Keynote</h4>
-                            <div class="subdetails skill-sub skill-sub-viz">
-                                <h4>Report and Dashboard Development, Basic Web Development, Dynamic Presentation Development and Design</h4>
-                            </div>
-                        </div>
-                        <div class="date-container skills-date-3">
-                            <h4 class="date skills-viz-date">2014 - 2020</h4>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
-</div>
-<div class="footer-container">
-    <div class="footer-text">
-        <h5>Designed and developed by Gabriel Herrera-Lim. &copy; 2020</h5>
+            </section>
+    <!--        ORGANIZATION & LEADERSHIP -->
+            <section id="org-section">
+                <div class="main-sub org-container" data-scroll-speed="4">
+                    <h1 class="segment-title org-title">org + leadership</h1>
+                    <div class="cards-container org-cards">
+                        <div class="card org-msbaa">
+                            <div class="card-content">
+                                <h2 class="organization">Notre Dame MSBA Student Association</h2>
+                                <h4 class="position">Director of Academic Affairs / Secretary</h4>
+                                <div class="subdetails org-sub org-sub-msbaa">
+                                    <h4>Primary academic liaison of the inaugural Notre Dame residential MSBA program, in a council of 6</h4>
+                                    <h4>Conceptualized and organized the Hot Deck analytics lecture series, a series of workshops on various analytics tools and techniques for Mendoza students</h4>
+                                </div>
+                            </div>
+                            <div class="date-container org-date-1">
+                                <h4 class="date org-msbaa-date">NOV 2019 - MAY 2020</h4>
+                            </div>
+                        </div>
+                        <div class="card org-jma">
+                            <div class="card-content">
+                                <h2 class="organization">UP Junior Marketing Association</h2>
+                                <h4 class="position">President</h4>
+                                <div class="subdetails org-sub org-sub-jma">
+                                    <h4>Officially represented and led a membership base of approximately 370 members</h4>
+                                    <h4>Streamlined several internal systems, supervised 13 committees and an executive committee of 6, and consequently increased member involvement by 30%</h4>
+                                    <h4>Awarded the Villar Sipag Organizational Leadership Award for Academic Year 2017-2018</h4>
+                                </div>
+                            </div>
+                            <div class="date-container org-date-2">
+                                <h4 class="date school-up-date">MAY 2017 - JUN 2018</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    <!--        SKILLS -->
+            <section id="skills-section">
+                <div class="main-sub skills-container" data-scroll-speed="5">
+                    <h1 class="segment-title skill-title">skills + competencies</h1>
+                    <div class="cards-container skill-cards">
+                        <div class="card skill-data"  id="skill-land">
+                            <div class="card-content">
+                                <h2 class="organization">Data & Analytics</h2>
+                                <h4 class="position">Tools: R, Python, SQL, Excel VBA</h4>
+                                <div class="subdetails skill-sub skill-sub-data">
+                                    <h4>Machine Learning, Statistical Analysis, Data Management/Web Scraping, Text/Image Analysis</h4>
+                                </div>
+                            </div>
+                            <div class="date-container skills-date-1">
+                                <h4 class="date skills-data-date">2018 - 2020</h4>
+                            </div>
+                        </div>
+                        <div class="card skill-design">
+                            <div class="card-content">
+                                <h2 class="organization">Design & Creatives</h2>
+                                <h4 class="position">Tools: Adobe Creative Cloud (Photoshop, Illustrator, XD, Lightroom), Final Cut Pro</h4>
+                                <div class="subdetails skill-sub skill-sub-design">
+                                    <h4>Multimedia Design, Web Design, Photo Editing, Video Editing</h4>
+                                </div>
+                            </div>
+                            <div class="date-container skills-date-2">
+                                <h4 class="date skills-design-date">2013 - 2020</h4>
+                            </div>
+                        </div>
+                        <div class="card skill-viz">
+                            <div class="card-content">
+                                <h2 class="organization">Visualization & Presentation</h2>
+                                <h4 class="position">Tools: Tableau, Power BI, R Shiny, HTML/CSS, MS Powerpoint/VBA, Keynote</h4>
+                                <div class="subdetails skill-sub skill-sub-viz">
+                                    <h4>Report and Dashboard Development, Basic Web Development, Dynamic Presentation Development and Design</h4>
+                                </div>
+                            </div>
+                            <div class="date-container skills-date-3">
+                                <h4 class="date skills-viz-date">2014 - 2020</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
 </div>
 <div class="cursor"></div>
@@ -296,7 +294,7 @@
 <script>
     $(document).ready(function(){
         // Add smooth scrolling to all links
-        $(".section-selector").on('click', function(event) {
+        $(".link").on('click', function(event) {
 
             // Make sure this.hash has a value before overriding default behavior
             if (this.hash !== "") {

@@ -8,14 +8,17 @@
 }
 body{
     background: #030303;
-    min-height:1500px;
+    position: relative;
 }
 a{
     text-decoration: underline;
     color: #FFF;
 }
 html, body {
-    cursor: none
+    cursor: none;
+    margin:0;
+    padding: 0;
+    height: 100%;
 }
 .cursor{
     border: #FFF solid 2px;
@@ -242,11 +245,11 @@ a, input{
     -webkit-animation-name: slideOut;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-timing-function: ease-out;
-    -webkit-animation-duration: 1s;
+    -webkit-animation-duration: 200ms;
     animation-name: slideOut;
     animation-iteration-count: 1;
     animation-timing-function: ease-out;
-    animation-duration: 1s;
+    animation-duration: 200ms;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
     -webkit-animation-fill-mode: forwards;
@@ -280,6 +283,10 @@ a, input{
     }
 }
 
+#body-container{
+    position: relative;
+}
+
 /*sidebar*/
 #sidetext-container{
     height: 100vh;
@@ -288,17 +295,25 @@ a, input{
     left: 10%;
 }
 #side-text{
-    font-size: 250px;
-    color: #FFF;
+    font-size: 20em;
+    text-transform: uppercase;
     transform: rotate(90deg);
     white-space: nowrap;
     line-height: 225px;
-    font-weight: 900;
+    font-weight: 600;
+    /*color: #FFF;*/
+    -webkit-text-stroke: .01em #FFF;
+    text-stroke: 1px #FFF;
+    color: transparent;
+}
+.sidespan{
+    font-family: 'Teko', sans-serif;
 }
 /*INTRO TEXT*/
 .intro-text-container{
     width: 100%;
     height: 100vh;
+    position: relative;
 }
 .circle{
     width: 60em;
@@ -329,12 +344,24 @@ a, input{
     width: 57%;
     position: absolute;
     right: 18%;
-    top: 33vh;
+    top: 38vh;
     color: #FFF;
 }
 #big-intro{
+    font-family: 'Teko', sans-serif;
+    line-height: 0.9em;
     font-size: 6em;
     font-weight: 800;
+    text-transform: uppercase;
+    -webkit-text-stroke: .02em #FFF;
+    text-stroke: 1px #FFF;
+    color: transparent;
+}
+.full{
+    font-family: 'Teko', sans-serif;
+    -webkit-text-stroke: 0;
+    text-stroke: 0;
+    color: #FFF;
 }
 #small-intro{
     font-size: 1em;
@@ -346,6 +373,7 @@ a, input{
     position: absolute;
     right: 10px;
     top: calc(100vh + 300px);
+    padding: 10px 10px 60px;
 }
 .work-title{
     color: #FFF;
@@ -909,14 +937,44 @@ a, input{
     transform: translate(0, 100px) rotate(-90deg)
 }
 
-/*footer*/
-.footer-container{
-    position: fixed;
-    width: 80%;
-    bottom: 50px;
-    align-items: center;
-    border-top: #FFF 2px solid;
+/*LINKS*/
+.link{
+    position: relative;
+    color: #D30000;
+    font-weight: 500;
+    text-decoration:none;
+    transition: all 175ms ease-in-out;
 }
-.footer-text{
+.link:hover{
+    background: #A50000;
     color: #FFF;
+}
+
+.link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.175s ease-in-out 0s;
+}
+
+.link:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+.segment-title{
+    font-family: 'Teko', sans-serif;
+    -webkit-text-stroke: 0.02em #FFF;
+    text-stroke: 1px #FFF;
+    color: transparent;
+    font-weight: 700;
+}
+
+::before{
+    font-family: 'Teko', sans-serif;
 }

@@ -22,7 +22,9 @@ html, body {
     padding: 0.3rem;
     background: transparent;
     mix-blend-mode: difference;
-    transition: transform 0.3s ease;
+    transform: translate(-50%, -50%);
+    transition: transform 0.35s ease;
+    transition-property: background, transform;
     z-index: 100000000000000000000000000000000000000000000000;
 }
 a, input{
@@ -665,6 +667,7 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
+    position: relative;
 }
 .skills-container .card{
     position:relative;
@@ -1405,17 +1408,13 @@ input[type="submit"]{
     z-index: 10000000000;
     transform: translateY(100%);
     transition: all 200ms ease-in;
-    /*-webkit-animation-name: slideIn;*/
-    /*-webkit-animation-iteration-count: 1;*/
-    /*-webkit-animation-timing-function: ease-in;*/
-    /*-webkit-animation-duration: 1.5s;*/
-    /*animation-name: slideIn;*/
-    /*animation-iteration-count: 1;*/
-    /*animation-timing-function: ease-in;*/
-    /*animation-duration: 1.5s;*/
-    /*-webkit-animation-delay: 2s;*/
-    /*animation-delay: 2s;*/
-    /*-webkit-animation-fill-mode: forwards;*/
-    /*animation-fill-mode: forwards;*/
 }
 
+/*footer*/
+.footer-container{
+    padding: 30px;
+    border-top: #030303 2px solid;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}

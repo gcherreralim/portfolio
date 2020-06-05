@@ -3,8 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
+    <link rel="stylesheet" type = "text/css" href="portfolio.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo-white-fill.png">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="portfolio.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+<!-- START Menu -->
+<div class="menu-wrap" id="pop-up-menu">
+    <input type="checkbox" class="toggler" id = "hamburger-button">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+        <div>
+            <div>
+                <ul>
+                    <li><a href="index.html" id="menu-home">home</a></li>
+                    <li><a href="aboutme.html" id="menu-about" class="about-click">about me</a></li>
+                    <li><a href="portfolio.html" id="menu-portfolio" class="portfolio-click">portfolio</a></li>
+                    <li><a href="index.html#contact-me-section" id="menu-contact">contact me</a></li>
+                    <img src="./images/logo-white-stroke.png" id="menu-logo" alt="./images/logo-white-fill">
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END Menu-->
+<div id="container">
+    <div id="body">
+        <section id="intro">
+            <div class="intro-title">
+                <div class="titletext" id="title-recent">
+                    <span>
+                        featured<span class="outline">featured</span>featured
+                    </span>
+                </div>
+                <div class="titletext" id="title-project">
+                    <span>
+                        projects<span class="outline">projects</span>projects
+                    </span>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="footer-container">
+        Designed and Developed by Gabby Herrera-Lim&nbsp;&nbsp;|&nbsp;&nbsp;&copy; 2020
+    </div>
+</div>
+<div class="cursor"></div>
+<script>
+    $(document).ready(function () {
+        var $horizontal = $('#title-recent');
 
+        $(window).scroll(function () {
+            var s = $(this).scrollTop(),
+                d = $(document).height(),
+                c = $(this).height();
+
+            scrollPercent = (s / (d - c));
+
+            var position = (scrollPercent * ($(document).width() - $horizontal.width()));
+
+            $horizontal.css({
+                'left': position
+            });
+        });
+    });
+</script>
+<script>
+    (function() {
+        const cursor = document.querySelector('.cursor');
+
+        const editCursor = e => {
+            const { clientX: x, clientY: y} = e;
+            cursor.style.left = x - 5 + 'px';
+            cursor.style.top = y - 5 + 'px';
+        };
+
+        window.addEventListener('mousemove', editCursor);
+    })();
+</script>
+<script>
+    $(function() {
+        $('a').hover(function() {
+            $('.cursor').css('background-color', '#A50000');
+            $('.cursor').css('transform','scale(2)');
+        }, function() {
+            // on mouseout, reset the background colour
+            $('.cursor').css('background-color', '');
+            $('.cursor').css('transform','');
+        });
+    });
+</script>
+<script>
+    $(function() {
+        $('input').hover(function() {
+            $('.cursor').css('background-color', '#A50000');
+            $('.cursor').css('transform','scale(2)');
+        }, function() {
+            // on mouseout, reset the background colour
+            $('.cursor').css('background-color', '');
+            $('.cursor').css('transform','');
+        });
+    });
+</script>
 </body>
 </html>
