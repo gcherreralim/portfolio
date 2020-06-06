@@ -52,7 +52,7 @@ a, input{
 }
 body{
     background: #FFFFFF;
-    min-height:10000px;
+    min-height:5000px;
 }
 
 /* scrollbar */
@@ -258,6 +258,7 @@ body{
     background: #FFF;
     top: 30vh;
     left: -15vw;
+    margin-bottom: -350px;
 }
 .titletext span{
     display: inline;
@@ -277,13 +278,13 @@ body{
 }
 #title-recent{
     left: 0;
+    margin-bottom: -9vw;
 }
 #title-project{
-    margin-top: -9vw;
+    margin-bottom: -9vw;
 }
 .intro-subtext{
     position: relative;
-    top: -30vh;
     left: 10vw;
     font-size: 2em;
 }
@@ -298,6 +299,10 @@ body{
 .proj-1{
     top: 100vh;
     left: 0;
+}
+.proj-2{
+    top: 200vh;
+    left:0;
 }
 .port-image{
     width: 50%;
@@ -347,20 +352,24 @@ body{
     line-height: 0.8em;
     text-transform: uppercase;
     color: transparent;
-    -webkit-text-stroke: .02em #030303;
-    text-stroke: 1px #030303;
+    letter-spacing: 0.0003em;
+    -webkit-text-stroke: .03em #030303;
+    text-stroke: 3px #030303;
     left: 5%;
+    padding-bottom: 10px;
     /*top: 30vh;*/
     overflow: visible;
 }
 .port-team{
-    width: 90%;
+    width: 50%;
     display: inline-block;
     position: relative;
     font-size: 0.8em;
     line-height: 0.8em;
     text-transform: uppercase;
     left: 5%;
+    border-top: #030303 2px solid;
+    padding-top: 20px;
     /*top: 30vh;*/
 }
 .port-desc{
@@ -396,8 +405,71 @@ body{
     line-height: 0.8em;
     text-transform: uppercase;
     color: transparent;
-    -webkit-text-stroke: .03em #FFF;
-    text-stroke: 2px #FFF;
+    -webkit-text-stroke: .05em #FFF;
+    text-stroke: 4px #FFF;
+    letter-spacing: 1px;
+    visibility: visible;
+    opacity: 1;
+    transition: all 200ms ease-in-out;
+}
+.port-tools{
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+    text-align: center;
+    line-height: 1.5em;
+    color: #030303;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 350ms ease-in-out;
+}
+.tools-container:hover{
+    background: #FFF;
+}
+.tools-container:hover .port-tool-title{
+    opacity: 0;
+    visibility: hidden;
+}
+.tools-container:hover .port-tools{
+    opacity: 1;
+    visibility: visible;
+}
+.port-links{
+    position: absolute;
+    left: 5%;
+    bottom: 3%;
+    z-index: 5;
+    width: 60%;
+    align-items: center;
+    text-align: left;
+}
+.port-links a{
+    text-decoration: none;
+}
+.link-text{
+    font-size: 2em;
+    font-family: 'Teko', sans-serif;
+    -webkit-text-stroke: .05em #FFF;
+    text-stroke: 4px #FFF;
+    color: transparent;
+    text-align: center;
+    background: #030303;
+    padding: 1px 9px;
+    margin-right: 40px;
+    transition: all 350ms ease-in-out;
+}
+.link-text:hover{
+    background: #A50000;
+    padding: 4px 15px;
+    margin-right: 28px;
+    text-decoration: underline wavy;
+}
+
+#project-2{
+
 }
 /*footer*/
 .footer-container{
@@ -410,4 +482,56 @@ body{
     align-items: center;
     margin: 0 auto;
     text-align: center;
+}
+
+/*SCROLL*/
+.image-right[data-scroll],
+.tools-right[data-scroll],
+.num-right[data-scroll]{
+    transition: all 1s;
+}
+.image-right[data-scroll = "in"],
+.tools-right[data-scroll = "in"],
+.num-right[data-scroll = "in"]{
+    opacity: 1;
+    transform: translateX(0);
+}
+.image-right[data-scroll = "out"],
+.tools-right[data-scroll = "out"],
+.num-right[data-scroll = "out"]{
+    opacity: 0;
+    transform: translateX(200px);
+}
+
+.title-left[data-scroll],
+.team-left[data-scroll],
+.desc-left[data-scroll],
+.links-left[data-scroll]{
+    transition: all 1s;
+}
+.title-left[data-scroll = "in"],
+.team-left[data-scroll = "in"],
+.desc-left[data-scroll = "in"],
+.links-left[data-scroll = "in"]{
+    opacity: 1;
+    transform: translateX(0);
+}
+.title-left[data-scroll = "out"],
+.team-left[data-scroll = "out"],
+.desc-left[data-scroll = "out"],
+.links-left[data-scroll = "out"]{
+    opacity: 0;
+    transform: translateX(-200px);
+}
+
+.black-dots[data-scroll]{
+    transition: all 1s;
+}
+.black-dots[data-scroll="in"]{
+    opacity: 1;
+    transform: translateY(0);
+}
+.black-dots[data-scroll="out"]{
+    opacity: 0;
+    transform: translateY(200px);
 }
