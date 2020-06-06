@@ -318,17 +318,43 @@ body{
 }
 .port-num{
     position: absolute;
-    font-size: 2em;
-    left: 5%;
-    top: 20vh;
+    font-size: 1em;
+    right: 5%;
+    top: 5%;
 }
 .port-title{
-    position: absolute;
-    font-size: 9em;
+    width: 85%;
+    display: inline-block;
+    position: relative;
+    font-size: 5em;
     font-family: 'Teko', sans-serif;
-    overflow: visible;
-    line-height: 0.7em;
+    line-height: 0.8em;
     text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: .02em #030303;
+    text-stroke: 1px #030303;
+    left: 5%;
+    top: 25vh;
+    overflow: visible;
+}
+.port-team{
+    width: 90%;
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+    line-height: 0.8em;
+    text-transform: uppercase;
+    left: 5%;
+    top: 25vh;
+}
+.port-desc{
+    width: 70%;
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+    line-height: 1.2em;
+    left: 5%;
+    top: 28vh;
 }
 /*footer*/
 .footer-container{
