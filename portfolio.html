@@ -5,8 +5,6 @@
     <title>Portfolio</title>
     <link rel="stylesheet" type = "text/css" href="portfolio.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/logo-white-fill.png">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="portfolio.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -29,28 +27,60 @@
     </div>
 </div>
 <!-- END Menu-->
+<!--START CONTENT-->
 <div id="container">
     <div id="body">
-        <section id="intro">
-            <div class="intro-title">
-                <div class="titletext" id="title-recent">
-                    <span>
-                        featured<span class="outline">featured</span>featured
-                    </span>
+        <section class="section" id="intro">
+            <div id="luxy">
+                <div class="intro-title">
+                    <div class="luxy-el titletext" id="title-recent" data-horizontal="1" data-speed-x="-15">
+                        <span>
+                            project<span class="outline">project</span>project<span class="outline">project</span>
+                        </span>
+                    </div>
+                    <div class="luxy-el titletext" id="title-project"  data-horizontal="1" data-speed-x="15">
+                        <span>
+                            <span class="outline">portfolio</span>portfolio<span class="outline">portfolio</span>
+                        </span>
+                    </div>
                 </div>
-                <div class="titletext" id="title-project">
-                    <span>
-                        projects<span class="outline">projects</span>projects
-                    </span>
+                <div class="intro-subtext">
+                    <div class="luxy-el" id="title-subtext" data-horizontal="1" data-speed-x="-15">
+                        <span>some projects i've worked on in the last year</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="project-1">
+            <div class="project-container proj-1">
+                <div class="port-image image1"></div>
+                <div class="port-main main1">
+                    <span class="port-num num1">1</span>
+                    <span class="port-title title1">Clustering Methods to Redefine Positions and Analyze Effective Lineups in the NBA</span>
+                    <span class="port-team team1">with Sebastien Amato and Yixiao Zhang</span>
+                    <span class="port-desc desc1">Loerajalksjdflkajsdfkljasdlkfjasdjflasjdfjasldkfjalsdkjfklajshfkljah sdkjlfhaskjflhaksjdh</span>
+                </div>
+                <div class="port-tools tools1">
+                    <span class="port-tool-title">Tools Used:</span>
+                    <span class="port-tools tools1">R (data management, clustering, random forest, visualization) Python (web scraping) Adobe Photoshop (graphics)</span>
+                </div>
+                <div class="port-links links1">
+                    <span class="git">GitHub</span>
+                    <span class="docu">Documentation</span>
                 </div>
             </div>
         </section>
     </div>
     <div class="footer-container">
-        Designed and Developed by Gabby Herrera-Lim&nbsp;&nbsp;|&nbsp;&nbsp;&copy; 2020
+        Designed and Developed by Gabby Herrera-Lim &nbsp;&nbsp; | &nbsp;&nbsp; &copy; 2020
     </div>
 </div>
 <div class="cursor"></div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/luxy.js"></script>
+<script charset="utf-8">
+    luxy.init();
+</script>
 <script>
     $(document).ready(function () {
         var $horizontal = $('#title-recent');
@@ -107,5 +137,6 @@
         });
     });
 </script>
+<script type="text/javascript" src="portfolio.js"></script>
 </body>
 </html>

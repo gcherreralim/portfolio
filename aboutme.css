@@ -973,6 +973,7 @@ a, input{
     text-stroke: 1px #FFF;
     color: transparent;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 ::before{
