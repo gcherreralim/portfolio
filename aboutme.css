@@ -4,7 +4,7 @@
 *{
     margin:0;
     padding:0;
-    font-family: 'Circular Std', sans-serif;
+    font-family: 'Karla', sans-serif;
 }
 body{
     background: #030303;
@@ -632,7 +632,7 @@ a, input{
 
 /*SCHOOLS*/
 .school-sub{
-    width: 35%;
+    width: 40%;
 }
 .school-nd:hover{
     background: url(images/school-nd.jpg) no-repeat;
@@ -696,7 +696,7 @@ a, input{
 .school-sub-nd{
     position: absolute;
     top: 110px;
-    left: 293.3125px;
+    left: 270.75px;
     opacity: 0;
     visibility: hidden;
     transition-delay: 350ms;
@@ -714,7 +714,7 @@ a, input{
 .school-sub-up{
     position: absolute;
     top: 110px;
-    left: 293.3125px;
+    left: 270.75px;
     opacity: 0;
     visibility: hidden;
     transition-delay: 350ms;
@@ -733,7 +733,7 @@ a, input{
 .school-sub-ubc{
     position: absolute;
     top: 110px;
-    left: 293.3125px;
+    left: 270.75px;
     opacity: 0;
     visibility: hidden;
     transition-delay: 350ms;
@@ -931,7 +931,7 @@ a, input{
     visibility: visible;
 }
 .skill-cards .position{
-    width: 600px;
+    width: 650px;
     text-align: center;
 }
 .skill-cards .date{
