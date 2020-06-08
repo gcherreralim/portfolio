@@ -304,19 +304,31 @@ body{
     top: 200vh;
     left:0;
 }
-.port-image{
+.image-right{
     width: 50%;
     height: 100vh;
     position: absolute;
     right: 0;
     top: 0;
     z-index: 3;
-}
-.image1{
-    background: url(images/port-1-cluster.jpg);
     background-size: cover;
 }
-.black-dots{
+.image-left{
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    background-size: cover;
+}
+.image1{
+    background: url(images/port-1-cluster.jpg) no-repeat;
+}
+.image2{
+    background: url(images/port-2-postgame.jpg) no-repeat;
+}
+.dots-right{
     position: absolute;
     right: -10%;
     top: 50%;
@@ -324,7 +336,15 @@ body{
     width: 20%;
     z-index: 1;
 }
-.port-main{
+.dots-left{
+    position: absolute;
+    left: -10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20%;
+    z-index: 1;
+}
+.main-left{
     width: 50%;
     height: 100vh;
     position: absolute;
@@ -332,10 +352,24 @@ body{
     top: 0;
     background: #FFF;
 }
-.port-num{
+.main-right{
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #FFF;
+}
+.num-right{
     position: absolute;
     font-size: 1em;
     right: 3%;
+    top: 5%;
+}
+.num-left{
+    position: absolute;
+    font-size: 1em;
+    left: 3%;
     top: 5%;
 }
 .port-content{
@@ -343,7 +377,7 @@ body{
     top: 50%;
     transform: translateY(-50%);
 }
-.port-title{
+.title-left{
     width: 85%;
     display: inline-block;
     position: relative;
@@ -360,7 +394,25 @@ body{
     /*top: 30vh;*/
     overflow: visible;
 }
-.port-team{
+.title-right{
+    width: 85%;
+    display: inline-block;
+    position: relative;
+    font-size: 5em;
+    font-family: 'Teko', sans-serif;
+    line-height: 0.8em;
+    text-transform: uppercase;
+    color: transparent;
+    letter-spacing: 0.0003em;
+    -webkit-text-stroke: .03em #030303;
+    text-stroke: 3px #030303;
+    right: 5%;
+    padding-bottom: 10px;
+    text-align: right;
+    /*top: 30vh;*/
+    overflow: visible;
+}
+.team-left{
     width: 50%;
     display: inline-block;
     position: relative;
@@ -372,7 +424,20 @@ body{
     padding-top: 20px;
     /*top: 30vh;*/
 }
-.port-desc{
+.team-right{
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    font-size: 0.8em;
+    line-height: 0.8em;
+    text-transform: uppercase;
+    right: 5%;
+    border-top: #030303 2px solid;
+    padding-top: 20px;
+    text-align: right;
+    /*top: 30vh;*/
+}
+.desc-left{
     width: 70%;
     display: inline-block;
     position: relative;
@@ -383,12 +448,33 @@ body{
     text-align: justify;
     text-align-last: left;
 }
-
-.tools-container{
+.desc-right{
+    width: 70%;
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+    line-height: 1.2em;
+    right: 5%;
+    top: 20px;
+    text-align: justify;
+    text-align-last: right;
+}
+.tools-right{
     width: 30%;
     height: 10vh;
     position: absolute;
     left: 60vw;
+    bottom: 10%;
+    background: #A50000;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+.tools-left{
+    width: 30%;
+    height: 10vh;
+    position: absolute;
+    right: 60vw;
     bottom: 10%;
     background: #A50000;
     align-items: center;
@@ -437,7 +523,7 @@ body{
     opacity: 1;
     visibility: visible;
 }
-.port-links{
+.links-left{
     position: absolute;
     left: 5%;
     bottom: 3%;
@@ -446,10 +532,19 @@ body{
     align-items: center;
     text-align: left;
 }
+.links-right{
+    position: absolute;
+    right: 5%;
+    bottom: 3%;
+    z-index: 5;
+    width: 60%;
+    align-items: center;
+    text-align: right;
+}
 .port-links a{
     text-decoration: none;
 }
-.link-text{
+.link-text-left{
     font-size: 2em;
     font-family: 'Teko', sans-serif;
     -webkit-text-stroke: .05em #FFF;
@@ -461,16 +556,31 @@ body{
     margin-right: 40px;
     transition: all 350ms ease-in-out;
 }
-.link-text:hover{
+.link-text-left:hover{
     background: #A50000;
     padding: 4px 15px;
     margin-right: 28px;
     text-decoration: underline wavy;
 }
-
-#project-2{
-
+.link-text-right{
+    font-size: 2em;
+    font-family: 'Teko', sans-serif;
+    -webkit-text-stroke: .05em #FFF;
+    text-stroke: 4px #FFF;
+    color: transparent;
+    text-align: center;
+    background: #030303;
+    padding: 1px 9px;
+    margin-left: 40px;
+    transition: all 350ms ease-in-out;
 }
+.link-text-right:hover{
+    background: #A50000;
+    padding: 4px 15px;
+    margin-left: 28px;
+    text-decoration: underline wavy;
+}
+
 /*footer*/
 .footer-container{
     position: absolute;
@@ -487,28 +597,46 @@ body{
 /*SCROLL*/
 .image-right[data-scroll],
 .tools-right[data-scroll],
-.num-right[data-scroll]{
+.num-right[data-scroll],
+.title-right[data-scroll],
+.team-right[data-scroll],
+.desc-right[data-scroll],
+.links-right[data-scroll]{
     transition: all 1s;
 }
 .image-right[data-scroll = "in"],
 .tools-right[data-scroll = "in"],
-.num-right[data-scroll = "in"]{
+.num-right[data-scroll = "in"],
+.title-right[data-scroll = "in"],
+.team-right[data-scroll = "in"],
+.desc-right[data-scroll = "in"],
+.links-right[data-scroll = "in"]{
     opacity: 1;
     transform: translateX(0);
 }
 .image-right[data-scroll = "out"],
 .tools-right[data-scroll = "out"],
-.num-right[data-scroll = "out"]{
+.num-right[data-scroll = "out"],
+.title-right[data-scroll = "out"],
+.team-right[data-scroll = "out"],
+.desc-right[data-scroll = "out"],
+.links-right[data-scroll = "out"]{
     opacity: 0;
     transform: translateX(200px);
 }
 
+.image-left[data-scroll],
+.tools-left[data-scroll],
+.num-left[data-scroll],
 .title-left[data-scroll],
 .team-left[data-scroll],
 .desc-left[data-scroll],
 .links-left[data-scroll]{
     transition: all 1s;
 }
+.image-left[data-scroll = "in"],
+.tools-left[data-scroll = "in"],
+.num-left[data-scroll = "in"],
 .title-left[data-scroll = "in"],
 .team-left[data-scroll = "in"],
 .desc-left[data-scroll = "in"],
@@ -516,6 +644,9 @@ body{
     opacity: 1;
     transform: translateX(0);
 }
+.image-left[data-scroll = "out"],
+.tools-left[data-scroll = "out"],
+.num-left[data-scroll = "out"],
 .title-left[data-scroll = "out"],
 .team-left[data-scroll = "out"],
 .desc-left[data-scroll = "out"],
