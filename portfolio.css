@@ -323,10 +323,10 @@ body{
     background-size: cover;
 }
 .image1{
-    background: url(images/port-1-cluster.jpg) no-repeat;
+    background: url(images/port-1-cluster.jpg);
 }
 .image2{
-    background: url(images/port-2-postgame.jpg) no-repeat;
+    background: url(images/port-2-postgame.jpg);
 }
 .dots-right{
     position: absolute;
@@ -389,14 +389,14 @@ body{
     letter-spacing: 0.0003em;
     -webkit-text-stroke: .03em #030303;
     text-stroke: 3px #030303;
-    left: 5%;
+    left: 50px;
     padding-bottom: 10px;
     /*top: 30vh;*/
     overflow: visible;
 }
 .title-right{
     width: 85%;
-    display: inline-block;
+    display: block;
     position: relative;
     font-size: 5em;
     font-family: 'Teko', sans-serif;
@@ -406,7 +406,7 @@ body{
     letter-spacing: 0.0003em;
     -webkit-text-stroke: .03em #030303;
     text-stroke: 3px #030303;
-    right: 5%;
+    right: 0;
     padding-bottom: 10px;
     text-align: right;
     /*top: 30vh;*/
@@ -454,7 +454,7 @@ body{
     position: relative;
     font-size: 1em;
     line-height: 1.2em;
-    right: 5%;
+    right: 10px;
     top: 20px;
     text-align: justify;
     text-align-last: right;
@@ -463,7 +463,7 @@ body{
     width: 30%;
     height: 10vh;
     position: absolute;
-    left: 60vw;
+    right: 10vw;
     bottom: 10%;
     background: #A50000;
     align-items: center;
@@ -474,7 +474,7 @@ body{
     width: 30%;
     height: 10vh;
     position: absolute;
-    right: 60vw;
+    left: 10vw;
     bottom: 10%;
     background: #A50000;
     align-items: center;
