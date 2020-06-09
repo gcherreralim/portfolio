@@ -52,15 +52,15 @@ a, input{
 }
 body{
     background: #FFFFFF;
-    min-height:5000px;
+    min-height:calc(1000vh + 81px);
 }
 
 /* scrollbar */
 ::-webkit-scrollbar{
-    width:6px;
+    width:9px;
 }
 ::-webkit-scrollbar-track{
-    border:4px solid #030303;
+    border:6px solid #030303;
     box-shadow: inset 0 0 3px 2px rgba(0,0,0,1)
 }
 ::-webkit-scrollbar-thumb{
@@ -308,6 +308,30 @@ body{
     top: 300vh;
     left:0;
 }
+.proj-4{
+    top: 400vh;
+    left:0;
+}
+.proj-5{
+    top: 500vh;
+    left: 0;
+}
+.proj-6{
+    top: 600vh;
+    left:0;
+}
+.proj-7{
+    top: 700vh;
+    left:0;
+}
+.proj-8{
+    top: 800vh;
+    left:0;
+}
+.proj-9{
+    top: 900vh;
+    left:0;
+}
 .image-right{
     width: 50%;
     height: 100vh;
@@ -334,6 +358,24 @@ body{
 }
 .image3{
     background: url(images/port-3-glassdoor.jpg) center center;
+}
+.image4{
+    background: url(images/port-4-wwe.jpg) center center;
+}
+.image5{
+    background: url(images/port-5-goat.jpg) center center;
+}
+.image6{
+    background: url(images/port-6-leader.jpg) center center;
+}
+.image7{
+    background: url(images/port-7-jeep.jpg) center center;
+}
+.image8{
+    background: url(images/port-8-homeaway.jpg) center center;
+}
+.image9{
+    background: url(images/port-9-news.jpg) center center;
 }
 .dots-right{
     position: absolute;
