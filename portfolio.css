@@ -304,6 +304,10 @@ body{
     top: 200vh;
     left:0;
 }
+.proj-3{
+    top: 300vh;
+    left:0;
+}
 .image-right{
     width: 50%;
     height: 100vh;
@@ -327,6 +331,9 @@ body{
 }
 .image2{
     background: url(images/port-2-postgame.jpg) center center;
+}
+.image3{
+    background: url(images/port-3-glassdoor.jpg) center center;
 }
 .dots-right{
     position: absolute;
@@ -383,6 +390,7 @@ body{
     top: 50%;
     right: 0;
     transform: translateY(-50%);
+
 }
 .title-left{
     width: 80%;
@@ -397,6 +405,7 @@ body{
     -webkit-text-stroke: .03em #030303;
     text-stroke: 3px #030303;
     left: 50px;
+    float: left;
     padding-bottom: 10px;
     /*top: 30vh;*/
     overflow: visible;
@@ -413,7 +422,8 @@ body{
     letter-spacing: 0.0003em;
     -webkit-text-stroke: .03em #030303;
     text-stroke: 3px #030303;
-    right: 0;
+    right: 50px;
+    float: right;
     padding-bottom: 10px;
     text-align: right;
     /*top: 30vh;*/
@@ -426,7 +436,8 @@ body{
     font-size: 0.8em;
     line-height: 0.8em;
     text-transform: uppercase;
-    left: 5%;
+    left: 50px;
+    float: left;
     border-top: #030303 2px solid;
     padding-top: 20px;
     /*top: 30vh;*/
@@ -438,7 +449,8 @@ body{
     font-size: 0.8em;
     line-height: 0.8em;
     text-transform: uppercase;
-    right: 5%;
+    right: 50px;
+    float: right;
     border-top: #030303 2px solid;
     padding-top: 20px;
     text-align: right;
@@ -450,7 +462,8 @@ body{
     position: relative;
     font-size: 1em;
     line-height: 1.2em;
-    left: 5%;
+    left: 50px;
+    float: left;
     top: 20px;
     text-align: justify;
     text-align-last: left;
@@ -461,7 +474,8 @@ body{
     position: relative;
     font-size: 1em;
     line-height: 1.2em;
-    right: 10px;
+    right: 50px;
+    float: right;
     top: 20px;
     text-align: justify;
     text-align-last: right;
