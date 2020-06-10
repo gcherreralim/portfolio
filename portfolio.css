@@ -472,7 +472,7 @@ body{
     overflow: visible;
 }
 .team-left{
-    width: 50%;
+    width: 60%;
     display: inline-block;
     position: relative;
     font-size: 0.8em;
@@ -485,7 +485,7 @@ body{
     /*top: 30vh;*/
 }
 .team-right{
-    width: 50%;
+    width: 60%;
     display: inline-block;
     position: relative;
     font-size: 0.8em;
