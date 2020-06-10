@@ -644,6 +644,14 @@ body{
     text-decoration: underline wavy;
 }
 
+.desc-links{
+    color: #030303;
+    font-weight: bold;
+}
+.desc-links:hover{
+    color: #A50000;
+}
+
 /*footer*/
 .footer-container{
     position: absolute;
