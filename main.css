@@ -727,27 +727,30 @@ body{
 .skills-container .data:after{
     content:'data';
     position: absolute;
+    font-family: "Teko", sans-serif;
     top:30%;
     left:0%;
-    font-size: 10em;
+    font-size: 12em;
     font-weight: 800;
     color: rgba(255,255,255,0.1);
 }
 .skills-container .design:after{
     content:'design';
     position: absolute;
+    font-family: "Teko", sans-serif;
     top:30%;
     left:0%;
-    font-size: 10em;
+    font-size: 12em;
     font-weight: 800;
     color: rgba(255,255,255,0.1);
 }
 .skills-container .viz:after{
     content:'viz';
     position: absolute;
+    font-family: "Teko", sans-serif;
     top:30%;
     left:0%;
-    font-size: 10em;
+    font-size: 12em;
     font-weight: 800;
     color: rgba(255,255,255,0.1);
 }
@@ -896,8 +899,11 @@ body{
 #project-head{
     font-size: 150px;
     font-weight: 700;
-    color: #FFF;
+    -webkit-text-stroke: .02em #FFF;
+    text-stroke: 2px #FFF;
+    color: transparent;
     position: absolute;
+    font-family: "Teko", sans-serif;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%) rotate(-90deg);
@@ -908,7 +914,7 @@ body{
     position: absolute;
     width: 100%;
     height: 10px;
-    bottom: 20px;
+    bottom: 30px;
     left: 0;
     background-color: #FFF;
     visibility: hidden;
@@ -1217,28 +1223,32 @@ body{
     bottom: 2%;
 }
 #contactme-head{
-    font-size: 80px;
+    font-size: 100px;
     font-weight: 900;
+    font-family: 'Teko', sans-serif;
     margin: 0;
     position: absolute;
     text-align: center;
     top: 50%;
     left: 50%;
-    color: #FFF;
+    -webkit-text-stroke: .02em #FFF;
+    text-stroke: 2px #FFF;
+    color: transparent;
+    text-transform: uppercase;
     transform: translate(-50%, -50%);
     transition: all 350ms ease-in-out;
 }
 
 .contact-me-container:hover #contactme-head{
-    transform: translate(-50%, -400%);
+    transform: translate(-50%, -300%);
 }
 
 #contactme-head::before {
     content: "";
     position: absolute;
     width: 100%;
-    height: 10px;
-    bottom: 0px;
+    height: 5px;
+    bottom: 30px;
     left: 0;
     background-color: #FFF;
     visibility: hidden;
@@ -1389,10 +1399,12 @@ body{
 input[type="submit"]{
     border: none;
     padding: 7px 35px;
+    font-family: "Teko", sans-serif;
     outline: none;
     background: #A50000;
     color: #FFF;
-    font-size: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
 }
 
 /*EXIT SLIDES*/
