@@ -134,7 +134,8 @@ body{
     width: 30px;
     height: 30px;
     padding: 1rem;
-    background: #FFF;
+    background: transparent;
+    mix-blend-mode: difference;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -177,7 +178,8 @@ body{
 }
 .menu-wrap .toggler:checked + .hamburger > div {
     transform: rotate(135deg);
-    background: #FFF;
+    background: #030303;
+    mix-blend-mode: normal;
 }
 
 /* Turns Lines Into X */
@@ -1077,6 +1079,7 @@ body{
 }
 .project-1:hover{
     background: url(images/project-1-nba-cluster.jpg) no-repeat;
+    background-size: cover;
 }
 .project-2{
     position: absolute;
@@ -1088,6 +1091,7 @@ body{
 }
 .project-2:hover{
     background: url(images/project-2-nba-postgame.jpg) no-repeat;
+    background-size: cover;
 }
 .project-3{
     position: absolute;
@@ -1099,6 +1103,7 @@ body{
 }
 .project-3:hover{
     background: url(images/project-3-glassdoor.jpg) no-repeat;
+    background-size: cover;
 }
 .project-4{
     position: absolute;
@@ -1110,6 +1115,7 @@ body{
 }
 .project-4:hover{
     background: url(images/project-4-wwe.jpg) no-repeat;
+    background-size: cover;
 }
 .project-5{
     position: absolute;
@@ -1121,6 +1127,7 @@ body{
 }
 .project-5:hover{
     background: url(images/project-5-goat.jpg) no-repeat;
+    background-size: cover;
 }
 .project-6{
     position: absolute;
@@ -1132,6 +1139,7 @@ body{
 }
 .project-6:hover{
     background: url(images/project-6-leader.jpg) no-repeat;
+    background-size: cover;
 }
 .project-7{
     position: absolute;
@@ -1143,6 +1151,7 @@ body{
 }
 .project-7:hover{
     background: url(images/project-7-jeep.jpg) no-repeat;
+    background-size: cover;
 }
 .project-8{
     position: absolute;
@@ -1154,6 +1163,7 @@ body{
 }
 .project-8:hover{
     background: url(images/project-8-nba-homeaway.jpg) no-repeat;
+    background-size: cover;
 }
 .project-9{
     position: absolute;
@@ -1165,6 +1175,7 @@ body{
 }
 .project-9:hover{
     background: url(images/project-9-media.jpg) no-repeat;
+    background-size: cover;
 }
 
 /* CONTACT ME PAGE */

@@ -80,7 +80,7 @@ a, input{
     width: 30px;
     height: 30px;
     padding: 1rem;
-    background: #030303;
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,7 +123,7 @@ a, input{
 }
 .menu-wrap .toggler:checked + .hamburger > div {
     transform: rotate(135deg);
-    background: #030303;
+    background: #FFF;
 }
 
 /* Turns Lines Into X */

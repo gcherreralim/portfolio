@@ -150,7 +150,7 @@ body{
     width: 30px;
     height: 30px;
     padding: 1rem;
-    background: #FFF;
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -193,7 +193,7 @@ body{
 }
 .menu-wrap .toggler:checked + .hamburger > div {
     transform: rotate(135deg);
-    background: #FFF;
+    background: #030303;
 }
 
 /* Turns Lines Into X */
