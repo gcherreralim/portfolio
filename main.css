@@ -556,6 +556,7 @@ body{
     -webkit-text-stroke: .02em #A50000;
     text-stroke: 2px #A50000;
     opacity: 0.5;
+    text-transform: uppercase;
     font-size: 280px;
     font-weight: 700;
     line-height: 125px;
@@ -650,6 +651,7 @@ body{
     color: transparent;
     -webkit-text-stroke: .02em #030303;
     text-stroke: 2px #030303;
+    text-transform: uppercase;
     font-size: 280px;
     font-weight: 700;
     line-height: 125px;
@@ -904,6 +906,7 @@ body{
     color: transparent;
     position: absolute;
     font-family: "Teko", sans-serif;
+    text-transform: uppercase;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%) rotate(-90deg);
@@ -1408,6 +1411,20 @@ input[type="submit"]{
 }
 
 /*EXIT SLIDES*/
+.exit-home{
+    position: fixed;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100vh;
+    background: #A50000;
+    z-index: 10000000000;
+    transform: scale(0);
+    border-radius: 50%;
+    transition: all 500ms ease-in;
+}
 .exit-about{
     position: fixed;
     top:0;

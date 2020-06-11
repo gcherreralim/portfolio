@@ -56,7 +56,7 @@
                         <li><a href="index.html" class="norm-click home-click" id="menu-home">home</a></li>
                         <li><a href="aboutme.html" id="menu-about" class="norm-click about-click">about me</a></li>
                         <li><a href="portfolio.html" id="menu-portfolio" class="norm-click portfolio-click">projects</a></li>
-                        <li><a href="index.html#contact-me-section" id="menu-contact">contact me</a></li>
+                        <li><a href="index.html#contact-me-section" onClick="window.location.reload(true);" id="menu-contact">contact me</a></li>
                         <img src="./images/logo-white-stroke.png" id="menu-logo" alt="./images/logo-white-fill">
                     </ul>
                 </div>
@@ -538,6 +538,7 @@
         });
     </script>
     <!--    EXIT SLIDES -->
+    <div class="exit-slide exit-home"></div>
     <div class="exit-slide exit-about"></div>
     <div class="exit-slide exit-proj"></div>
 <!-- SCRIPTS -->
@@ -584,6 +585,20 @@
             myFunction2();});
         document.getElementById("menu-portfolio").addEventListener("click", function(){
             myFunction2();});
+    </script>
+    <script>
+        function myFunction5() {
+            // Code for Chrome, Safari, Opera
+            document.getElementsByClassName("exit-home")[0].style.WebkitTransform = "scale(2)";
+            document.getElementsByClassName("exit-home")[0].innerHtml =" asd";
+            // Code for IE9
+            document.getElementsByClassName("exit-home")[0].style.msTransform = "scale(2)";
+            // Standard syntax
+            document.getElementsByClassName("exit-home")[0].style.transform = "scale(2)";
+        }
+
+        document.getElementById("menu-home").addEventListener("click", function(){
+            myFunction5();});
     </script>
     <script>
         $(window).on('beforeunload', function() {

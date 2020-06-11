@@ -287,6 +287,7 @@
     });
 </script>
 <!--    EXIT SLIDES -->
+<div class="exit-slide exit-home"></div>
 <div class="exit-slide exit-about"></div>
 <div class="exit-slide exit-proj"></div>
 <script>
@@ -348,6 +349,20 @@
 
     document.getElementById("menu-portfolio").addEventListener("click", function(){
         myFunction4();});
+</script>
+<script>
+    function myFunction5() {
+        // Code for Chrome, Safari, Opera
+        document.getElementsByClassName("exit-home")[0].style.WebkitTransform = "scale(2)";
+        document.getElementsByClassName("exit-home")[0].innerHtml =" asd";
+        // Code for IE9
+        document.getElementsByClassName("exit-home")[0].style.msTransform = "scale(2)";
+        // Standard syntax
+        document.getElementsByClassName("exit-home")[0].style.transform = "scale(2)";
+    }
+
+    document.getElementById("menu-home").addEventListener("click", function(){
+        myFunction5();});
 </script>
 <script>
     $('a.norm-click').click(function (e) {
