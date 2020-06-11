@@ -709,6 +709,20 @@ body{
 }
 
 /*EXIT SLIDES*/
+.exit-home{
+    position: fixed;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100vh;
+    background: #A50000;
+    z-index: 10000000000;
+    transform: scale(0);
+    border-radius: 50%;
+    transition: all 500ms ease-in;
+}
 .exit-about{
     position: fixed;
     top:0;
