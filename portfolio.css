@@ -261,7 +261,7 @@ body{
     list-style: none;
     color: #fff;
     font-size: 90px;
-    padding: 1rem;
+    padding: 5px;
 }
 
 .menu-wrap .menu > div > div > ul > li > a {
@@ -269,6 +269,7 @@ body{
     color: #151515;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
+    font-family: 'Teko', sans-serif;
 }
 .menu-wrap .menu > div > div > ul > li > a:hover{
     background: #A50000;

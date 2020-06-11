@@ -101,35 +101,16 @@
 
 <!-- START Landing Section -->
     <section id="landing">
-        <img src="images/land-bg.jpg" id="landing-bg">
-        <img src="images/land-stripe.png" id="landing-stripe">
-        <img src="images/land-dots.png" id="landing-dots">
-        <img src="images/land-edge.png" id="landing-edge">
-        <img src="images/land-gabby.png" id="landing-gabby">
-        <h2 id="landing-maintext">Gabriel<br/>Herrera-Lim</h2>
-        <h6 id="landing-subtext">analytics &<br/>visualization</h6>
+        <div id="luxy">
+            <img class="luxy-el" src="images/land-bg.jpg" id="landing-bg" data-speed-y="40">
+            <img class="luxy-el" src="images/land-stripe.png" id="landing-stripe" data-speed-y="40">
+            <img class="luxy-el" src="images/land-dots.png" id="landing-dots" data-speed-y="40">
+            <img class="luxy-el" src="images/land-edge.png" id="landing-edge" data-speed-y="40" data-horizontal="1" data-speed-x="15">
+            <img class="luxy-el" src="images/land-gabby.png" id="landing-gabby" data-speed-y="70">
+            <h2 class="luxy-el" id="landing-maintext" data-speed-y="40" data-horizontal="1" data-speed-x="-30">Gabriel<br/>Herrera-Lim</h2>
+            <h6 class="luxy-el" id="landing-subtext" data-speed-y="40" data-horizontal="1" data-speed-x="15">PORTFOLIO / 2020</h6>
+        </div>
     </section>
-    <script type="text/javascript">
-        let landbg = document.getElementById("landing-bg")
-        let landstripe = document.getElementById("landing-stripe")
-        let landdots = document.getElementById("landing-dots")
-        let landedge = document.getElementById("landing-edge")
-        let landghl = document.getElementById("landing-gabby")
-        let landtext = document.getElementById("landing-maintext")
-        let landsub = document.getElementById("landing-subtext")
-
-        window.addEventListener('scroll', function(){
-            var value = window.scrollY;
-
-            landbg.style.top = value * 0.5 + 'px';
-            landstripe.style.top = -value * 0.5 + 'px';
-            landdots.style.top = -value * 0.6 + 'px';
-            landedge.style.left = value * 0.3 + 'px';
-            landghl.style.left = -value * 0.5 + 'px';
-            landtext.style.top = value * 0.75 + 'px';
-            landsub.style.left = value * 0.5 + 'px';
-        })
-    </script>
 <!-- END Landing Section -->
 
 <!-- START About Me Section -->
@@ -140,7 +121,9 @@
                     <span class="typed-words"></span>
                 </p>
                 <br> <br>
-                <p>I'm Gabby Herrera-Lim, a <a class="about-nd" href="https://mendoza.nd.edu/graduate-programs/business-analytics-msba/" target="_blank">Master's of Science in Business Analytics graduate from the University of Notre Dame</a>. Aside from analytics, I like to dabble in graphic design, brand marketing, sports, media, and pop culture. I've grown to love analytics and seeing how it changes the way we think about the world around us. My education and project experiences have honed well-rounded skills that set a good foundation in solving analytics problems for various industries.</p>
+                <p>I'm Gabby Herrera-Lim, a <a class="about-nd" href="https://mendoza.nd.edu/graduate-programs/business-analytics-msba/" target="_blank">Master's of Science in Business Analytics graduate from the University of Notre Dame</a>. Aside from data and analytics,
+                    I like to dabble in graphic design, brand marketing, sports, media, and pop culture. I've grown to love analytics and seeing how it changes the way we think about the world
+                    around us. My education and project experiences have honed well-rounded skills that set a good foundation in solving analytics problems for various industries.</p>
                 <br>
                 <div class="more-about-wrapper">
                     <div class="about-link-wrapper">
@@ -574,7 +557,7 @@
     <script src="js/typed.js"></script>
     <script>
         var typed = new Typed('.typed-words', {
-            strings: ["data analytics.","visualization.","design.","sports analytics."],
+            strings: ["data analytics.","visualization.","design.","sports analytics.","marketing."],
             typeSpeed: 55,
             backSpeed: 60,
             backDelay: 2000,
@@ -632,5 +615,9 @@
         }, 800);                             // time in ms
     });
 </script>
+    <script src="js/luxy.js"></script>
+    <script charset="utf-8">
+        luxy.init();
+    </script>
 </body>
 </html>

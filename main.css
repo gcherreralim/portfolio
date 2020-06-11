@@ -62,7 +62,7 @@ body{
 .preloader:before{
     content:'Loading';
     position: absolute;
-    font-size: 5em;
+    font-size: 8em;
     font-weight: 900;
     text-transform: lowercase;
     color: rgba(255,255,255,0.1);
@@ -75,25 +75,25 @@ body{
 #loading-head{
     color: #FFF;
     position: absolute;
-    top: 300px;
+    top: 20%;
 }
 #loading-sub{
     text-decoration: underline;
     color: #FFF;
     position: absolute;
-    top: 320px;
+    top: 22%;
 }
 #loading-foot{
     color: #FFF;
     position: absolute;
-    font-size: 10px;
-    top: 800px;
+    font-size: 14px;
+    bottom: 20%;
 }
 .counter{
     position:relative;
     color: #FFF;
-    font-family: "Circular Std", serif;
-    font-size: 3.5em;
+    font-family: "Teko", sans-serif;
+    font-size: 5em;
     font-weight: 800;
     z-index: 1;
 }
@@ -245,7 +245,7 @@ body{
     list-style: none;
     color: #fff;
     font-size: 90px;
-    padding: 1rem;
+    padding: 5px;
 }
 
 .menu-wrap .menu > div > div > ul > li > a {
@@ -253,6 +253,7 @@ body{
     color: #151515;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
+    font-family: 'Teko', sans-serif;
 }
 .menu-wrap .menu > div > div > ul > li > a:hover{
     background: #A50000;
@@ -287,6 +288,9 @@ body{
 /* end hamburger menu */
 
 /* section buttons */
+.section-selector div{
+    mix-blend-mode: difference;
+}
 #section1{
     width: 7px;
     height: 7px;
@@ -349,7 +353,8 @@ body{
 /* section buttons end*/
 
 /* section 1: header */
-#landing{
+#landing,
+#landing div{
     position:relative;
     width:100%;
     height:100vh;
@@ -390,48 +395,37 @@ body{
     pointer-events: none;
 }
 #landing-maintext{
-    font-family: 'Circular Std', sans-serif;
-    position: relative;
-    line-height: 1em;
+    font-family: 'Teko', sans-serif;
+    position: absolute;
+    top: 38%;
+    left: 5%;
+    text-transform: uppercase;
+    line-height: 0.8em;
+    /*-webkit-text-stroke: .02em #FFF;*/
+    /*text-stroke: 2px #FFF;*/
+    /*color: transparent;*/
+    font-size: 12rem;
     color: #FFF;
-    font-size: 7rem;
     font-weight: 800;
     letter-spacing: 0.00003em;
     z-index: 100000;
-    animation: 5s floating1 infinite ease-in-out;
+    /*animation: 5s floating1 infinite ease-in-out;*/
 }
 #landing-gabby{
-    animation: 5s floating2 infinite ease-in-out;
+    /*animation: 5s floating2 infinite ease-in-out;*/
 }
 #landing-subtext{
-    position: relative;
-    top: 40%;
-    margin-left: 50%;
+    position: absolute;
+    bottom: 4%;
+    right: 3%;
     text-align: right;
     line-height: 1em;
     color: #030303;
     font-size: 2rem;
     z-index: 100000;
-    animation: 5s floating3 infinite ease-in-out;
+    /*animation: 5s floating3 infinite ease-in-out;*/
 }
-@keyframes floating1 {
-    from {transform: translate(0,0px);}
-    33% {transform: translate(3px,8px);}
-    65% {transform: translate(8px,8px);}
-    to {transform: translate(0,0px);}
-}
-@keyframes floating2 {
-    from {transform: translate(0,0px);}
-    33% {transform: translate(8px,8px);}
-    65% {transform: translate(4px,15px);}
-    to {transform: translate(0,0px);}
-}
-@keyframes floating3 {
-    from {transform: translate(0,0px);}
-    33% {transform: translate(-8px,10px);}
-    65% {transform: translate(3px,12px);}
-    to {transform: translate(0,0px);}
-}
+
 /* section 2: about me */
 #about-me-section{
     background-color: #FFFFFF;
@@ -464,16 +458,18 @@ body{
     margin-right: 20%;
 }
 
-.about-text > p:nth-child(1){
+.about-text > p:nth-child(1),
+.typed-words{
     color: #FFFFFF;
-    font-family: 'Karla', sans-serif;
-    font-size: 3em;
+    font-family: 'Teko', sans-serif;
+    font-size: 70px;
     font-weight: 700;
     line-height: 2em;
     margin-bottom: -1em;
 }
 .about-text > p:nth-child(4){
     color: #FFFFFF;
+    font-family: 'Karla', sans-serif;
     font-size: 1em;
     font-weight: 300;
     text-align: justify;
@@ -553,11 +549,14 @@ body{
 
 #about-me-head{
     position: absolute;
-    bottom: 0;
+    font-family: "Teko", sans-serif;
+    bottom:-10px;
     right:0;
-    color: #A50000;
+    color: transparent;
+    -webkit-text-stroke: .02em #A50000;
+    text-stroke: 2px #A50000;
     opacity: 0.5;
-    font-size: 250px;
+    font-size: 280px;
     font-weight: 700;
     line-height: 125px;
     animation: 5s floating4 infinite ease-in-out;
@@ -645,11 +644,13 @@ body{
 }
 #skills-head {
     position: absolute;
-    top: -1%;
+    top: -2%;
     left: 4%;
-    color: #030303;
-    opacity: 0.5;
-    font-size: 250px;
+    font-family: "Teko", sans-serif;
+    color: transparent;
+    -webkit-text-stroke: .02em #030303;
+    text-stroke: 2px #030303;
+    font-size: 280px;
     font-weight: 700;
     line-height: 125px;
     animation: 5s floating4 infinite ease-in-out;
