@@ -1394,8 +1394,8 @@ input[type="submit"]{
     font-size: 15px;
 }
 
-/*EXIT SLIDE*/
-.exit-slide{
+/*EXIT SLIDES*/
+.exit-about{
     position: fixed;
     top:0;
     display: flex;
@@ -1406,9 +1406,21 @@ input[type="submit"]{
     background: #A50000;
     z-index: 10000000000;
     transform: translateY(100%);
-    transition: all 200ms ease-in;
+    transition: all 750ms ease-in;
 }
-
+.exit-proj{
+    position: fixed;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100vh;
+    background: #030303;
+    z-index: 10000000000;
+    transform: translateX(100%);
+    transition: all 750ms ease-in;
+}
 /*footer*/
 .footer-container{
     padding: 30px;

@@ -53,9 +53,9 @@
             <div>
                 <div>
                     <ul>
-                        <li><a href="index.html" id="menu-home">home</a></li>
-                        <li><a href="aboutme.html" id="menu-about" class="about-click">about me</a></li>
-                        <li><a href="portfolio.html" id="menu-portfolio" class="portfolio-click">projects</a></li>
+                        <li><a href="index.html" class="norm-click home-click" id="menu-home">home</a></li>
+                        <li><a href="aboutme.html" id="menu-about" class="norm-click about-click">about me</a></li>
+                        <li><a href="portfolio.html" id="menu-portfolio" class="norm-click portfolio-click">projects</a></li>
                         <li><a href="index.html#contact-me-section" id="menu-contact">contact me</a></li>
                         <img src="./images/logo-white-stroke.png" id="menu-logo" alt="./images/logo-white-fill">
                     </ul>
@@ -144,7 +144,7 @@
                 <br>
                 <div class="more-about-wrapper">
                     <div class="about-link-wrapper">
-                        <a id="about-more" href="aboutme.html" class="about-click"> <span id="more-about-text"> More About Me </span> </a>
+                        <a id="about-more" href="aboutme.html" class="norm-click about-click"> <span id="more-about-text"> More About Me </span> </a>
                     </div>
                 </div>
             </div>
@@ -231,7 +231,7 @@
 <section id="portfolio-section">
     <div class="proj-head-container">
         <div id="project-side-container">
-            <a href="portfolio.html" class="portfolio-click"><h3 id="project-head">Projects</h3></a>
+            <a href="portfolio.html" class="norm-click portfolio-click" id="proj-head"><h3 id="project-head">Projects</h3></a>
         </div>
 <!--        PROJECT 1 -->
         <div class="project-container project-1">
@@ -567,8 +567,9 @@
             });
         });
     </script>
-    <!--    EXIT SLIDE -->
-    <div class="exit-slide"></div>
+    <!--    EXIT SLIDES -->
+    <div class="exit-slide exit-about"></div>
+    <div class="exit-slide exit-proj"></div>
 <!-- SCRIPTS -->
     <script src="js/typed.js"></script>
     <script>
@@ -585,16 +586,34 @@
     <script>
         function myFunction() {
             // Code for Chrome, Safari, Opera
-            document.getElementsByClassName("exit-slide")[0].style.WebkitTransform = "translateY(0)";
-            document.getElementsByClassName("exit-slide")[0].innerHtml =" asd";
+            document.getElementsByClassName("exit-about")[0].style.WebkitTransform = "translateY(0)";
+            document.getElementsByClassName("exit-about")[0].innerHtml =" asd";
             // Code for IE9
-            document.getElementsByClassName("exit-slide")[0].style.msTransform = "translateY(0)";
+            document.getElementsByClassName("exit-about")[0].style.msTransform = "translateY(0)";
             // Standard syntax
-            document.getElementsByClassName("exit-slide")[0].style.transform = "translateY(0)";
+            document.getElementsByClassName("exit-about")[0].style.transform = "translateY(0)";
         }
 
         document.getElementById("about-more").addEventListener("click", function(){
             myFunction();});
+        document.getElementById("menu-about").addEventListener("click", function(){
+            myFunction();});
+    </script>
+    <script>
+        function myFunction2() {
+            // Code for Chrome, Safari, Opera
+            document.getElementsByClassName("exit-proj")[0].style.WebkitTransform = "translateX(0)";
+            document.getElementsByClassName("exit-proj")[0].innerHtml =" asd";
+            // Code for IE9
+            document.getElementsByClassName("exit-proj")[0].style.msTransform = "translateX(0)";
+            // Standard syntax
+            document.getElementsByClassName("exit-proj")[0].style.transform = "translateX(0)";
+        }
+
+        document.getElementById("proj-head").addEventListener("click", function(){
+            myFunction2();});
+        document.getElementById("menu-portfolio").addEventListener("click", function(){
+            myFunction2();});
     </script>
     <script>
         $(window).on('beforeunload', function() {
@@ -602,7 +621,7 @@
         });
     </script>
 <script>
-    $('a').click(function (e) {
+    $('a.norm-click').click(function (e) {
         e.preventDefault();                   // prevent default anchor behavior
         var goTo = this.getAttribute("href"); // store anchor href
 
@@ -610,7 +629,7 @@
 
         setTimeout(function(){
             window.location = goTo;
-        }, 500);                             // time in ms
+        }, 800);                             // time in ms
     });
 </script>
 </body>

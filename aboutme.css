@@ -250,7 +250,7 @@ a, input{
     animation-name: slideOut;
     animation-iteration-count: 1;
     animation-timing-function: ease-out;
-    animation-duration: 200ms;
+    animation-duration: 750ms;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
     -webkit-animation-fill-mode: forwards;
@@ -260,10 +260,14 @@ a, input{
 .screen-transition:before{
     content:'about me';
     position: absolute;
-    font-size: 3em;
+    font-family: 'Teko', sans-serif;
+    font-size: 15em;
     font-weight: 900;
     text-transform: lowercase;
-    color: #FFF;
+    /*color: #FFF;*/
+    -webkit-text-stroke: .02em #FFF;
+    text-stroke: 2px #FFF;
+    color: transparent;
 }
 
 @keyframes slideOut {
@@ -339,7 +343,7 @@ a, input{
     z-index: -1;
     position: absolute;
     top: -10%;
-    right: 30%;
+    right: 20%;
 }
 #intro-text{
     width: 57%;
@@ -979,4 +983,32 @@ a, input{
 
 ::before{
     font-family: 'Teko', sans-serif;
+}
+
+/*EXIT SLIDES*/
+.exit-about{
+    position: fixed;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100vh;
+    background: #A50000;
+    z-index: 10000000000;
+    transform: translateY(100%);
+    transition: all 750ms ease-in;
+}
+.exit-proj{
+    position: fixed;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100vh;
+    background: #030303;
+    z-index: 10000000000;
+    transform: translateX(100%);
+    transition: all 750ms ease-in;
 }

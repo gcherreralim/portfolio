@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 </head>
 <body>
+
+<!-- SCREEN TRANSITION -->
+<div class="screen-transition"></div>
+<!-- END SCREEN TRANSITION -->
+
 <!-- START Menu -->
 <div class="menu-wrap" id="pop-up-menu">
     <input type="checkbox" class="toggler" id = "hamburger-button">
@@ -18,9 +23,9 @@
         <div>
             <div>
                 <ul>
-                    <li><a href="index.html" id="menu-home">home</a></li>
-                    <li><a href="aboutme.html" id="menu-about" class="about-click">about me</a></li>
-                    <li><a href="portfolio.html" id="menu-portfolio" class="portfolio-click">projects</a></li>
+                    <li><a href="index.html" class="norm-click home-click" id="menu-home">home</a></li>
+                    <li><a href="aboutme.html" id="menu-about" class="norm-click about-click">about me</a></li>
+                    <li><a href="portfolio.html" id="menu-portfolio" class="norm-click portfolio-click">projects</a></li>
                     <li><a href="index.html#contact-me-section" id="menu-contact">contact me</a></li>
                     <img src="./images/logo-white-stroke.png" id="menu-logo" alt="./images/logo-white-fill">
                 </ul>
@@ -176,16 +181,16 @@
                     <span class="port-num num5 num-right" data-scroll>5 &nbsp; of &nbsp; 9</span>
                     <div class="port-content content-left">
                         <span class="port-title title5 title-left" data-scroll>GOAT: A Statistical Analysis of Basketball's "Greatest of All Time" Argument</span>
-                        <span class="port-team team5 team-left" data-scroll>Advanced Statistical Inference</span>
+                        <span class="port-team team5 team-left" data-scroll>Advanced Statistical Inference &nbsp; | &nbsp; December 2019</span>
                         <span class="port-desc desc5 desc-left" data-scroll>Basketball, a sport that features individual star power as much as (or even more than) it does overall team success, often hosts a multitude of arguments on the greatness of players spanning one
                         generation to the next. Many of the NBA's most high-profile players have made their cases as the best, greatest, and most influential stars within their own generations and throughout its history. It's also
                         sparked a conversation amongst fans as to who really is the greatest player to have graced the sports biggest stage, citing many tangible and intangible factors. Three players whose names have most often come up
                             in many experts' and critics' lists are players that come from different generations and dominated all throughout their illustrious careers: <b><a class="desc-links" href="https://www.basketball-reference.com/players/a/abdulka01.html">Kareem Abdul-Jabbar</a></b>, whose 20-year career displayed a level of longevity
                             and dominance on all levels of the sport that has still been unmatched; <b><a class="desc-links" href="https://www.basketball-reference.com/players/a/jordami01.html">Michael Jordan</a></b>, whose undeniable competitiveness, all-around talent, and winning mentality led to being the most influential star in the game's
                             history; and <b><a class="desc-links" href="https://www.basketball-reference.com/players/a/jamesle01.html">LeBron James</a></b>, whose sheer athleticism, drive to make those around him better, and incomparable I.Q. on both ends of the floor have catapulted him to a record-breaking level since entering the league out of high school.<br><br>
-                        Using 5 statistics-based factors, I was able to use multiple models and methods (e.g. logistic regression, mixed models) to rank each of the three players' relative performances and answer some interesting questions along the way, such as
+                        Using 5 statistics-based factors, I was able to use multiple models and methods (e.g. logistic regression, mixed models) to rank each of the three players' relative performances and answer some interesting questions along the way, such as:
                             who had the best production at each age, which teams each of the three performed the best against, and which round of the playoffs brought out the best from the three stars?<br><br> DISCLAIMER: Using statistics does not paint a complete picture
-                            of a player's contribution to the sport, but does give a more grounded perspective on a more tangible aspect of the argument. Further studies can use more all-encompassing statistics and other intangible measures to provide a
+                            of a player's contribution to the sport, but does give a more grounded perspective on a more tangible aspect of the argument. Further studies can use more all-encompassing statistics, team statistics, and other intangible measures to provide a
                             clearer and well-rounded perspective on the study.
                         </span>
                     </div>
@@ -196,7 +201,7 @@
                 </div>
                 <div class="tools-container tool-container-5 tools-right" data-scroll>
                     <span class="port-tool-title">Tools Used</span>
-                    <span class="port-tools tools5">R (web scraping, text and sentiment analysis, topic modeling)</span>
+                    <span class="port-tools tools5">R (linear and logistic regression, mixed models)</span>
                 </div>
             </div>
         </section>
@@ -208,8 +213,12 @@
                     <span class="port-num num6 num-left" data-scroll>6 &nbsp; of &nbsp; 9</span>
                     <div class="port-content content-right">
                         <span class="port-title title6 title-right" data-scroll>What Makes An Effective Leader?</span>
-                        <span class="port-team team6 team-right" data-scroll>Unstructured Data Analytics</span>
-                        <span class="port-desc desc6 desc-right" data-scroll>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                        <span class="port-team team6 team-right" data-scroll>Advanced Statistical Inference &nbsp; | &nbsp; December 2019</span>
+                        <span class="port-desc desc6 desc-right" data-scroll>Effective leaders are found in all forms and ways, but are there common characteristics and leadership traits that many of these leaders share? What weight to these traits have in
+                        creating a better environment for his employees and effectively leading his teams? Are there other factors that make a leader more credible in the eyes of his employees?<br><br>
+                        By using power analyses, bootstrap resampling, and heteroskedasticity-consistent covariance matrices, I was able to effectively test several hypotheses and identify some traits and characteristics
+                        of leaders in demonstrating credibility and effectiveness in the workplace. Moving forward, this can help business unit leaders and HR managers to identify parameters for improvement for themselves
+                        potential recruits.</span>
                     </div>
                     <div class="port-links links6 links-right" data-scroll>
                         <a href="" title="Click to see project GitHub page"><span class="link-text-right git">GitHub</span></a>
@@ -218,7 +227,7 @@
                 </div>
                 <div class="tools-container tool-container-6 tools-left" data-scroll>
                     <span class="port-tool-title">Tools Used</span>
-                    <span class="port-tools tools6">R (web scraping, text and sentiment analysis, topic modeling)</span>
+                    <span class="port-tools tools6">R (hypothesis testing: power analyses, bootstrap resampling, covariance matrices)</span>
                 </div>
             </div>
         </section>
@@ -230,8 +239,12 @@
                     <span class="port-num num7 num-right" data-scroll>7 &nbsp; of &nbsp; 9</span>
                     <div class="port-content content-left">
                         <span class="port-title title7 title-left" data-scroll>Jeep Hybrid Launch Strategy</span>
-                        <span class="port-team team7 team-left" data-scroll>Data Analytics &nbsp; | &nbsp; with Sebastien Amato, Eric Gilgenbach, Michael Ma, and Ziyi Zhang</span>
-                        <span class="port-desc desc7 desc-left" data-scroll>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                        <span class="port-team team7 team-left" data-scroll>With Sebastien Amato, Eric Gilgenbach, Michael Ma, and Ziyi Zhang &nbsp; | &nbsp; December 2019</span>
+                        <span class="port-desc desc7 desc-left" data-scroll>Entering the new decade, Fiat-Chrysler and Jeep plan to launch several vehicles under their hybrid vehicle line, going beyond their initial image of
+                        high-power utility vehicles and marrying that concept with a more fuel-efficient and sustainable system. The brand's global president intends to make the automobile brand "the greenest and most sustainable SUV company.
+                        However, the presence of hybrid Jeep vehicles and other sustainable SUV options is not as widely recognized in the United States.<br><br>To aid in effectively launching Jeep's venture into sustainable vehicle lines in the
+                        United States, our group decided to launch this (hypothetical) project and analyze the current market of hybrid and electric SUVs in the country and understand what aspects of its launch it should capitalize on. This project was
+                        also done as an exercise to prepare us in effectively explaining data-driven insights and recommendations to a company's leadership team.</span>
                     </div>
                     <div class="port-links links7 links-left" data-scroll>
                         <a href="" title="Click to see project GitHub page"><span class="link-text-left git">GitHub</span></a>
@@ -240,7 +253,7 @@
                 </div>
                 <div class="tools-container tool-container-7 tools-right" data-scroll>
                     <span class="port-tool-title">Tools Used</span>
-                    <span class="port-tools tools7">R (web scraping, text and sentiment analysis, topic modeling)</span>
+                    <span class="port-tools tools7">Tableau (data manipulation, analysis, and visualization)<br>Powerpoint (visualization and dynamic presentation development)</span>
                 </div>
             </div>
         </section>
@@ -251,18 +264,24 @@
                     <img src="images/dots-black.png" class="black-dots dots-left">
                     <span class="port-num num8 num-left" data-scroll>8 &nbsp; of &nbsp; 9</span>
                     <div class="port-content content-right">
-                        <span class="port-title title8 title-right" data-scroll>Home-Away Comparative Analysis and Shot-Chart Analysis for NBA Teams</span>
-                        <span class="port-team team8 team-right" data-scroll>Data Visualization</span>
-                        <span class="port-desc desc8 desc-right" data-scroll>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                        <span class="port-title title8 title-right" data-scroll>Home-Away Comparative Analysis for NBA Teams</span>
+                        <span class="port-team team8 team-right" data-scroll>Data Visualization &nbsp; | &nbsp; September 2019</span>
+                        <span class="port-desc desc8 desc-right" data-scroll>Home-court advantage is an often-stated factor in team and player performance in the NBA. Playing with the support of the home fans and on
+                        a familiar surface/feel of your home arena definitely helps player and team psychology and is demonstrated by trends (both positive and negative) in statistical performance. One basic statistic
+                        that demonstrates a team's or player's performance on a nightly basis is shooting percentage. More often than not, teams/players perform better on their home floor. But, is there a way to go
+                        deeper than that and see which cities and arenas are toughest for players to perform in?<br><br>Using Tableau to visualize comparisons between player and team performances at home and away can help NBA front
+                        offices and coaching staffs to set their game plans around the strengths and weaknesses of their opponents and their own players, especially when going into games in tougher environments.
+                            It also helps teams identify points of improvement for their lineups and players by seeing which have larger differences between shooting performances at home and away. Moving forward, this type of visualization
+                        can help coaches easily understand and analyze trends in other stats and apply different parameters suited to their needs.</span>
                     </div>
                     <div class="port-links links8 links-right" data-scroll>
-                        <a href="" title="Click to see project GitHub page"><span class="link-text-right git">GitHub</span></a>
+                        <a href="" title="Click to see project GitHub page"><span class="link-text-right git">Tableau Viz</span></a>
                         <a href="" title="Click to see project documentation"><span class="link-text-right docu">Documentation</span></a>
                     </div>
                 </div>
                 <div class="tools-container tool-container-8 tools-left" data-scroll>
                     <span class="port-tool-title">Tools Used</span>
-                    <span class="port-tools tools8">R (web scraping, text and sentiment analysis, topic modeling)</span>
+                    <span class="port-tools tools8">Tableau (data manipulation, analysis, and visualization)</span>
                 </div>
             </div>
         </section>
@@ -274,17 +293,21 @@
                     <span class="port-num num9 num-right" data-scroll>9 &nbsp; of &nbsp; 9</span>
                     <div class="port-content content-left">
                         <span class="port-title title9 title-left" data-scroll>Daily Media Blitz Company Sales Analysis</span>
-                        <span class="port-team team9 team-left" data-scroll>Data Visualization</span>
-                        <span class="port-desc desc9 desc-left" data-scroll>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                        <span class="port-team team9 team-left" data-scroll>Data Visualization &nbsp; | &nbsp; With Sebastien Amato, Felicien Dumas, Eric Gilgenbach, and Elena Huang &nbsp; | &nbsp; October 2019</span>
+                        <span class="port-desc desc9 desc-left" data-scroll>With the rise of technology, news and media companies that prospered initially on print media were forced to adapt, innovate, or perish. Though print sales decreased, streams of revenue came in the form of
+                        digital advertising. By understanding [1] which revenue streams were most effective in raising the overall profit of the organization, [2] what projected sales were going to be for each revenue stream, [3] which customers and salespersons were most crucial to
+                        the business, and [4] which digital products were most promising, Daily Media Blitz (a hypothetical media company) would be able to see which products and revenue streams it could prioritize in terms of effort and investment.<br><br>By visualizing many of these
+                        factors, management would easily see the daily performance of the company, how various products and revenue streams are performing, and where to invest more money and resources. One other thing that our group tackled was the effectiveness of their discount and
+                        pricing strategy and its relative weight against customer loyalty.</span>
                     </div>
                     <div class="port-links links9 links-left" data-scroll>
-                        <a href="" title="Click to see project GitHub page"><span class="link-text-left git">GitHub</span></a>
+                        <a href="" title="Click to see project GitHub page"><span class="link-text-left git">Tableau Viz</span></a>
                         <a href="" title="Click to see project documentation"><span class="link-text-left docu">Documentation</span></a>
                     </div>
                 </div>
                 <div class="tools-container tool-container-9 tools-right" data-scroll>
                     <span class="port-tool-title">Tools Used</span>
-                    <span class="port-tools tools9">R (web scraping, text and sentiment analysis, topic modeling)</span>
+                    <span class="port-tools tools9">Tableau (data manipulation, analysis, and visualization)</span>
                 </div>
             </div>
         </section>
@@ -355,12 +378,60 @@
         });
     });
 </script>
+<!--    EXIT SLIDES -->
+<div class="exit-slide exit-about"></div>
+<div class="exit-slide exit-proj"></div>
+<script>
+    function myFunction() {
+        // Code for Chrome, Safari, Opera
+        document.getElementsByClassName("exit-about")[0].style.WebkitTransform = "translateY(0)";
+        document.getElementsByClassName("exit-about")[0].innerHtml =" asd";
+        // Code for IE9
+        document.getElementsByClassName("exit-about")[0].style.msTransform = "translateY(0)";
+        // Standard syntax
+        document.getElementsByClassName("exit-about")[0].style.transform = "translateY(0)";
+    }
+
+    document.getElementById("menu-about").addEventListener("click", function(){
+        myFunction();});
+</script>
+<script>
+    function myFunction2() {
+        // Code for Chrome, Safari, Opera
+        document.getElementsByClassName("exit-proj")[0].style.WebkitTransform = "translateX(0)";
+        document.getElementsByClassName("exit-proj")[0].innerHtml =" asd";
+        // Code for IE9
+        document.getElementsByClassName("exit-proj")[0].style.msTransform = "translateX(0)";
+        // Standard syntax
+        document.getElementsByClassName("exit-proj")[0].style.transform = "translateX(0)";
+    }
+
+    document.getElementById("menu-portfolio").addEventListener("click", function(){
+        myFunction2();});
+</script>
 <script type="text/javascript" src="portfolio.js"></script>
 <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 <script>
     ScrollOut({
         threshold: .35,
         once: true
+    });
+</script>
+<script>
+    $(window).on('beforeunload', function() {
+        $(window).scrollTop(0);
+    });
+</script>
+<script>
+    $('a.norm-click').click(function (e) {
+        e.preventDefault();                   // prevent default anchor behavior
+        var goTo = this.getAttribute("href"); // store anchor href
+
+        // do something while timeOut ticks ...
+
+        setTimeout(function(){
+            window.location = goTo;
+        }, 800);                             // time in ms
     });
 </script>
 </body>

@@ -20,9 +20,9 @@
         <div>
             <div>
                 <ul>
-                    <li><a href="index.html" id="menu-home">home</a></li>
-                    <li><a href="aboutme.html" id="menu-about">about me</a></li>
-                    <li><a href="portfolio.html" id="menu-portfolio">projects</a></li>
+                    <li><a href="index.html" class="norm-click home-click" id="menu-home">home</a></li>
+                    <li><a href="aboutme.html" id="menu-about" class="norm-click about-click">about me</a></li>
+                    <li><a href="portfolio.html" id="menu-portfolio" class="norm-click portfolio-click">projects</a></li>
                     <li><a href="index.html#contact-me-section" id="menu-contact">contact me</a></li>
                     <img src="./images/logo-black-fill.png" id="menu-logo" alt="./images/logo-black-fill">
                 </ul>
@@ -286,6 +286,9 @@
         });
     });
 </script>
+<!--    EXIT SLIDES -->
+<div class="exit-slide exit-about"></div>
+<div class="exit-slide exit-proj"></div>
 <script>
     $(window).on('beforeunload', function() {
         $(window).scrollTop(0);
@@ -316,6 +319,46 @@
                 });
             } // End if
         });
+    });
+</script>
+<script>
+    function myFunction3() {
+        // Code for Chrome, Safari, Opera
+        document.getElementsByClassName("exit-about")[0].style.WebkitTransform = "translateY(0)";
+        document.getElementsByClassName("exit-about")[0].innerHtml =" asd";
+        // Code for IE9
+        document.getElementsByClassName("exit-about")[0].style.msTransform = "translateY(0)";
+        // Standard syntax
+        document.getElementsByClassName("exit-about")[0].style.transform = "translateY(0)";
+    }
+
+    document.getElementById("menu-about").addEventListener("click", function(){
+        myFunction3();});
+</script>
+<script>
+    function myFunction4() {
+        // Code for Chrome, Safari, Opera
+        document.getElementsByClassName("exit-proj")[0].style.WebkitTransform = "translateX(0)";
+        document.getElementsByClassName("exit-proj")[0].innerHtml =" asd";
+        // Code for IE9
+        document.getElementsByClassName("exit-proj")[0].style.msTransform = "translateX(0)";
+        // Standard syntax
+        document.getElementsByClassName("exit-proj")[0].style.transform = "translateX(0)";
+    }
+
+    document.getElementById("menu-portfolio").addEventListener("click", function(){
+        myFunction4();});
+</script>
+<script>
+    $('a.norm-click').click(function (e) {
+        e.preventDefault();                   // prevent default anchor behavior
+        var goTo = this.getAttribute("href"); // store anchor href
+
+        // do something while timeOut ticks ...
+
+        setTimeout(function(){
+            window.location = goTo;
+        }, 800);                             // time in ms
     });
 </script>
 </body>
