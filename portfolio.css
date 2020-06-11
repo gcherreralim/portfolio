@@ -721,7 +721,7 @@ body{
     z-index: 10000000000;
     transform: scale(0);
     border-radius: 50%;
-    transition: all 500ms ease-in;
+    transition: all 200ms ease-in;
 }
 .exit-about{
     position: fixed;
