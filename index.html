@@ -148,7 +148,7 @@
     <div class="skills-container">
         <p id="skills-head"> Skills </p>
         <div class="skills-text">
-            <p id="skills-subhead"> My skills have been blah blah</p>
+            <p id="skills-subhead"> Here are some of the skills I've gained and competencies I've developed over the last few years, through academics, work, or my own exploration:</p>
         </div>
         <div class="card-container">
             <div class="card data">
@@ -158,14 +158,12 @@
                 <div class="contentBx">
                     <h2>Data & Analytics</h2>
                     <div class="skill-list">
-                        <h3>R</h3>
-                        <div class="progress-container"><div class="skills r">60%</div></div>
-                        <h3>Python</h3>
-                        <div class="progress-container"><div class="skills py">45%</div></div>
-                        <h3>SQL</h3>
-                        <div class="progress-container"><div class="skills sql">33%</div></div>
-                        <h3>Excel VBA</h3>
-                        <div class="progress-container"><div class="skills vba">40%</div></div>
+                        <div class="tool-list">
+                            <h3>R</h3>
+                            <h3>Python</h3>
+                            <h3>SQL</h3>
+                            <h3>Excel VBA</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -176,14 +174,12 @@
                 <div class="contentBx">
                     <h2>Graphic Design</h2>
                     <div class="skill-list">
-                        <h3>R</h3>
-                        <div class="progress-container"><div class="skills r">60%</div></div>
-                        <h3>Python</h3>
-                        <div class="progress-container"><div class="skills py">45%</div></div>
-                        <h3>SQL</h3>
-                        <div class="progress-container"><div class="skills sql">33%</div></div>
-                        <h3>Excel VBA</h3>
-                        <div class="progress-container"><div class="skills vba">40%</div></div>
+                        <div class="tool-list">
+                            <h3>Adobe Photoshop</h3>
+                            <h3>Adobe Illustrator</h3>
+                            <h3>Adobe XD</h3>
+                            <h3>Final Cut Pro</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -194,17 +190,19 @@
                 <div class="contentBx">
                     <h2>Visualization</h2>
                     <div class="skill-list">
-                        <h3>R</h3>
-                        <div class="progress-container"><div class="skills r">60%</div></div>
-                        <h3>Python</h3>
-                        <div class="progress-container"><div class="skills py">45%</div></div>
-                        <h3>SQL</h3>
-                        <div class="progress-container"><div class="skills sql">33%</div></div>
-                        <h3>Excel VBA</h3>
-                        <div class="progress-container"><div class="skills vba">40%</div></div>
+                        <div class="tool-list">
+                            <h3>Tableau</h3>
+                            <h3>Power BI</h3>
+                            <h3>R Shiny</h3>
+                            <h3>HTML / CSS</h3>
+                            <h3>PowerPoint / Keynote</h3>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="skills-text">
+            <p id="skills-footer"> Since there's always something new to learn, I decided not to arbitrarily measure my skills in experience and expertise. Instead, I've listed the tools I've leveraged and some techniques I've used in previous projects.<br><br>To find out more about what I can do, see <a id="skill-about" class="norm-click" href="aboutme.html">more about me</a> or <a class="section-selector" id="skill-contact" href="#contact-me-section">contact me below</a>!</p>
         </div>
     </div>
 </section>
@@ -568,6 +566,8 @@
         document.getElementById("about-more").addEventListener("click", function(){
             myFunction();});
         document.getElementById("menu-about").addEventListener("click", function(){
+            myFunction();});
+        document.getElementById("skill-about").addEventListener("click", function(){
             myFunction();});
     </script>
     <script>

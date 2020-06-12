@@ -554,9 +554,7 @@ body{
     font-family: "Teko", sans-serif;
     bottom:-10px;
     right:0;
-    color: transparent;
-    -webkit-text-stroke: .02em #A50000;
-    text-stroke: 2px #A50000;
+    color: #A50000;
     opacity: 0.5;
     text-transform: uppercase;
     font-size: 280px;
@@ -650,9 +648,8 @@ body{
     top: -2%;
     left: 4%;
     font-family: "Teko", sans-serif;
-    color: transparent;
-    -webkit-text-stroke: .02em #030303;
-    text-stroke: 2px #030303;
+    color: #030303;
+    opacity: 0.3;
     text-transform: uppercase;
     font-size: 280px;
     font-weight: 700;
@@ -666,6 +663,24 @@ body{
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+#skills-footer{
+    position: absolute;
+    bottom: 12%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#skills-footer a{
+    color: #A50000;
+    text-decoration: none;
+    transition: all 175ms ease-in-out;
+}
+
+#skills-footer a:hover{
+    background-color: #A50000;
+    color: #FFF;
 }
 .card-container{
     display: flex;
@@ -824,54 +839,48 @@ body{
     transition: 0.5s;
 }
 .skills-container .card .contentBx .skill-list h3{
-    color: #fff;
+    color: #030303;
     font-weight: 300;
     font-size: 14px;
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: 2px;
-    margin-right: 10px;
+    padding: 5px;
     opacity: 0;
     visibility: hidden;
     transition: 0.5s ease-in-out;
+    transition-delay: 0.5s;
 }
 .skills-container .card:hover .contentBx .skill-list h3{
     opacity: 1;
-    text-align: left;
+    text-align: center;
     visibility: visible;
+}
+.tool-list{
+    width: 70%;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255,255,255,0.75);
+    border-radius: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
     transition-delay: 0.5s;
 }
-.skills-container .card .progress-container{
-    box-sizing:border-box;
-    width: 100%;
-    background-color:#FFF;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border-radius: 100px;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.5s ease-in-out;
-}
-.skills-container .card:hover .progress-container{
+.skills-container .card:hover .contentBx .skill-list .tool-list{
     opacity: 1;
     visibility: visible;
-    transition-delay: 0.5s;
 }
-.skills{
-    text-align: right;
-    font-size: 9px;
-    font-weight: 400;
-    padding-top:2px;
-    padding-bottom: 2px;
-    border-radius: 100px;
+.tool-list:hover{
+    background-color: rgba(255,0,0,0.6);
+    transition-delay: 0.001s;
+}
+.skills-container .card .contentBx .skill-list .tool-list:hover h3{
     color: #FFF;
-    width:0;
-    transition: 1.25s ease-in-out;
+    transition-delay: 0.001s;
 }
-
-.card:hover .r {width: 60%; background-color: #2561c2; transition-delay: 0.5s;}
-.card:hover .py {width: 45%; background-color: #e3c620; transition-delay: 0.5s;}
-.card:hover .sql {width: 33%; background-color: #23b5de; transition-delay: 0.5s;}
-.card:hover .vba {width: 40%; background-color: #1da81d; transition-delay: 0.5s;}
 
 /* portfolio section */
 .proj-head-container{
@@ -903,9 +912,7 @@ body{
 #project-head{
     font-size: 150px;
     font-weight: 700;
-    -webkit-text-stroke: .02em #FFF;
-    text-stroke: 2px #FFF;
-    color: transparent;
+    color: #FFF;
     position: absolute;
     font-family: "Teko", sans-serif;
     text-transform: uppercase;
@@ -1245,9 +1252,7 @@ body{
     text-align: center;
     top: 50%;
     left: 50%;
-    -webkit-text-stroke: .02em #FFF;
-    text-stroke: 2px #FFF;
-    color: transparent;
+    color: #FFF;
     text-transform: uppercase;
     transform: translate(-50%, -50%);
     transition: all 350ms ease-in-out;
