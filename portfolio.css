@@ -341,8 +341,9 @@ body{
 }
 .intro-subtext{
     position: relative;
-    left: 10vw;
-    font-size: 2em;
+    left: 20vw;
+    top: 7%;
+    font-size: 1.25vw;
 }
 
 /*project*/
