@@ -23,18 +23,35 @@
     border-radius: 5px;
 }
 
-.title{
+.heading{
     width: 100%;
-    height: 25vh;
+    height: 20vh;
     background: #A50000;
-    font-family: 'Teko', sans-serif;
-    font-size: 4.5vw;
-    text-transform: uppercase;
-    color: transparent;
-    -webkit-text-stroke: .03em #FFF;
-    text-stroke: 3px #FFF;
+    position: relative;
+}
+.title{
+    position: absolute;
+    width: 100%;
     text-align: center;
-    line-height: 25vh;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    font-size: 6vh;
+    color: #FFF;
+    background: #A50000;
+}
+.subtitle{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 50%;
+    top: 58%;
+    transform: translate(-50%, -50%);
+    font-size: 2vh;
+    color: #FFF;
+    background: #A50000;
 }
 .slides{
     width: 100%;
