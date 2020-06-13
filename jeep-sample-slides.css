@@ -7,6 +7,7 @@
     padding:0;
     font-family: 'Karla', sans-serif;
     user-select: none;
+    background: #030303;
 }
 
 /* scrollbar */
@@ -24,16 +25,16 @@
 
 .title{
     width: 100%;
-    height: 100vh;
+    height: 25vh;
     background: #A50000;
     font-family: 'Teko', sans-serif;
-    font-size: 4vw;
+    font-size: 4.5vw;
     text-transform: uppercase;
     color: transparent;
     -webkit-text-stroke: .03em #FFF;
     text-stroke: 3px #FFF;
     text-align: center;
-    line-height: 100vh;
+    line-height: 25vh;
 }
 .slides{
     width: 100%;
@@ -52,10 +53,22 @@
     color: #FFF;
     font-family: 'Teko', sans-serif;
     text-transform: uppercase;
-    font-size: 4vw;
+    font-size: 3.5vw;
     position: absolute;
     text-align: center;
     left: 50%;
     top: 5%;
     transform: translateX(-50%);
+}
+.footer{
+    margin-top: 40px;
+    border-top: #FFF 2px solid;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #030303;
+    color: #FFF;
+    text-align: center;
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 700;
 }
