@@ -1,6 +1,6 @@
 
 ::selection {
-    background: #17408B;
+    background: #0A377A;
 }
 *{
     margin:0;
@@ -18,14 +18,14 @@
     box-shadow: inset 0 0 3px 2px rgba(255,255,255,1)
 }
 ::-webkit-scrollbar-thumb{
-    background: #C9082A;
+    background: #DAB216;
     border-radius: 5px;
 }
 
 .heading{
     width: 100%;
     height: 20vh;
-    background: #17408B;
+    background: #0A377A;
     position: relative;
 }
 .title,
@@ -44,7 +44,7 @@
     transition: all 250ms ease-in-out;
 }
 .title a:hover{
-    color: #C9082A;
+    color: #DAB216;
 }
 .subtitle{
     position: absolute;
@@ -56,6 +56,7 @@
     font-size: 2vh;
     color: #FFF;
 }
+
 .content{
     width: 100%;
     background: #FFF;
@@ -67,8 +68,8 @@
     font-size: 1.25vw;
     text-transform: uppercase;
     font-weight: 700;
-    background: #C9082A;
-    color: #FFF;
+    background: #DAB216;
+    color: #030303;
     margin: 50px auto;
     text-align: center;
     padding: 10px 0;
@@ -83,23 +84,19 @@
     text-align-last: left;
     line-height: 1.5vw;
 }
-.ha-image{
+.mb-image{
     position: relative;
     margin-top: 30px;
     margin-bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
 }
-.vid{
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
+
 .footer{
-    margin-top: 50px;
+    margin-top: 75px;
     padding-top: 30px;
     padding-bottom: 30px;
-    background: #17408B;
+    background: #0A377A;
     color: #FFF;
     text-align: center;
     font-size: 1vw;
