@@ -1475,3 +1475,63 @@ input[type="submit"]{
     margin: 0 auto;
     text-align: center;
 }
+
+/*mobile*/
+#mobileonly{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #030303;
+    z-index: 100000000000000000000000000000000000000000000002;
+    transform: translateY(0);
+    transition: all 250ms ease-in-out;
+    display: none;
+}
+#mobileonlycontent{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#mobileonlycontent h2{
+    color: #FFF;
+    font-family: 'Karla', sans-serif;
+    font-size: 2vh;
+    line-height: 2vh;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 100000000000000000000000000000000000000000000005;
+}
+#textoverlay{
+    color: #FFF;
+    line-height: 3vh;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 100000000000000000000000000000000000000000000005;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-80%);
+    font-family: 'Teko', sans-serif;
+    font-size: 3vh;
+}
+#mobileonlycontent img{
+    width: 100%;
+    z-index: 100000000000000000000000000000000000000000000003;
+    filter: grayscale(100%);
+}
+
+#dismiss{
+    color: #A50000;
+    font-family: 'Karla', sans-serif;
+    font-size: 2vh;
+    line-height: 2vh;
+}
+
+/* SMARTPHONE PORTRAIT AND LANDSCAPE */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px){
+    .mobileonly{
+        display: inline;
+    }
+}
