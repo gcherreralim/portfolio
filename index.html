@@ -456,11 +456,11 @@
         <img src="images/contact-phone.png" id="contact-phone">
         <img src="images/contact-envelope.png" id="contact-envelope">
         <h3 id="contactme-head">Contact Me</h3>
-        <div class="contact-input-container">
+        <form class="contact-input-container" action="contactform.php" method="post">
             <div class="row100">
                 <div class="col">
                     <div class="inputBox">
-                        <input type="text" name="" required="required">
+                        <input type="text" name="name" required="required">
                         <span class="contact-text">Name</span>
                         <span class="contact-line"></span>
                     </div>
@@ -469,7 +469,7 @@
             <div class="row100">
                 <div class="col">
                     <div class="inputBox">
-                        <input type="text" name="" required="required">
+                        <input type="text" name="mail" required="required">
                         <span class="contact-text">Email</span>
                         <span class="contact-line"></span>
                     </div>
@@ -478,7 +478,7 @@
             <div class="row100">
                 <div class="col">
                     <div class="inputBox">
-                        <input type="text" name="" required="required">
+                        <input type="text" name="subject" required="required">
                         <span class="contact-text">Subject</span>
                         <span class="contact-line"></span>
                     </div>
@@ -487,7 +487,7 @@
             <div class="row100">
                 <div class="col">
                     <div class="inputBox textarea">
-                        <textarea required="required"></textarea>
+                        <textarea name="message" required="required"></textarea>
                         <span class="contact-text">Your Message</span>
                         <span class="contact-line"></span>
                     </div>
@@ -495,10 +495,10 @@
             </div>
             <div class="row100">
                 <div class="col">
-                    <input type="submit" value="Send">
+                    <input type="submit" name="submit" value="Send">
                 </div>
             </div>
-        </div>
+        </form>
         <h5 id="contactme-text">Don't hesitate to ask a question or let me know about work we could do together!</h5>
     </div>
 </section>
