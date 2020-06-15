@@ -1528,10 +1528,8 @@ input[type="submit"]{
 }
 
 /* SMARTPHONE PORTRAIT AND LANDSCAPE */
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 480px){
-    .mobileonly{
-        display: inline;
+@media screen and (max-width: 768px){
+    #mobileonly{
+        display: block
     }
 }
