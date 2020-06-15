@@ -32,7 +32,7 @@ html, body {
 }
 #textoverlay{
     color: #FFF;
-    line-height: 12vh;
+    line-height: 3vh;
     text-align: center;
     text-transform: uppercase;
     z-index: 5;
