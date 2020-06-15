@@ -28,10 +28,25 @@ html, body {
     line-height: 2vh;
     text-align: center;
     text-transform: uppercase;
+    z-index: 5;
 }
-
+#textoverlay{
+    color: #FFF;
+    line-height: 12vh;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 5;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Teko', sans-serif;
+    font-size: 12vh;
+}
 #mobileonlycontent img{
     width: 100%;
+    z-index: 3;
+    filter: grayscale(100%);
 }
 
 #dismiss{
