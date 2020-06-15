@@ -17,7 +17,9 @@ html, body {
     transition: all 250ms ease-in-out;
 }
 #mobileonlycontent{
-
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 #mobileonlycontent h2{
     color: #FFF;
