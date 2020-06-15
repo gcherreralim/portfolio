@@ -5,7 +5,6 @@
     $subject = $_POST['subject'];
     $mailFrom = $_POST['mail'];
     $message = $_POST['message'];
-
     $to = "contactme@gcherreralim.com"
     $headers = "From:" . $mailFrom;
     mail($to,$subject,$message, $headers);
