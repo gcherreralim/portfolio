@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MOBILE - TRIAL ONLY</title>
+    <link rel="stylesheet" type = "text/css" href="mobile-trial.css">
+</head>
+<body>
+<div class="show">HELLO</div>
+<div id="mobileonly">
+    <h2>Mobile-optimized view<br>coming soon</h2>
+    <img src="images/small-chang.gif" alt="animated"/>
+    <h2>Still want to check it out?<br><p id="dismiss" onclick="dismiss();">Click here.</p></h2>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    function dismiss(){
+        document.getElementById('mobileonly').style.transform='translateY(-100%)'
+    }
+</script>
+</body>
+</html>
