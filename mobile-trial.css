@@ -39,7 +39,7 @@ html, body {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-80%);
     font-family: 'Teko', sans-serif;
     font-size: 3vh;
 }
