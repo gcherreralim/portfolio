@@ -11,7 +11,7 @@
     $messageFull = "Message from: " . $mail . "\n\n" . $msg;
     $headers = "From: " . $mail;
 
-    $mail = mail($to, $subject, $messageFull);
+    $mail = mail($to, $subject, $messageFull, $headers);
     if($mail){
         echo "Thanks!";
     }else{
