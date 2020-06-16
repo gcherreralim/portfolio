@@ -8,6 +8,7 @@
     $name = "Gabby";
     $subject = "Hello";
     $mailFrom = "gcherreralim@gmail.com";
+    $message = "Hello";
     $to = "contactme@gcherreralim.com";
     $headers = "From:" . $mailFrom;
     mail($to,$subject,$message, $headers);
