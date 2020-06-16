@@ -1,5 +1,3 @@
-<html>
-<body>
 <?php
     $name = $_POST["sendName"];
     $mail = $_POST["sendMail"];
@@ -11,5 +9,3 @@
     echo $subject;
     echo $msg;
 ?>
-</body>
-</html>
