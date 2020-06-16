@@ -667,7 +667,7 @@ body{
 }
 #skills-footer{
     position: absolute;
-    bottom: 12%;
+    bottom: 3vh;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -691,8 +691,8 @@ body{
 }
 .skills-container .card{
     position:relative;
-    width: 320px;
-    height: 450px;
+    width: calc(100vw / 5.25);
+    height: calc(100vh / 2.1556);
     margin-left: 50px;
     margin-right: 50px;
     background: #131313;
@@ -738,11 +738,11 @@ body{
     width:100%;
     height:100%;
     background:#A50000;
-    clip-path: circle(150px at 80% 20%);
+    clip-path: circle(150px at 80% 15%);
     transition: 0.5s ease-in-out;
 }
 .skills-container .card:hover:before{
-    clip-path: circle(300px at 80% -20%);
+    clip-path: circle(300px at 80% -25%);
 }
 .skills-container .data:after{
     content:'data';
@@ -750,7 +750,7 @@ body{
     font-family: "Teko", sans-serif;
     top:30%;
     left:0%;
-    font-size: 12em;
+    font-size: 11vw;
     font-weight: 800;
     color: rgba(255,255,255,0.1);
 }
@@ -760,7 +760,7 @@ body{
     font-family: "Teko", sans-serif;
     top:30%;
     left:0%;
-    font-size: 12em;
+    font-size: 11vw;
     font-weight: 800;
     color: rgba(255,255,255,0.1);
 }
@@ -770,48 +770,55 @@ body{
     font-family: "Teko", sans-serif;
     top:30%;
     left:0%;
-    font-size: 12em;
+    font-size: 11vw;
     font-weight: 800;
     color: rgba(255,255,255,0.1);
+}
+.imgBx{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+    z-index: 200002;
 }
 #skills-data-img{
     position: absolute;
     top:40%;
-    transform: translate(22%,-40%) rotate(-15deg);
+    transform: translateY(-40%) rotate(-15deg);
     z-index: 200002;
-    width: 220px;
-    height: 220px;
+    width: calc(100vw / 7.636);
+    height: calc(100vh / 4.41);
     transition: 0.5s;
 }
 .skills-container .card:hover #skills-data-img{
     top:0%;
-    transform: translate(22%,0%);
+    transform: translateY(-70%);
 }
 #skills-design-img{
     position: absolute;
     top:40%;
-    transform: translate(22%,-40%) rotate(-15deg);
+    transform: translateY(-40%) rotate(-15deg);
     z-index: 200002;
-    width: 220px;
-    height: 220px;
+    width: calc(100vw / 7.636);
+    height: calc(100vh / 4.41);
     transition: 0.5s;
 }
 .skills-container .card:hover #skills-design-img{
     top:0%;
-    transform: translate(22%,0%);
+    transform: translateY(-70%);
 }
 #skills-viz-img{
     position: absolute;
     top:40%;
-    transform: translate(22%,-40%) rotate(-15deg);
+    transform: translateY(-40%) rotate(-15deg);
     z-index: 200002;
-    width: 220px;
-    height: 220px;
+    width: calc(100vw / 7.636);
+    height: calc(100vh / 4.41);
     transition: 0.5s;
 }
 .skills-container .card:hover #skills-viz-img{
     top:0%;
-    transform: translate(22%,0%);
+    transform: translateY(-70%);
 }
 .skills-container .card .contentBx{
     position: absolute;
@@ -842,7 +849,7 @@ body{
 .skills-container .card .contentBx .skill-list h3{
     color: #030303;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 0.8vw;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 2px;
@@ -993,7 +1000,7 @@ body{
     text-align: center;
 }
 .project-container:hover .project-name{
-    transform: translate(0, -20px);
+    transform: translate(0, -10px);
 }
 .desc-container{
     background: #FFF;

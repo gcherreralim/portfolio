@@ -405,34 +405,43 @@ body{
     left: 0;
     top: 0;
     z-index: 3;
-    background-size: cover;
+    /*background-size: cover;*/
 }
 .image1{
-    background: url(images/port-1-cluster.jpg) center center;
+    background: url(images/port-1-cluster.jpg) no-repeat center center;
+    background-size: auto 100%;
 }
 .image2{
-    background: url(images/port-2-postgame.jpg) center center;
+    background: url(images/port-2-postgame.jpg) no-repeat center center;
+    background-size: auto 100%;
 }
 .image3{
-    background: url(images/port-3-glassdoor.jpg) center center;
+    background: url(images/port-3-glassdoor.jpg) no-repeat center center;
+    background-size: auto 100%;
 }
 .image4{
-    background: url(images/port-4-wwe.jpg) center center;
+    background: url(images/port-4-wwe.jpg) no-repeat center center;
+    background-size: auto 100%;
 }
 .image5{
-    background: url(images/port-5-goat.jpg) center center;
+    background: url(images/port-5-goat.jpg) no-repeat center center;
+    background-size: auto 100%;
 }
 .image6{
-    background: url(images/port-6-leader.jpg) center center;
+    background: url(images/port-6-leader.jpg) no-repeat center center;
+    background-size: auto 100%;
 }
 .image7{
-    background: url(images/port-7-jeep.jpg) center center;
+    background: url(images/port-7-jeep.jpg) no-repeat center center;
+    background-size: auto 100%;
 }
 .image8{
-    background: url(images/port-8-homeaway.jpg) center center;
+    background: url(images/port-8-homeaway.jpg) no-repeat center center;
+    background-size: auto 100%;
 }
 .image9{
-    background: url(images/port-9-news.jpg) center center;
+    background: url(images/port-9-news.jpg) no-repeat center center;
+    background-size: auto 100%;
 }
 .dots-right{
     position: absolute;

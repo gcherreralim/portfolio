@@ -322,8 +322,8 @@ a, input{
     position: relative;
 }
 .circle{
-    width: 60em;
-    height: 60em;
+    width: 60vw;
+    height: 60vw;
     background: #A50000;
     opacity: 0.5;
     border-radius: 50%;
@@ -370,10 +370,9 @@ a, input{
     color: #FFF;
 }
 #small-intro{
-    font-size: 1em;
+    font-size: 1vw;
     font-weight: 100;
     text-align: justify;
-    text-align-last: left;
 }
 /*main container*/
 .main-container{
@@ -432,7 +431,7 @@ a, input{
 }
 .cards-container .card{
     position:relative;
-    width: 950px;
+    width: calc(100vw/1.75);
     height: 200px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -468,7 +467,7 @@ a, input{
 }
 .subdetails{
     margin: 0 auto;
-    width: 70%;
+    width: 80%;
     font-size: 13px;
     text-align: justify;
     text-align-last: center;
@@ -476,6 +475,8 @@ a, input{
 }
 .organization,
 .position{
+    width: 100%;
+    text-align: center;
     position: absolute;
     vertical-align: center;
     left: 50%;
@@ -571,7 +572,7 @@ a, input{
 .work-sub-nd{
     position: absolute;
     top: 100px;
-    left: 135.375px;
+    left: 10%;
     opacity: 0;
     visibility: hidden;
     transition-delay: 350ms;
@@ -589,7 +590,7 @@ a, input{
 .work-sub-capstone{
     position: absolute;
     top: 90px;
-    left: 135.375px;
+    left: 10%;
     opacity: 0;
     visibility: hidden;
     transition-delay: 350ms;
@@ -608,7 +609,7 @@ a, input{
 .work-sub-cobena{
     position: absolute;
     top: 100px;
-    left: 135.375px;
+    left: 10%;
     opacity: 0;
     visibility: hidden;
     transition-delay: 350ms;
@@ -627,7 +628,7 @@ a, input{
 .work-sub-loreal{
     position: absolute;
     top: 105px;
-    left: 135.375px;
+    left: 10%;
     opacity: 0;
     visibility: hidden;
     transition-delay: 350ms;
@@ -639,7 +640,7 @@ a, input{
 
 /*SCHOOLS*/
 .school-sub{
-    width: 40%;
+    width: 60%;
 }
 .school-nd:hover{
     background: url(images/school-nd.jpg) no-repeat;
@@ -703,7 +704,7 @@ a, input{
 .school-sub-nd{
     position: absolute;
     top: 110px;
-    left: 270.75px;
+    left: 20%;
     opacity: 0;
     visibility: hidden;
     transition-delay: 350ms;
@@ -721,7 +722,7 @@ a, input{
 .school-sub-up{
     position: absolute;
     top: 110px;
-    left: 270.75px;
+    left: 20%;
     opacity: 0;
     visibility: hidden;
     transition-delay: 350ms;
@@ -740,7 +741,7 @@ a, input{
 .school-sub-ubc{
     position: absolute;
     top: 110px;
-    left: 270.75px;
+    left: 20%;
     opacity: 0;
     visibility: hidden;
     transition-delay: 350ms;
@@ -799,7 +800,7 @@ a, input{
 .org-sub-msbaa{
     position: absolute;
     top: 110px;
-    left: 135.375px;
+    left: 15%;
     opacity: 0;
     visibility: hidden;
     transition-delay: 350ms;
@@ -817,7 +818,7 @@ a, input{
 .org-sub-jma{
     position: absolute;
     top: 90px;
-    left: 135.375px;
+    left: 15%;
     opacity: 0;
     visibility: hidden;
     transition-delay: 350ms;
@@ -829,7 +830,7 @@ a, input{
 
 /* SKILLS */
 .skill-sub{
-    width: 70%;
+    width: 75%;
 }
 .skill-data:hover{
     background: url(images/skill-data.jpg) no-repeat;
@@ -892,7 +893,7 @@ a, input{
 .skill-sub-data{
     position: absolute;
     top: 110px;
-    left: 135.375px;
+    left: 12.5%;
     opacity: 0;
     visibility: hidden;
     transition-delay: 350ms;
@@ -910,7 +911,7 @@ a, input{
 .skill-sub-design{
     position: absolute;
     top: 110px;
-    left: 135.375px;
+    left: 12.5%;
     opacity: 0;
     visibility: hidden;
     transition-delay: 350ms;
@@ -928,7 +929,7 @@ a, input{
 .skill-sub-viz{
     position: absolute;
     top: 110px;
-    left: 135.375px;
+    left: 12.5%;
     opacity: 0;
     visibility: hidden;
     transition-delay: 350ms;
