@@ -1,31 +1,10 @@
 <?php
+    $name = $_POST["sendName"];
+    $mail = $_POST["sendMail"];
+    $subject = $_POST["sendSubject"];
+    $msg = $_POST["sendMessage"];
 
-    error_reporting(-1);
-    ini_set('display_errors', 'On');
-    set_error_handler("var_dump");
+    $headers = 'From: ' . $mail
 
-    if(isset($_POST['submit']))
-    {
-        $UserName = $_POST['sendName'];
-        $Email = $_POST['sendMail'];
-        $Subject = $_POST['sendSubject'];
-        $Message = $_POST['sendMessage'];
-
-        if(empty($UserName) | empty($Email) | empty($Subject) | empty($Message))
-        {
-            header('location: trial-form.html?error')
-        }
-        else{
-            $to = "contactme@gcherreralim.com";
-
-            if(mail($to,$Subject,$Message,$Email))
-            {
-                header("location: trial-form.html?success");
-            }
-        }
-    }
-    else
-    {
-        header("location: trial-form.html");
-    }
+    mail("contactme@gcherreralim.com",$subject,$msg,$headers)
 ?>
