@@ -9,7 +9,8 @@
     $to = "contactme@gcherreralim.com";
 
     $messageFull = "Message from: " . $mail . "\n\n" . $msg;
+    $header = "From: " . $mail;
 
-    mail($to, $subject, $messageFull);
+    mail($to, $subject, $messageFull, $header);
     header("Location: ./?mailsend");
 ?>
