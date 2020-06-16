@@ -669,6 +669,7 @@ body{
     font-family: 'Teko', sans-serif;
     -webkit-text-stroke: .05em #FFF;
     text-stroke: 4px #FFF;
+    text-transform: uppercase;
     color: transparent;
     text-align: center;
     background: #030303;
@@ -687,6 +688,7 @@ body{
     font-family: 'Teko', sans-serif;
     -webkit-text-stroke: .05em #FFF;
     text-stroke: 4px #FFF;
+    text-transform: uppercase;
     color: transparent;
     text-align: center;
     background: #030303;
