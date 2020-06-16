@@ -524,7 +524,8 @@
                 </div>
             </div>
         </form>
-        <h5 id="contactme-text">Don't hesitate to ask a question or let me know about work we could do together!</h5>
+        <h5 id="contactme-text">Don't hesitate to ask a question or let me know<br>about work we could do together!</h5>
+        <h5 id="contactme-text2">+1 (574) 386-2562<br><a href="mailto:contactme@gcherreralim.com" id="contactme-mailto">contactme@gcherreralim.com</a></h5>
     </div>
 </section>
 <!-- END Contact Section -->
@@ -563,6 +564,18 @@
     <script>
         $(function() {
             $('input').hover(function() {
+                $('.cursor').css('background-color', '#A50000');
+                $('.cursor').css('transform','scale(2)');
+            }, function() {
+                // on mouseout, reset the background colour
+                $('.cursor').css('background-color', '');
+                $('.cursor').css('transform','');
+            });
+        });
+    </script>
+    <script>
+        $(function() {
+            $('textarea').hover(function() {
                 $('.cursor').css('background-color', '#A50000');
                 $('.cursor').css('transform','scale(2)');
             }, function() {

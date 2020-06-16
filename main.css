@@ -26,7 +26,7 @@ html, body {
     transition-property: background, transform;
     z-index: 100000000000000000000000000000000000000000000000;
 }
-a, input{
+a, input, textarea{
     cursor: none;
 }
 body{
@@ -1301,6 +1301,31 @@ body{
 .contact-me-container:hover #contactme-text{
     visibility: visible;
     opacity: 1;
+}
+#contactme-text2{
+    display: block;
+    background: #A50000;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    margin:0;
+    position: absolute;
+    text-align: right;
+    top: 3%;
+    right: 3%;
+    color: #FFF;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.175s ease-in-out 0s;
+    transition-delay: 450ms;
+}
+.contact-me-container:hover #contactme-text2{
+    visibility: visible;
+    opacity: 1;
+}
+#contactme-mailto{
+    text-decoration: none;
+    color: #FFF;
 }
 
 .contact-input-container{
