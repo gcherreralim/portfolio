@@ -11,5 +11,5 @@
     $messageFull = "Message from: " . $mail . "\n\n" . $msg;
 
     mail($to, $subject, $messageFull);
-    header("Location: ./#contact-me?mailsend");
+    header("Location: ./?mailsend");
 ?>
