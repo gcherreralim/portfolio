@@ -190,7 +190,7 @@ a, input{
 .menu-wrap .menu > div > div > ul > li {
     list-style: none;
     color: #fff;
-    font-size: 90px;
+    font-size: 4vw;
     padding: 5px;
 }
 
@@ -301,11 +301,11 @@ a, input{
     left: 10%;
 }
 #side-text{
-    font-size: 20em;
+    font-size: 20vw;
     text-transform: uppercase;
     transform: rotate(90deg);
     white-space: nowrap;
-    line-height: 225px;
+    line-height: 12vw;
     font-weight: 600;
     /*color: #FFF;*/
     -webkit-text-stroke: .01em #FFF;
@@ -355,8 +355,8 @@ a, input{
 }
 #big-intro{
     font-family: 'Teko', sans-serif;
-    line-height: 0.9em;
-    font-size: 6em;
+    line-height: 5vw;
+    font-size: 5vw;
     font-weight: 800;
     text-transform: uppercase;
     -webkit-text-stroke: .02em #FFF;
@@ -372,6 +372,8 @@ a, input{
 #small-intro{
     font-size: 1em;
     font-weight: 100;
+    text-align: justify;
+    text-align-last: left;
 }
 /*main container*/
 .main-container{
@@ -385,9 +387,9 @@ a, input{
     color: #FFF;
     text-align: left;
     position: absolute;
-    left: 185px;
-    top: -65px;
-    font-size: 100px;
+    left: 20%;
+    top: -6%;
+    font-size: 5vw;
 }
 .education-container{
     position: relative;
@@ -402,25 +404,25 @@ a, input{
     color: #FFF;
     text-align: left;
     position: absolute;
-    left: 0px;
-    top: -65px;
-    font-size: 100px;
+    left: 0;
+    top: -7%;
+    font-size: 5vw;
 }
 .org-title{
     color: #FFF;
     text-align: right;
     position: absolute;
-    left: 160px;
-    top: -65px;
-    font-size: 100px;
+    left: 20%;
+    top: -11%;
+    font-size: 5vw;
 }
 .skill-title{
     color: #FFF;
     text-align: right;
     position: absolute;
     left: 10px;
-    top: -65px;
-    font-size: 100px;
+    top: -8%;
+    font-size: 5vw;
 }
 /*cards*/
 .cards-container{
@@ -972,6 +974,11 @@ a, input{
 .link:hover::before {
     visibility: visible;
     transform: scaleX(1);
+}
+#link-intro{
+    -webkit-text-stroke: none;
+    text-stroke: none;
+    color: #A50000;
 }
 .segment-title{
     font-family: 'Teko', sans-serif;

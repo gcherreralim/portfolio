@@ -260,7 +260,7 @@ body{
 .menu-wrap .menu > div > div > ul > li {
     list-style: none;
     color: #fff;
-    font-size: 90px;
+    font-size: 4vw;
     padding: 5px;
 }
 
@@ -495,9 +495,9 @@ body{
     width: 80%;
     display: inline-block;
     position: relative;
-    font-size: 5em;
+    font-size: 4vw;
     font-family: 'Teko', sans-serif;
-    line-height: 0.8em;
+    line-height: 3.5vw;
     text-transform: uppercase;
     color: transparent;
     letter-spacing: 0.0003em;
@@ -513,9 +513,9 @@ body{
     width: 80%;
     display: inline-block;
     position: relative;
-    font-size: 5em;
+    font-size: 4vw;
     font-family: 'Teko', sans-serif;
-    line-height: 0.8em;
+    line-height: 3.5vw;
     text-transform: uppercase;
     color: transparent;
     letter-spacing: 0.0003em;
@@ -532,8 +532,8 @@ body{
     width: 70%;
     display: inline-block;
     position: relative;
-    font-size: 0.8em;
-    line-height: 0.8em;
+    font-size: 0.7vw;
+    line-height: 0.6vw;
     text-transform: uppercase;
     left: 50px;
     float: left;
@@ -545,8 +545,8 @@ body{
     width: 70%;
     display: inline-block;
     position: relative;
-    font-size: 0.8em;
-    line-height: 0.8em;
+    font-size: 0.7vw;
+    line-height: 0.6vw;
     text-transform: uppercase;
     right: 50px;
     float: right;
@@ -559,8 +559,8 @@ body{
     width: 70%;
     display: inline-block;
     position: relative;
-    font-size: 1em;
-    line-height: 1.2em;
+    font-size: 0.8vw;
+    line-height: 0.9vw;
     left: 50px;
     float: left;
     top: 20px;
@@ -571,8 +571,8 @@ body{
     width: 70%;
     display: inline-block;
     position: relative;
-    font-size: 1em;
-    line-height: 1.2em;
+    font-size: 0.8vw;
+    line-height: 0.9vw;
     right: 50px;
     float: right;
     top: 20px;
@@ -606,7 +606,7 @@ body{
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    font-size: 3em;
+    font-size: 2vw;
     font-family: 'Teko', sans-serif;
     line-height: 0.8em;
     text-transform: uppercase;
@@ -624,9 +624,9 @@ body{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1em;
+    font-size: 0.8vw;
+    line-height: 0.9vw;
     text-align: center;
-    line-height: 1.5em;
     color: #030303;
     visibility: hidden;
     opacity: 0;
@@ -665,7 +665,7 @@ body{
     text-decoration: none;
 }
 .link-text-left{
-    font-size: 2em;
+    font-size: 1.5vw;
     font-family: 'Teko', sans-serif;
     -webkit-text-stroke: .05em #FFF;
     text-stroke: 4px #FFF;
@@ -683,7 +683,7 @@ body{
     text-decoration: underline wavy;
 }
 .link-text-right{
-    font-size: 2em;
+    font-size: 1.5vw;
     font-family: 'Teko', sans-serif;
     -webkit-text-stroke: .05em #FFF;
     text-stroke: 4px #FFF;

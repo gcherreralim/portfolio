@@ -248,7 +248,7 @@ body{
 .menu-wrap .menu > div > div > ul > li {
     list-style: none;
     color: #fff;
-    font-size: 90px;
+    font-size: 4vw;
     padding: 5px;
 }
 
@@ -401,15 +401,15 @@ body{
 #landing-maintext{
     font-family: 'Teko', sans-serif;
     position: absolute;
-    top: 38%;
+    top: 40%;
     left: 5%;
     text-transform: uppercase;
     line-height: 0.8em;
-    /*-webkit-text-stroke: .02em #FFF;*/
-    /*text-stroke: 2px #FFF;*/
-    /*color: transparent;*/
-    font-size: 12rem;
-    color: #FFF;
+    -webkit-text-stroke: .02em #FFF;
+    text-stroke: 2px #FFF;
+    color: transparent;
+    font-size: 9vw;
+    /*color: #FFF;*/
     font-weight: 800;
     letter-spacing: 0.00003em;
     z-index: 100000;
@@ -425,7 +425,7 @@ body{
     text-align: right;
     line-height: 1em;
     color: #030303;
-    font-size: 2rem;
+    font-size: 1.5vw;
     z-index: 100000;
     /*animation: 5s floating3 infinite ease-in-out;*/
 }
@@ -466,7 +466,7 @@ body{
 .typed-words{
     color: #FFFFFF;
     font-family: 'Teko', sans-serif;
-    font-size: 70px;
+    font-size: 3vw;
     font-weight: 700;
     line-height: 2em;
     margin-bottom: -1em;
@@ -490,7 +490,7 @@ body{
     width: 200px;
     height: 40px;
     line-height: 40px;
-    font-size: 16px;
+    font-size: 0.75vw;
     font-weight: 600;
     text-decoration:none;
     background: #030303;
@@ -554,14 +554,13 @@ body{
 #about-me-head{
     position: absolute;
     font-family: "Teko", sans-serif;
-    bottom:-10px;
+    bottom:-15%;
     right:0;
     color: #A50000;
     opacity: 0.5;
     text-transform: uppercase;
-    font-size: 280px;
+    font-size: 15vw;
     font-weight: 700;
-    line-height: 125px;
     animation: 5s floating4 infinite ease-in-out;
 }
 @keyframes floating4 {
@@ -582,7 +581,7 @@ body{
     bottom: 60%;
     right: 12%;
     color: #FFF;
-    font-size: 20px;
+    font-size: 1.25vw;
 }
 #about-github{
     text-align:center;
@@ -591,7 +590,7 @@ body{
     bottom: 50%;
     right: 12%;
     color: #FFF;
-    font-size: 20px;
+    font-size: 1.25vw;
 }
 #about-resume{
     text-align:center;
@@ -600,7 +599,7 @@ body{
     bottom: 40%;
     right: 12%;
     color: #FFF;
-    font-size: 20px;
+    font-size: 1.25vw;
 }
 
 #about-links a p{
@@ -647,15 +646,14 @@ body{
 }
 #skills-head {
     position: absolute;
-    top: -2%;
+    top: -15%;
     left: 4%;
     font-family: "Teko", sans-serif;
     color: #030303;
     opacity: 0.3;
     text-transform: uppercase;
-    font-size: 280px;
+    font-size: 15vw;
     font-weight: 700;
-    line-height: 125px;
     animation: 5s floating4 infinite ease-in-out;
 }
 #skills-subhead{
@@ -665,6 +663,7 @@ body{
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 #skills-footer{
     position: absolute;
@@ -912,7 +911,7 @@ body{
     padding: 2px 0 0 12px;
 }
 #project-head{
-    font-size: 150px;
+    font-size: 10vw;
     font-weight: 700;
     color: #FFF;
     position: absolute;
@@ -983,7 +982,7 @@ body{
     top: 10px;
 }
 .project-name{
-    font-size: 20px;
+    font-size: 1vw;
     /*top: 50%;*/
     color: #FFF;
     border-style: solid;
@@ -1224,6 +1223,7 @@ body{
     width: 40%;
     left: 40%;
     top: 10%;
+    transform: rotate(-12deg);
     transition: all 350ms ease-in-out;
 }
 #contact-phone{
@@ -1231,6 +1231,7 @@ body{
     width: 43%;
     right: 40%;
     bottom: 10%;
+    transform: rotate(12deg);
     transition: all 350ms ease-in-out;
 }
 .contact-me-container:hover{
@@ -1240,13 +1241,15 @@ body{
 .contact-me-container:hover #contact-envelope{
     left: -10%;
     top: 2%;
+    transform: rotate(0);
 }
 .contact-me-container:hover #contact-phone{
     right: -10%;
     bottom: 2%;
+    transform: rotate(0);
 }
 #contactme-head{
-    font-size: 100px;
+    font-size: 7vw;
     font-weight: 900;
     font-family: 'Teko', sans-serif;
     margin: 0;
@@ -1261,7 +1264,7 @@ body{
 }
 
 .contact-me-container:hover #contactme-head{
-    transform: translate(-50%, -300%);
+    transform: translate(-50%, -220%);
 }
 
 #contactme-head::before {
@@ -1269,7 +1272,7 @@ body{
     position: absolute;
     width: 100%;
     height: 5px;
-    bottom: 30px;
+    bottom: 40px;
     left: 0;
     background-color: #FFF;
     visibility: hidden;
