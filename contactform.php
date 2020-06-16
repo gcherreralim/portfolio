@@ -27,14 +27,14 @@
         $Subject = $_POST['sendSubject'];
         $Message = $_POST['sendMessage'];
 
-        if(empty($UseName) | empty($Email) | empty($Subject) | empty($Message))
+        if(empty($UserName) | empty($Email) | empty($Subject) | empty($Message))
         {
             header('location: index.html?error')
         }
         else{
             $to = "contactme@gcherreralim.com";
 
-            if(mail($to,$Subject,$Msg,$Email))
+            if(mail($to,$Subject,$Message,$Email))
             {
                 header("location:index.html?success");
             }
