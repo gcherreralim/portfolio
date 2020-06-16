@@ -1,4 +1,4 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
-RewriteRule ^(.*).pdf$  https://gcherreralim.com/docu/$1 [R=301,L]
+RewriteRule ^([^\.]+)$ $1.pdf [NC,L]
