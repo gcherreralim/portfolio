@@ -467,11 +467,25 @@
         <img src="images/contact-phone.png" id="contact-phone">
         <img src="images/contact-envelope.png" id="contact-envelope">
         <h3 id="contactme-head">Contact Me</h3>
+        <?php
+            $Msg = "";
+            if(isset($_GET['error']))
+            {
+                $Msg = "Please fill in the blanks";
+                echo $Msg;
+            }
+
+            if(isset($_GET['success']))
+            {
+                $Msg = "Your message has been sent";
+                echo $Msg;
+            }
+        ?>
         <form class="contact-input-container" action="contactform.php" method="post">
             <div class="row100">
                 <div class="col">
                     <div class="inputBox">
-                        <input type="text" name="name" required="required">
+                        <input type="text" name="sendName" required="required" class="form-control mb-2">
                         <span class="contact-text">Name</span>
                         <span class="contact-line"></span>
                     </div>
@@ -480,7 +494,7 @@
             <div class="row100">
                 <div class="col">
                     <div class="inputBox">
-                        <input type="text" name="mail" required="required">
+                        <input type="text" name="sendMail" required="required" class="form-control mb-2">
                         <span class="contact-text">Email</span>
                         <span class="contact-line"></span>
                     </div>
@@ -489,7 +503,7 @@
             <div class="row100">
                 <div class="col">
                     <div class="inputBox">
-                        <input type="text" name="subject" required="required">
+                        <input type="text" name="sendSubject" required="required" class="form-control mb-2">
                         <span class="contact-text">Subject</span>
                         <span class="contact-line"></span>
                     </div>
@@ -498,7 +512,7 @@
             <div class="row100">
                 <div class="col">
                     <div class="inputBox textarea">
-                        <textarea name="message" required="required"></textarea>
+                        <textarea name="sendMessage" required="required" class="form-control mb-2"></textarea>
                         <span class="contact-text">Your Message</span>
                         <span class="contact-line"></span>
                     </div>
