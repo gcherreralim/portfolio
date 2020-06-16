@@ -8,7 +8,9 @@
     $msg = $_POST["sendMessage"];
     $to = "contactme@gcherreralim.com";
 
-    $mail = mail($to, $subject, $msg);
+    $messageFull = "Message from: " . $mail . "\n\n" . $msg
+
+    $mail = mail($to, $subject, $messageFull);
     if($mail){
         echo "Thanks!";
     }else{
