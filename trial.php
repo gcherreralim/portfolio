@@ -9,6 +9,7 @@
     $to = "contactme@gcherreralim.com";
 
     $messageFull = "Message from: " . $mail . "\n\n" . $msg;
+    $headers = "From: " . $mail;
 
     $mail = mail($to, $subject, $messageFull);
     if($mail){
