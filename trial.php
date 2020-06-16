@@ -8,7 +8,7 @@
     $msg = $_POST["sendMessage"];
     $to = "contactme@gcherreralim.com";
 
-    $messageFull = "Message from: " . $mail . "\n\n" . $msg
+    $messageFull = "Message from: " . $mail . "\n\n" . $msg;
 
     $mail = mail($to, $subject, $messageFull);
     if($mail){
