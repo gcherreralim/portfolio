@@ -386,7 +386,7 @@ a, input{
     color: #FFF;
     text-align: left;
     position: absolute;
-    left: 20%;
+    left: 0;
     top: -6%;
     font-size: 5vw;
 }
@@ -411,7 +411,7 @@ a, input{
     color: #FFF;
     text-align: right;
     position: absolute;
-    left: 20%;
+    left: 0;
     top: -11%;
     font-size: 5vw;
 }
@@ -419,7 +419,7 @@ a, input{
     color: #FFF;
     text-align: right;
     position: absolute;
-    left: 10px;
+    left: 0;
     top: -8%;
     font-size: 5vw;
 }
